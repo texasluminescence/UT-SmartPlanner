@@ -1,0 +1,81 @@
+{
+    "College of Fine Arts": {
+        "Art History Minor": {
+            "Description": "Focuses on the study of art history with upper-division coursework.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core": [
+                    {
+                        "Details": "Fifteen semester hours of coursework in art history, including at least 12 hours of upper-division coursework."
+                    }
+                ],
+                "Notes": "All classes must be taken on the letter-grade basis. The student must earn a combined grade point average of at least 2.50 in minor coursework."
+            }
+        },
+        "Arts Management and Administration Minor": {
+            "Description": "Provides a foundation in arts management and administration concepts.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "F A 362",
+                        "Title": "Foundations of Arts Management",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "F A 340",
+                        "Title": "Fine Arts Internship",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Details": "Nine hours of Fine Arts, Business, or Management coursework, at least 3 hours of which must be F A.",
+                        "Courses": [
+                            "F A 313C",
+                            "F A 364",
+                            "F A 365",
+                            "F A 366",
+                            "F A 368",
+                            "F A 370",
+                            "F A 371",
+                            "ACC 310F",
+                            "ACC 312",
+                            "MAN 320F",
+                            "MAN 336",
+                            "MKT 320F",
+                            "MKT 337",
+                            "FIN 320F",
+                            "FIN 357",
+                            "LEB 320F",
+                            "LEB 323",
+                            "I B 320F",
+                            "I B 350"
+                        ]
+                    }
+                ],
+                "Notes": "A 2.50 overall grade point average in minor coursework is required. All courses must be taken on the letter-grade basis."
+            }
+        },
+        "Studio Art Minor": {
+            "Description": "Offers practical coursework in studio art, focusing on non-majors.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Details": "15 semester hours of coursework in studio art chosen from the following:"
+                    },
+                    "ART 350",
+                    "ART 352J",
+                    "ART 352C",
+                    "ART 352D",
+                    "ART 352E",
+                    "ART 352F",
+                    "ART 352G",
+                    "ART 352K"
+                ],
+                "Notes": "All courses must be taken on the letter-grade basis."
+            }
+        }
+    }
+}

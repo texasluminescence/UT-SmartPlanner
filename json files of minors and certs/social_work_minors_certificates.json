@@ -1,0 +1,72 @@
+{
+    "School of Social Work": {
+      "Minors": {
+        "Social Work Minor": {
+          "Credit Hours Required": 15,
+          "Requirements": [
+            { "Course": "S W 310", "Title": "Introduction to Social Work and Social Welfare", "Hours": 3 },
+            { "Course": "S W 312", "Title": "Generalist Social Work Practice: Knowledge, Values, and Skills", "Hours": 3 },
+            { "Course": "S W 325", "Title": "Foundations of Social Justice", "Hours": 3 },
+            {
+              "Group": "Two additional courses from S W 360K numbered topic courses",
+              "Hours": 6
+            }
+          ],
+          "Notes": [
+            "All courses must be taken on a letter grade basis.",
+            "Students must earn a minimum grade of C.",
+            "Six hours must be upper-division.",
+            "Students must have an overall minimum GPA of 2.0 at The University of Texas at Austin to be eligible for the minor."
+          ]
+        },
+        "Critical Disability Studies Minor": {
+          "Credit Hours Required": 15,
+          "Requirements": [
+            { "Course": "CDI 355", "Title": "Topics in Critical Disability Studies (Topic 1: Social Construction of Disability)", "Hours": 3 },
+            { "Course": "CDI 355", "Title": "Topics in Critical Disability Studies (Topic 2: Making Systems Work for People with Disabilities)", "Hours": 3 },
+            { "Course": "S W 325", "Title": "Foundations of Social Justice", "Hours": 3 },
+            {
+              "Group": "Six hours chosen from the following:",
+              "Courses": [
+                { "Course": "SED 322C", "Title": "Individual Differences", "Hours": 3 },
+                { "Course": "ANT 302", "Title": "Cultural Anthropology", "Hours": 3 },
+                { "Course": "KIN 352K", "Title": "Studies in Human Movement: Topical Studies", "Hours": 3 },
+                { "Course": "KIN 366R", "Title": "Adapted Fitness and Recreation", "Hours": 3 },
+                { "Course": "SLH 308K", "Title": "Perspectives on Deafness", "Hours": 3 }
+              ]
+            }
+          ],
+          "Notes": [
+            "All courses in the disability studies minor must be taken on a letter grade basis.",
+            "Students must earn a minimum grade of C.",
+            "Students must have an overall minimum GPA of 2.0 at The University of Texas at Austin to be eligible for the minor."
+          ]
+        }
+      },
+      "Certificates": {
+        "Public Safety Certificate": {
+          "Credit Hours Required": 18,
+          "Requirements": [
+            { "Course": "PSF 311", "Title": "Social Work and Public Safety", "Hours": 3 },
+            { "Course": "S W 325", "Title": "Foundations of Social Justice", "Hours": 3 },
+            {
+              "Group": "Three courses chosen from the following:",
+              "Courses": [
+                { "Course": "S W 311", "Title": "Introductory Topics in Social Work (Topic 3: Introduction to the Criminal Justice System)", "Hours": 3 },
+                { "Course": "S W 360K", "Title": "Current Social Work Topics (Topic 4: Social Work Practice with Abused and Neglected Children and their Families)", "Hours": 3 },
+                { "Course": "S W 360K", "Title": "Current Social Work Topics (Topic 6: Contemporary Issues in Domestic Violence)", "Hours": 3 },
+                { "Course": "S W 360K", "Title": "Current Social Work Topics (Topic 9: Loss and Grief: Individual, Family, and Cultural Perspectives)", "Hours": 3 }
+              ]
+            },
+            { "Course": "PSF 360K", "Title": "Public Safety Field Immersion", "Hours": 3 }
+          ],
+          "Notes": [
+            "All courses in the certificate program must be taken on a letter grade basis.",
+            "Students must earn a minimum grade of C.",
+            "Field immersion placements will be completed in public safety-related settings, such as the Austin Police Department, Travis County Sheriff's Office, or Austin EMS."
+          ]
+        }
+      }
+    }
+  }
+  

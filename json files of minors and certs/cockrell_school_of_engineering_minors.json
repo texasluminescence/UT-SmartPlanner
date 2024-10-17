@@ -1,0 +1,284 @@
+{
+    "Cockrell School of Engineering": {
+        "Materials Science and Engineering Minor": {
+            "Description": "Focuses on the study of materials and their applications in engineering.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core": [
+                    {
+                        "Course": "MSE 360M",
+                        "Title": "Experiments in Materials Science and Engineering",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Chemistry Majors",
+                        "Courses": [
+                            {
+                                "Course": "CH 353",
+                                "Title": "Physical Chemistry I",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "PHY 355",
+                                "Title": "Modern Physics and Thermodynamics",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "CHE 355",
+                                "Title": "Introduction to Polymers",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "M E 349",
+                                "Title": "Corrosion Engineering",
+                                "Hours": 3
+                            }
+                        ]
+                    },
+                    {
+                        "Group": "Physics Majors",
+                        "Courses": [
+                            {
+                                "Course": "PHY 369",
+                                "Title": "Thermodynamics and Statistical Mechanics",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "CH 367C",
+                                "Title": "Materials Chemistry",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "CH 354S",
+                                "Title": "Elements of Spectroscopy",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "ECE 334K",
+                                "Title": "Quantum Theory of Electronic Materials",
+                                "Hours": 3
+                            }
+                        ]
+                    },
+                    {
+                        "Group": "Aerospace Engineering Majors",
+                        "Courses": [
+                            {
+                                "Course": "M E 310T",
+                                "Title": "Applied Thermodynamics",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "ASE 357",
+                                "Title": "Mechanics of Composite Materials",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "ASE 324L",
+                                "Title": "Aerospace Materials Laboratory",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "M E 349",
+                                "Title": "Corrosion Engineering",
+                                "Hours": 3
+                            }
+                        ]
+                    },
+                    {
+                        "Group": "Biomedical Engineering Majors",
+                        "Courses": [
+                            {
+                                "Course": "BME 335",
+                                "Title": "Engineering Probability and Statistics",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "BME 373",
+                                "Title": "Tissue, Scaffold, and Cell Biomechanics Applications",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "ECE 334K",
+                                "Title": "Quantum Theory of Electronic Materials",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "ASE 357",
+                                "Title": "Mechanics of Composite Materials",
+                                "Hours": 3
+                            }
+                        ]
+                    },
+                    {
+                        "Group": "Chemical Engineering Majors",
+                        "Courses": [
+                            {
+                                "Course": "CH 353",
+                                "Title": "Physical Chemistry I",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "CHE 355",
+                                "Title": "Introduction to Polymers",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "CH 367C",
+                                "Title": "Materials Chemistry",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "CH 375P",
+                                "Title": "Advanced Topics in Polymer Science",
+                                "Hours": 3
+                            }
+                        ]
+                    },
+                    {
+                        "Group": "Electrical and Computer Engineering Majors",
+                        "Courses": [
+                            {
+                                "Course": "PHY 369",
+                                "Title": "Thermodynamics and Statistical Mechanics",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "ECE 325",
+                                "Title": "Electromagnetic Engineering",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "CH 354S",
+                                "Title": "Elements of Spectroscopy",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "ECE 334K",
+                                "Title": "Quantum Theory of Electronic Materials",
+                                "Hours": 3
+                            }
+                        ]
+                    },
+                    {
+                        "Group": "Mechanical Engineering Majors",
+                        "Courses": [
+                            {
+                                "Course": "M E 316T",
+                                "Title": "Thermodynamics",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "PHY 355",
+                                "Title": "Modern Physics and Thermodynamics",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "M E 378K",
+                                "Title": "Mechanical Behavior of Materials",
+                                "Hours": 3
+                            },
+                            {
+                                "Course": "M E 349",
+                                "Title": "Corrosion Engineering",
+                                "Hours": 3
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "Robotics Minor": {
+            "Description": "Focuses on the study and application of robotics principles across multiple engineering disciplines.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core": [
+                    {
+                        "Course": "RBT 350",
+                        "Title": "Gateway to Robotics",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Hardware",
+                        "Courses": [
+                            "M E 348E",
+                            "M E 350R"
+                        ]
+                    },
+                    {
+                        "Group": "Programming",
+                        "Courses": [
+                            "M E 369P",
+                            "C S 330F",
+                            "ECE 445L"
+                        ]
+                    },
+                    {
+                        "Group": "Modeling and Control",
+                        "Courses": [
+                            "M E 364L",
+                            "ASE 370C",
+                            "ECE 362K"
+                        ]
+                    },
+                    {
+                        "Group": "Sensing, Perception, and Planning",
+                        "Courses": [
+                            "C S 330F",
+                            "M E 372J",
+                            "ASE 479W"
+                        ]
+                    },
+                    {
+                        "Group": "Machine Learning",
+                        "Courses": [
+                            "C S 342",
+                            "C S 343",
+                            "ECE 460J"
+                        ]
+                    }
+                ]
+            }
+        },
+        "Sustainable Energy Minor": {
+            "Description": "Focuses on energy technologies and policies for sustainability.",
+            "Credit Hours Required": 18,
+            "Requirements": {
+                "Core": [
+                    {
+                        "Course": "E S 369N",
+                        "Title": "Sustainability Issues in Energy",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "M E 363M",
+                        "Title": "Energy Technology and Policy",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "GEO 302C",
+                        "Title": "Climate: Past, Present, and Future",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Approved Electives",
+                        "Courses": [
+                            "ARE 346N",
+                            "CH 353",
+                            "C E 341",
+                            "ECE 339S",
+                            "M E 374T"
+                        ],
+                        "Hours": 9
+                    }
+                ]
+            }
+        }
+    }
+}

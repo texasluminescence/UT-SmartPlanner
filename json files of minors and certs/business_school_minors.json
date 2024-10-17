@@ -1,0 +1,916 @@
+{
+    "McCombs School of Business": {
+        "Minors for Business Majors": {
+            "Accounting Minor": {
+                "Description": "For BBA students, providing a foundation in managerial and financial accounting.",
+                "Credit Hours Required": 15,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Course": "B A 324",
+                            "Title": "Business Communication: Oral and Written",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "ACC 312",
+                            "Title": "Fundamentals of Managerial Accounting",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "ACC 326",
+                            "Title": "Financial Accounting--Intermediate",
+                            "Hours": 3
+                        },
+                        {
+                            "Requirement": "Six additional semester hours of upper-division coursework in accounting",
+                            "Hours": 6
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses."
+                    ]
+                }
+            },
+            "Business Analytics Minor": {
+                "Description": "Provides analytical skills for analyzing business data.",
+                "Credit Hours Required": 15,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Course": "STA 235",
+                            "Title": "Data Science for Business Applications",
+                            "Hours": 2
+                        },
+                        {
+                            "Course": "D S 235",
+                            "Title": "Introduction to Decision Science",
+                            "Hours": 2
+                        },
+                        {
+                            "Course": "O M 235",
+                            "Title": "Operations Management",
+                            "Hours": 2
+                        },
+                        {
+                            "Requirement": "Nine additional semester hours of upper-division coursework in business analytics or programming courses like BAX 304.",
+                            "Hours": 9
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses."
+                    ]
+                }
+            },
+            "Finance Minor": {
+                "Description": "Provides a foundation in financial analysis and investment management.",
+                "Credit Hours Required": 15,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Course": "B A 324",
+                            "Title": "Business Communication: Oral and Written",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "FIN 357",
+                            "Title": "Business Finance",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "FIN 367",
+                            "Title": "Investment Management",
+                            "Hours": 3
+                        },
+                        {
+                            "Requirement": "Six additional semester hours of upper-division coursework in finance",
+                            "Hours": 6
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses.",
+                        "Independent Research and Practicum courses may not be applied to the Finance minor."
+                    ]
+                }
+            },
+            "Management Minor": {
+                "Description": "Provides a foundation in management principles and organizational behavior.",
+                "Credit Hours Required": 15,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Course": "B A 324",
+                            "Title": "Business Communication: Oral and Written",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "MAN 336",
+                            "Title": "Organizational Behavior",
+                            "Hours": 3
+                        },
+                        {
+                            "Requirement": "Nine additional semester hours of upper-division coursework in management",
+                            "Hours": 9
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses."
+                    ]
+                }
+            },
+            "Management Information Systems Minor": {
+                "Description": "Focuses on information systems management for business applications.",
+                "Credit Hours Required": 15,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Course": "B A 324",
+                            "Title": "Business Communication: Oral and Written",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "MIS 301",
+                            "Title": "Introduction to Information Technology Management",
+                            "Hours": 3
+                        },
+                        {
+                            "Requirement": "Nine additional semester hours of upper-division coursework in MIS or MIS 304 and six hours of upper-division MIS",
+                            "Hours": 9
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses."
+                    ]
+                }
+            },
+            "Marketing Minor": {
+                "Description": "Develops skills in marketing strategy, consumer behavior, and brand management.",
+                "Credit Hours Required": 15,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Course": "B A 324",
+                            "Title": "Business Communication: Oral and Written",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "MKT 337",
+                            "Title": "Principles of Marketing",
+                            "Hours": 3
+                        },
+                        {
+                            "Requirement": "Nine additional semester hours of upper-division coursework in marketing",
+                            "Hours": 9
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses."
+                    ]
+                }
+            },
+            "Supply Chain Management Minor": {
+                "Description": "Provides a foundation in operations and supply chain management.",
+                "Credit Hours Required": 15,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Course": "B A 324",
+                            "Title": "Business Communication: Oral and Written",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "O M 235",
+                            "Title": "Operations Management",
+                            "Hours": 2
+                        },
+                        {
+                            "Course": "MAN 101S",
+                            "Title": "Leadership Challenges and Innovation",
+                            "Hours": 1
+                        },
+                        {
+                            "Requirement": "Nine additional semester hours of upper-division coursework in operations management",
+                            "Hours": 9
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses."
+                    ]
+                }
+            },
+            "Accounting Minor for Business Economics Option Program (BEOP ACC)": {
+                "Description": "Allows economics majors to take accounting and finance courses for a minor in accounting.",
+                "Credit Hours Required": 15,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Course": "ACC 311",
+                            "Title": "Fundamentals of Financial Accounting",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "ACC 312",
+                            "Title": "Fundamentals of Managerial Accounting",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "FIN 357",
+                            "Title": "Business Finance",
+                            "Hours": 3
+                        },
+                        {
+                            "Requirement": "Six additional semester hours of upper-division coursework in accounting",
+                            "Hours": 6
+                        }
+                    ],
+                    "Notes": [
+                        "All courses must be taken on the letter-grade basis.",
+                        "The student must be admitted to the Accounting Track of the BEOP through the Department of Economics."
+                    ]
+                }
+            },
+            "Finance Minor for Business Economics Option Program (BEOP FIN)": {
+                "Description": "Allows economics majors to take accounting and finance courses for a minor in finance.",
+                "Credit Hours Required": 15,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Course": "ACC 311",
+                            "Title": "Fundamentals of Financial Accounting",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "ACC 312",
+                            "Title": "Fundamentals of Managerial Accounting",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "FIN 357",
+                            "Title": "Business Finance",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "FIN 367",
+                            "Title": "Investment Management",
+                            "Hours": 3
+                        },
+                        {
+                            "Requirement": "Three additional semester hours of upper-division coursework in finance",
+                            "Hours": 3
+                        }
+                    ],
+                    "Notes": [
+                        "All courses must be taken on the letter-grade basis.",
+                        "The student must be admitted to the Finance Track of the BEOP through the Department of Economics."
+                    ]
+                }
+            }
+        },
+        "Specialized Business Minors for All Majors": {
+            "Business Foundations Minor": {
+                "Description": "Designed for non-business majors to gain exposure to primary business disciplines.",
+                "Credit Hours Required": 18,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Requirement": "Accounting Requirement (e.g., ACC 310F or ACC 311 & ACC 312)",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "MIS 302F",
+                            "Title": "Foundations of Information Technology Management",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "FIN 320F",
+                            "Title": "Foundations of Finance",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "MAN 320F",
+                            "Title": "Foundations of Management and Organizational Behavior",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "LEB 320F",
+                            "Title": "Foundations of Business Law and Ethics",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "MKT 320F",
+                            "Title": "Foundations of Marketing",
+                            "Hours": 3
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses.",
+                        "Students can pursue either the Business Foundations Minor or the Elements of Business Certificate, but not both."
+                    ]
+                }
+            },
+            "Analytics and Business of Sports Minor": {
+                "Description": "Equips students with analytical skills and business knowledge in the sports industry.",
+                "Credit Hours Required": 18,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Requirement": "Business Fundamentals (one course)",
+                            "Options": [
+                                {
+                                    "Course": "MAN 320F",
+                                    "Title": "Foundations of Management and Organizational Behavior"
+                                },
+                                {
+                                    "Course": "MAN 336",
+                                    "Title": "Organizational Behavior"
+                                },
+                                {
+                                    "Course": "FIN 320F",
+                                    "Title": "Foundations of Finance"
+                                },
+                                {
+                                    "Course": "FIN 357",
+                                    "Title": "Business Finance"
+                                },
+                                {
+                                    "Course": "MKT 320F",
+                                    "Title": "Foundations of Marketing"
+                                },
+                                {
+                                    "Course": "MKT 337",
+                                    "Title": "Principles of Marketing"
+                                },
+                                {
+                                    "Course": "HDO 301",
+                                    "Title": "Introduction to the Human Dimensions of Organizations"
+                                },
+                                {
+                                    "Course": "MIS 302F",
+                                    "Title": "Foundations of Information Technology Management"
+                                },
+                                {
+                                    "Course": "MIS 301",
+                                    "Title": "Introduction to Information Technology Management"
+                                }
+                            ],
+                            "Hours": 3
+                        },
+                        {
+                            "Requirement": "Analytical Foundations (one course)",
+                            "Options": [
+                                {
+                                    "Course": "ECO 329",
+                                    "Title": "Economic Statistics"
+                                },
+                                {
+                                    "Course": "SDS 301",
+                                    "Title": "Elementary Statistical Methods"
+                                },
+                                {
+                                    "Course": "SOC 317L",
+                                    "Title": "Introduction to Social Statistics"
+                                },
+                                {
+                                    "Course": "PSY 317",
+                                    "Title": "Statistical Methods in Psychology"
+                                },
+                                {
+                                    "Course": "STA 301",
+                                    "Title": "Introduction to Data Science"
+                                }
+                            ],
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "MAN 372T",
+                            "Title": "Topics in Management (Topic 18: People Analytics)",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "MAN 372T",
+                            "Title": "Topics in Management (Topic 6: Performance and Sports Analytics)",
+                            "Hours": 3
+                        },
+                        {
+                            "Requirement": "Electives related to sports, managing people, and leading organizations (two courses)",
+                            "Options": [
+                                {
+                                    "Course": "ADV 305S",
+                                    "Title": "Introduction to Integrated Communication for Sports"
+                                },
+                                {
+                                    "Course": "P R 305S",
+                                    "Title": "Introduction to Integrated Communication for Sports"
+                                },
+                                {
+                                    "Course": "ADV 348S",
+                                    "Title": "The Business of Sports Media"
+                                },
+                                {
+                                    "Course": "J 348G",
+                                    "Title": "The Business of Sports Media"
+                                },
+                                {
+                                    "Course": "CMS 363C",
+                                    "Title": "Communication and Sports"
+                                },
+                                {
+                                    "Course": "CMS 363P",
+                                    "Title": "Politics and Protest in Sports"
+                                },
+                                {
+                                    "Course": "J 326F",
+                                    "Title": "Reporting Sports"
+                                },
+                                {
+                                    "Course": "KIN 312",
+                                    "Title": "Issues in Kinesiology: Sport Industry in America"
+                                },
+                                {
+                                    "Course": "KIN 352K",
+                                    "Title": "Studies in Human Movement: Race and Sport in African American Life"
+                                },
+                                {
+                                    "Course": "MAN 325",
+                                    "Title": "Strategic Human Resources Management"
+                                },
+                                {
+                                    "Course": "MAN 327",
+                                    "Title": "Innovation and Entrepreneurship"
+                                },
+                                {
+                                    "Course": "MAN 328",
+                                    "Title": "Consulting and Change Management"
+                                },
+                                {
+                                    "Course": "MAN 372T",
+                                    "Title": "Topics in Management (Topic 21: The Art and Science of Negotiation)"
+                                }
+                            ],
+                            "Hours": 6
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses.",
+                        "Other courses may be considered for substitution, as approved by the Business of Sports Minor Committee."
+                    ]
+                }
+            },
+            "Business and Public Policy Minor": {
+                "Description": "Provides study in business and public policy, equipping students to understand political processes and their influence on businesses.",
+                "Credit Hours Required": 15,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Course": "GOV 312L",
+                            "Title": "Issues and Policies in American Government",
+                            "Hours": 3
+                        },
+                        {
+                            "Requirement": "Three or four of the following courses",
+                            "Hours": -3,
+                            "Options": [
+                                {
+                                    "Course": "BGS 371",
+                                    "Title": "Corporate Political Strategy"
+                                },
+                                {
+                                    "Course": "BGS 372",
+                                    "Title": "Strategic Corporate Social Responsibility"
+                                },
+                                {
+                                    "Course": "BGS 373",
+                                    "Title": "Strategic Corporate Communication"
+                                },
+                                {
+                                    "Course": "BGS 374",
+                                    "Title": "Global Political Economy"
+                                },
+                                {
+                                    "Course": "BGS 375",
+                                    "Title": "Business and Policy in the Age of Inequality"
+                                }
+                            ]
+                        },
+                        {
+                            "Requirement": "Zero or one of the following courses",
+                            "Hours": -3,
+                            "Options": [
+                                {
+                                    "Course": "ADV/P R 353",
+                                    "Title": "Advertising and Public Relations Law and Ethics"
+                                },
+                                {
+                                    "Course": "AMS 310",
+                                    "Title": "Introduction to American Studies"
+                                },
+                                {
+                                    "Course": "BGS 325",
+                                    "Title": "Social and Ethical Responsibility of Business"
+                                },
+                                {
+                                    "Course": "CMS 306M",
+                                    "Title": "Professional Communication Skills"
+                                },
+                                {
+                                    "Course": "CMS 342K",
+                                    "Title": "Political Communication"
+                                },
+                                {
+                                    "Course": "ECO 321",
+                                    "Title": "Public Economics"
+                                },
+                                {
+                                    "Course": "GOV 370R",
+                                    "Title": "Money in United States Politics"
+                                }
+                            ]
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses.",
+                        "Other courses may be considered for substitution, as approved by the BGS Department."
+                    ]
+                }
+            },
+            "Energy Management Minor": {
+                "Description": "Prepares students to address the energy challenges of the future with technical expertise and business knowledge.",
+                "Credit Hours Required": 18,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Requirement": "Eighteen semester hours selected from the following",
+                            "Hours": 18,
+                            "Options": [
+                                {
+                                    "Course": "BGS 372T",
+                                    "Title": "Nontechnical Exploration and Production"
+                                },
+                                {
+                                    "Course": "BGS 372T",
+                                    "Title": "Energy Technology and Policy"
+                                },
+                                {
+                                    "Course": "FIN 320F",
+                                    "Title": "Foundations of Finance"
+                                },
+                                {
+                                    "Course": "FIN 337T",
+                                    "Title": "Valuing Natural Resources"
+                                },
+                                {
+                                    "Course": "LEB 372T",
+                                    "Title": "Contracts and Real Property"
+                                },
+                                {
+                                    "Course": "MAN 372T",
+                                    "Title": "Energy Strategy"
+                                }
+                            ]
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses.",
+                        "Other courses may be considered for substitution, as approved by the Energy Management Minor Committee."
+                    ]
+                }
+            },
+            "Entrepreneurship Minor": {
+                "Description": "Equips students with the skills and knowledge to engage in entrepreneurship and innovation across various industries.",
+                "Credit Hours Required": 15,
+                "Requirements": {
+                    "Courses": [
+                        {
+                            "Requirement": "One of the following courses",
+                            "Hours": 3,
+                            "Options": [
+                                {
+                                    "Course": "ACC 310F",
+                                    "Title": "Foundations of Accounting"
+                                },
+                                {
+                                    "Course": "ACC 311",
+                                    "Title": "Fundamentals of Financial Accounting"
+                                }
+                            ]
+                        },
+                        {
+                            "Course": "MAN 327",
+                            "Title": "Innovation and Entrepreneurship",
+                            "Hours": 3
+                        },
+                        {
+                            "Course": "MAN 327E",
+                            "Title": "New Venture Mechanics",
+                            "Hours": 3
+                        },
+                        {
+                            "Requirement": "One of the following courses",
+                            "Hours": 3,
+                            "Options": [
+                                {
+                                    "Course": "FIN 374S",
+                                    "Title": "Entrepreneurial Finance"
+                                },
+                                {
+                                    "Course": "MAN 372T",
+                                    "Title": "Technology Transfer and Entrepreneurship"
+                                },
+                                {
+                                    "Course": "MKT 372T",
+                                    "Title": "Design Thinking for Business Innovation"
+                                }
+                            ]
+                        }
+                    ],
+                    "Notes": [
+                        "All classes must be taken on the letter-grade basis.",
+                        "The student must earn a combined grade point average of at least 2.00 in these courses.",
+                        "Management majors cannot pursue the Entrepreneurship Minor."
+                    ]
+                }
+            }
+        },
+        "Specialized Minors for All Majors": [
+            {
+                "minor_name": "Global Management Minor",
+                "description": "The Global Management Minor is an officially recognized minor in the study of international management. In today\u2019s workplace, managers lead global teams, interface with international suppliers and customers, and collaborate with international partners. It is vital for firms and organizations to have access to employees who understand global political and economic dynamics, who are able to recognize and adapt to the cultural orientations of multiple constituencies, and who can operate effectively in countries around the world.",
+                "requirements": [
+                    {
+                        "course": "I B 350",
+                        "title": "International Trade",
+                        "hours": 3
+                    },
+                    {
+                        "course": "IRG 320F",
+                        "title": "Foundations of International Relations and Global Studies",
+                        "hours": 3
+                    },
+                    {
+                        "course": "MAN 336",
+                        "title": "Organizational Behavior",
+                        "hours": 3
+                    },
+                    {
+                        "course": "I B 337D",
+                        "title": "Global Management Capstone",
+                        "hours": 3
+                    },
+                    {
+                        "course": "International Experience",
+                        "title": "Three semester credit hours earned through an approved study abroad or international internship",
+                        "hours": 3
+                    }
+                ],
+                "notes": [
+                    "All classes must be taken on the letter-grade basis. The student must earn a combined grade point average of at least 2.00 in these courses.",
+                    "Students who have declared an International Business Major are ineligible to pursue the Global Management Minor.",
+                    "Up to three semester credit hours of the courses above completed abroad can satisfy minor requirements for both coursework and the international experience."
+                ]
+            },
+            {
+                "minor_name": "Health Care Reform and Innovation Minor",
+                "description": "The Health Care Reform and Innovation Minor provides students interested in a clinical, academic, or business career in this industry an overview and opportunity to understand the complexities of the US healthcare system, the goals and barriers for reform, and the opportunities for innovation.",
+                "requirements": [
+                    {
+                        "course": "ACC 310F",
+                        "title": "Foundations of Accounting (for non-business students)",
+                        "hours": 3
+                    },
+                    {
+                        "course": "ACC 334M",
+                        "title": "Healthcare Accounting",
+                        "hours": 3
+                    },
+                    {
+                        "course": "LEB 334M",
+                        "title": "Healthcare Law and Policy",
+                        "hours": 3
+                    },
+                    {
+                        "course": "MAN 334M",
+                        "title": "Healthcare System Management",
+                        "hours": 3
+                    },
+                    {
+                        "course": "O M 334M",
+                        "title": "Healthcare Operations Management",
+                        "hours": 3
+                    },
+                    {
+                        "course": "Elective",
+                        "title": "One of the following elective courses",
+                        "hours": 3
+                    }
+                ],
+                "notes": [
+                    "All classes must be taken on the letter-grade basis. The student must earn a combined grade point average of at least 2.00 in these courses."
+                ]
+            },
+            {
+                "minor_name": "International Business Minor",
+                "description": "The International Business Minor will provide The University of Texas at Austin undergraduate students with a broad knowledge of the workings of the global economy and the opportunity to learn specific functional skills in areas such as finance, accounting, and value chain management that are particularly useful to companies and organizations operating in the international environment.",
+                "requirements": [
+                    {
+                        "course": "I B 350",
+                        "title": "International Trade",
+                        "hours": 3
+                    },
+                    {
+                        "course": "Electives",
+                        "title": "Any four or three of the following courses",
+                        "hours": 12
+                    }
+                ],
+                "notes": [
+                    "All classes must be taken on the letter-grade basis. The student must earn a combined grade point average of at least 2.00 in these courses.",
+                    "Students who have declared an International Business Major are ineligible to pursue the International Business Minor."
+                ]
+            },
+            {
+                "minor_name": "Leadership in Global Sustainability Minor",
+                "description": "The Leadership in Global Sustainability Minor is open to students of all majors and is offered as a collaboration between the McCombs School of Business and the Moody College of Communication. The objective of this minor is to provide students the opportunity to develop a set of theoretical and implementable skills to understand how sustainability can be embedded in business, financial and social systems.",
+                "requirements": [
+                    {
+                        "course": "ADV 324",
+                        "title": "Communicating Sustainability",
+                        "hours": 3
+                    },
+                    {
+                        "course": "BGS 372T",
+                        "title": "Global Business Sustainability",
+                        "hours": 3
+                    },
+                    {
+                        "course": "FIN 134M",
+                        "title": "Current Issues in Global Sustainability",
+                        "hours": 1
+                    },
+                    {
+                        "course": "FIN 164P",
+                        "title": "Global Sustainability Practicum",
+                        "hours": 1
+                    },
+                    {
+                        "course": "Elective",
+                        "title": "One course regarding Sustainability in Business",
+                        "hours": 3
+                    }
+                ],
+                "notes": [
+                    "All classes must be taken on the letter-grade basis. The student must earn a combined grade point average of at least 2.00 in these courses."
+                ]
+            },
+            {
+                "name": "National Security and International Business Minor",
+                "requirements": {
+                    "required_courses": [
+                        {
+                            "course": "I B 360D or GOV 360D",
+                            "name": "International Security",
+                            "hours": 3
+                        },
+                        {
+                            "course": "BGS 374",
+                            "name": "Global Political Economy",
+                            "hours": 3
+                        },
+                        {
+                            "course": "I B 350",
+                            "name": "International Trade",
+                            "hours": 3
+                        },
+                        {
+                            "course": "I B 368",
+                            "name": "Global Value Chains",
+                            "hours": 3
+                        }
+                    ],
+                    "elective_courses": [
+                        {
+                            "options": [
+                                "HIS 365G Topics in United States History (Topic 15: United States Military History)",
+                                "HIS 365G Topics in United States History (Topic 24: The United States and the United Kingdom: The Transatlantic Alliance)",
+                                "HIS 376F The United States and the Second World War"
+                            ],
+                            "hours": 3
+                        }
+                    ],
+                    "internship_credit": [
+                        {
+                            "description": "Students may substitute an approved internship in lieu of I B 350, I B 368, or elective course as described above. The internship must be at least six weeks in length and must be eligible for course credit at the University. Internships must be pre-approved by the National Security and International Business Committee."
+                        }
+                    ],
+                    "notes": [
+                        "Other courses may be considered for substitution, as approved by the National Security and International Business Minor Committee.",
+                        "All classes must be taken on the letter-grade basis. The student must earn a combined grade point average of at least 2.00 in these courses.",
+                        "Students who have declared an International Business Major are ineligible to pursue the National Security and International Business Minor.",
+                        "Students can pursue either the International Business Minor or the National Security and International Business Minor, but not both.",
+                        "Internship programs must be pre-approved by the National Security and International Business Minor Committee."
+                    ]
+                }
+            },
+            {
+                "name": "Professional Sales and Business Development Minor",
+                "requirements": {
+                    "foundations_courses": [
+                        {
+                            "options": [
+                                "MKT 320F Foundations of Marketing",
+                                "MKT 337 Principles of Marketing",
+                                "MKT 337H Principles of Marketing: Honors"
+                            ],
+                            "hours": 3
+                        },
+                        {
+                            "options": [
+                                "CMS 306M Professional Communication Skills",
+                                "B A 324 Business Communication: Oral and Written",
+                                "B A 324H Business Communication: Oral and Written: Honors"
+                            ],
+                            "hours": 3
+                        }
+                    ],
+                    "foundational_sales_courses": [
+                        {
+                            "description": "Must take one, but both may be taken",
+                            "options": [
+                                "CMS 337 Building Sales Relationships",
+                                "MKT 363 Professional Selling and Sales Management"
+                            ],
+                            "hours": "3-6"
+                        }
+                    ],
+                    "advanced_sales_topics_courses": [
+                        {
+                            "description": "Must take one, but may take two",
+                            "options": [
+                                "CMS 335 Strategic Sales and Event Planning",
+                                "MKT 354 Topics in Professional Sales and Business Development (various topics)"
+                            ],
+                            "hours": "3-6"
+                        }
+                    ],
+                    "sales_related_elective_courses": [
+                        {
+                            "options": [
+                                "ADV 339L Brand Storytelling",
+                                "ADV 369 Social Media",
+                                "CMS 332K Theories of Persuasion",
+                                "CMS 344K Lying and Deception",
+                                "CMS 346 Using Communication Technology at Work",
+                                "CMS 370K Internship in Communication Studies",
+                                "MKT 354 Topics in Professional Sales and Business Development (various topics)"
+                            ]
+                        }
+                    ],
+                    "notes": [
+                        "Other courses may be considered for substitution, as approved by the Professional Sales and Business Development Minor Committee.",
+                        "All classes must be taken on the letter-grade basis unless they are only offered on a pass/fail basis. The student must earn a combined grade point average of at least 2.00 in these courses.",
+                        "For students majoring in marketing, nine hours for the Professional Sales and Business Development minor must be taken in addition to and different from the marketing electives taken for the major."
+                    ]
+                }
+            }
+        ],
+        "Certificates": [
+            {
+                "name": "Elements of Business Certificate",
+                "requirements": {
+                    "required_courses": [
+                        {
+                            "options": [
+                                "ACC 310F Foundations of Accounting",
+                                "MIS 302F Foundations of Information Technology Management",
+                                "B A 320F Foundations of Entrepreneurship",
+                                "FIN 320F Foundations of Finance",
+                                "FIN 322F Foundations of Personal Finance",
+                                "I B 320F Foundations of International Business",
+                                "LEB 320F Foundations of Business Law and Ethics",
+                                "MAN 320F Foundations of Management and Organizational Behavior",
+                                "MKT 320F Foundations of Marketing",
+                                "O M 320F Foundations of Operations and Supply Chain Management"
+                            ],
+                            "hours": 18
+                        }
+                    ],
+                    "notes": [
+                        "Students can pursue either the Business Foundations Minor or the Elements of Business Certificate, but not both.",
+                        "Other courses may be considered for substitution, as approved by the Business Minors and Certificate Committee.",
+                        "No more than nine of the required 18 hours may be taken on an approved study abroad program. A list of approved programs is available in the University Study Abroad Office. LEB 320F cannot be taken abroad.",
+                        "The student must satisfy the courses used to fulfill certificate requirements on the letter-grade basis, except for credit by exam. The student must earn a combined grade point average of at least 2.00 in these courses."
+                    ]
+                }
+            }
+        ]
+    }
+}

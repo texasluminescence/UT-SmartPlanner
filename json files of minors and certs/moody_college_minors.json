@@ -1,0 +1,351 @@
+{
+    "Moody College of Communication": {
+        "Communicating for Development and Philanthropy Minor": {
+            "Description": "Focuses on communication skills for development and philanthropy.",
+            "Credit Hours Required": 18,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "CLD 330",
+                        "Title": "Philanthropy Capstone",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "CMS 306M",
+                        "Title": "Professional Communication Skills",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "CMS 321D",
+                        "Title": "Communicating for Development and Philanthropy",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Communicating about Philanthropy and Development",
+                        "Hours": 3,
+                        "Courses": [
+                            "ADV 305",
+                            "ADV 318J",
+                            "ADV 339L",
+                            "CMS 337",
+                            "CMS 353S",
+                            "MKT 320F",
+                            "MKT 337",
+                            "RTF 301D"
+                        ]
+                    },
+                    {
+                        "Group": "Communicating about Social Issues",
+                        "Hours": 3,
+                        "Courses": [
+                            "ADV 320",
+                            "ADV 322",
+                            "ADV 323",
+                            "ADV 324",
+                            "ADV 336",
+                            "ADV 378",
+                            "CMS 332K",
+                            "CMS 340K",
+                            "CMS 342K",
+                            "CMS 362E",
+                            "J 308F",
+                            "RTF 323C"
+                        ]
+                    },
+                    {
+                        "Group": "Internship with a focus on Development or Philanthropy",
+                        "Hours": 3,
+                        "Notes": "Internship must be approved by the faculty committee for the minor."
+                    }
+                ]
+            }
+        },
+        "Communicating Social Issues Minor": {
+            "Description": "Focuses on communication strategies related to social justice.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "COM 307",
+                        "Title": "Overview of Social Justice and Media",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "COM 321",
+                        "Title": "Communicating Social Justice Capstone",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Additional Coursework",
+                        "Hours": 9,
+                        "Courses": [
+                            "ADV 320",
+                            "ADV 322",
+                            "ADV 323",
+                            "ADV 324",
+                            "ADV 336",
+                            "CLD 301",
+                            "CMS 338",
+                            "CMS 340K",
+                            "CMS 342K",
+                            "CMS 344K",
+                            "CMS 354",
+                            "CMS 358C",
+                            "CMS 363P",
+                            "CMS 364K",
+                            "COM 316",
+                            "COM 323",
+                            "J 301F",
+                            "J 308S",
+                            "J 313P",
+                            "J 341F",
+                            "J 348D",
+                            "J 348M",
+                            "J 351F",
+                            "J 356R",
+                            "RTF 303D",
+                            "RTF 323C",
+                            "RTF 328C",
+                            "RTF 335",
+                            "RTF 359",
+                            "RTF 359S",
+                            "RTF 365",
+                            "SLH 314L"
+                        ]
+                    }
+                ]
+            }
+        },
+        "Communication Studies Minor": {
+            "Description": "Offers a broad understanding of communication theories and practices.",
+            "Credit Hours Required": 18,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "CMS 306M",
+                        "Title": "Professional Communication Skills",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "CMS 315M",
+                        "Title": "Interpersonal Communication Theory",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Communication Studies Electives",
+                        "Hours": 12,
+                        "Details": "At least nine hours must be upper-division."
+                    }
+                ]
+            }
+        },
+        "Global Communication Minor": {
+            "Description": "Focuses on communication in a global context.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "CMS 367",
+                        "Title": "Global Communication",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Additional Coursework",
+                        "Hours": 12,
+                        "Details": "Includes courses in international advertising, intercultural communication, and global media."
+                    }
+                ]
+            }
+        },
+        "Health Communication Minor": {
+            "Description": "Explores communication strategies in health-related contexts.",
+            "Credit Hours Required": 16,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "COM 102",
+                        "Title": "Introduction to Health Communication",
+                        "Hours": 1
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Interpersonal Communication",
+                        "Hours": 3
+                    },
+                    {
+                        "Group": "Organizational Communication",
+                        "Hours": 3
+                    },
+                    {
+                        "Group": "Population/Mass Media",
+                        "Hours": 3
+                    },
+                    {
+                        "Group": "Additional Upper-Division Hours",
+                        "Hours": 6
+                    }
+                ]
+            }
+        },
+        "Journalism and Media Minor": {
+            "Description": "Focuses on journalism fundamentals and media analysis.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "J 301F",
+                        "Title": "Fundamental Issues in Journalism",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "J 302F",
+                        "Title": "Digital Storytelling Basics",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Additional Coursework",
+                        "Hours": 9,
+                        "Details": "Includes courses on media analysis, digital storytelling, and media ethics."
+                    }
+                ]
+            }
+        },
+        "Latino Media Arts and Studies Minor": {
+            "Description": "Focuses on media and cultural studies related to Latino/a communities.",
+            "Credit Hours Required": 18,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "RTF 306",
+                        "Title": "Introduction to World Cinema History",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "RTF 323C",
+                        "Title": "Screening Race",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Upper-Division Coursework",
+                        "Hours": 6
+                    },
+                    {
+                        "Group": "Additional Coursework in Mexican American & Latina/o Studies or Latin American Studies",
+                        "Hours": 6
+                    }
+                ]
+            }
+        },
+        "Media and Entertainment Industries Minor": {
+            "Description": "Prepares students for careers in media and entertainment industries.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "RTF 303C",
+                        "Title": "Introduction to Media and Entertainment Industries",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Internship or Industry Experience",
+                        "Hours": 3
+                    },
+                    {
+                        "Group": "Additional Media Courses",
+                        "Hours": 9
+                    }
+                ]
+            }
+        },
+        "Media Studies Minor": {
+            "Description": "Provides an understanding of media analysis and cultural studies.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "RTF 306",
+                        "Title": "Introduction to World Cinema History",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Additional Coursework",
+                        "Hours": 12,
+                        "Details": "Includes courses in media storytelling, film history, and digital media studies."
+                    }
+                ]
+            }
+        },
+        "Science Communication Minor": {
+            "Description": "Focuses on communicating scientific concepts to diverse audiences.",
+            "Credit Hours Required": 18,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "ADV 323",
+                        "Title": "Public Communication of Science and Technology",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Foundations",
+                        "Hours": 3
+                    },
+                    {
+                        "Group": "Skills",
+                        "Hours": 3
+                    },
+                    {
+                        "Group": "Ethics and Leadership",
+                        "Hours": 3
+                    },
+                    {
+                        "Group": "Additional Coursework",
+                        "Hours": 6
+                    }
+                ]
+            }
+        },
+        "Sports Media Minor": {
+            "Description": "Focuses on communication and media strategies within the sports industry.",
+            "Credit Hours Required": 18,
+            "Requirements": {
+                "Core Courses": [
+                    {
+                        "Course": "ADV 378S",
+                        "Title": "Special Topics in Sports Media",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "CMS 363C",
+                        "Title": "Communication and Sports",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Additional Coursework in Sports Media",
+                        "Hours": 12
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,547 @@
+{
+    "College of Natural Sciences": {
+      "Minors": {
+        "Robotics Minor": {
+          "Credit Hours Required": 15,
+          "Admissions": {
+            "Criteria": [
+              "Completed in conjunction with a degree in Computer Science, Aerospace Engineering, Electrical and Computer Engineering, Computational Engineering, or Mechanical Engineering.",
+              "24 hours or more completed in residence at UT Austin."
+            ]
+          },
+          "Requirements": [
+            { "Course": "RBT 350", "Title": "Gateway to Robotics", "Hours": 3 },
+            {
+              "Group": "Four Courses from Different Content Areas",
+              "Content Areas": [
+                {
+                  "Area": "Hardware",
+                  "Courses": [
+                    { "Course": "M E 348E", "Title": "Advanced Mechatronics I", "Hours": 3 },
+                    { "Course": "M E 350R", "Title": "Robot Mechanism Design", "Hours": 3 }
+                  ]
+                },
+                {
+                  "Area": "Programming",
+                  "Courses": [
+                    { "Course": "M E 369P", "Title": "Application Programming for Engineers", "Hours": 3 },
+                    { "Course": "C S 330F", "Title": "F1/10 Autonomous Driving", "Hours": 3 }
+                  ]
+                },
+                {
+                  "Area": "Modeling and Control",
+                  "Courses": [
+                    { "Course": "M E 364L", "Title": "Automatic Control System Design", "Hours": 3 },
+                    { "Course": "ASE 370C", "Title": "Feedback Control Systems", "Hours": 3 }
+                  ]
+                },
+                {
+                  "Area": "Sensing, Perception, and Planning",
+                  "Courses": [
+                    { "Course": "C S 376", "Title": "Computer Vision", "Hours": 3 },
+                    { "Course": "ECE 371P", "Title": "Introduction to Computer Vision", "Hours": 3 }
+                  ]
+                },
+                {
+                  "Area": "Machine Learning",
+                  "Courses": [
+                    { "Course": "C S 342", "Title": "Neural Networks", "Hours": 3 },
+                    { "Course": "C S 363M", "Title": "Principles of Machine Learning I", "Hours": 3 }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Notes": [
+            "All courses must be taken on a letter-grade basis.",
+            "The student must earn a combined GPA of at least 2.00 in these courses."
+          ]
+        },
+        "Statistics and Data Science Minor": {
+          "Credit Hours Required": 15,
+          "Requirements": [
+            {
+              "Group": "Foundational Areas",
+              "Courses": [
+                {
+                  "Category": "Statistics",
+                  "Options": [
+                    { "Course": "SDS 320E", "Title": "Elements of Statistics", "Hours": 3 },
+                    { "Course": "SDS 320H", "Title": "Elements of Statistics: Honors", "Hours": 3 }
+                  ]
+                },
+                {
+                  "Category": "Data Science",
+                  "Options": [
+                    { "Course": "SDS 322E", "Title": "Elements of Data Science", "Hours": 3 },
+                    { "Course": "SDS 313", "Title": "Introduction to Data Science", "Hours": 3 }
+                  ]
+                },
+                {
+                  "Category": "Programming",
+                  "Options": [
+                    { "Course": "C S 303E", "Title": "Elements of Computers and Programming", "Hours": 3 },
+                    { "Course": "C S 312", "Title": "Introduction to Programming", "Hours": 3 }
+                  ]
+                }
+              ]
+            },
+            {
+              "Group": "Supplementary Courses",
+              "Courses": [
+                {
+                  "Category": "Regression/Modeling",
+                  "Options": [
+                    { "Course": "SDS 324E", "Title": "Elements of Regression Analysis", "Hours": 3 },
+                    { "Course": "SDS 334", "Title": "Intermediate Statistical Methods", "Hours": 3 }
+                  ]
+                },
+                {
+                  "Category": "Machine Learning",
+                  "Options": [
+                    { "Course": "SDS 326E", "Title": "Elements of Statistical Machine Learning", "Hours": 3 },
+                    { "Course": "SDS 336", "Title": "Practical Machine Learning", "Hours": 3 }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Notes": [
+            "A grade of at least C- is required in each course.",
+            "No credit-by-exam may be used to fulfill minor course requirements."
+          ]
+        }
+      },
+      "Certificates": {
+        "Advanced Mathematics Certificate": {
+          "Credit Hours Required": 18,
+          "Requirements": [
+            {
+              "Group": "Foundational Coursework",
+              "Courses": [
+                {
+                  "Category": "IBL Coursework",
+                  "Options": [
+                    { "Course": "M 325K", "Title": "Discrete Mathematics (IBL or II)", "Hours": 3 },
+                    { "Course": "M 328K", "Title": "Introduction to Number Theory (IBL or II)", "Hours": 3 }
+                  ]
+                }
+              ]
+            },
+            {
+              "Group": "Supplementary Coursework",
+              "Courses": [
+                { "Course": "M 365C", "Title": "Real Analysis I", "Hours": 3 },
+                { "Course": "M 367K", "Title": "Topology I", "Hours": 3 }
+              ]
+            }
+          ]
+        },
+        "Applied Statistical Modeling Certificate": {
+          "Credit Hours Required": 18,
+          "Admission": "by application only",
+          "Requirements": [
+            { "Group": "Mathematical Foundation of Statistics", "Hours": 3 },
+            {
+              "Group": "Applied Statistics Sequence",
+              "Courses": [
+                { "Course": "ECO 329", "Title": "Economic Statistics", "Hours": 3 },
+                { "Course": "SDS 302F", "Title": "Foundations of Data Analysis", "Hours": 3 }
+              ]
+            },
+            {
+              "Group": "Electives",
+              "Courses": [
+                { "Course": "C S 342", "Title": "Neural Networks", "Hours": 3 },
+                { "Course": "MIS 372T", "Title": "Predictive Analytics and Data Mining", "Hours": 3 }
+              ]
+            }
+          ],
+          "Notes": [
+            "A grade of at least C in each course.",
+            "A cumulative GPA of at least 3.0 in courses presented for the certificate."
+          ]
+        },
+        "Computational Science and Engineering Certificate": {
+          "Credit Hours Required": 18,
+          "Notes": "The certificate is administered by the Institute for Computational Engineering and Sciences (ICES). More details are available in the Cockrell School of Engineering's Minor and Certificates section."
+        },
+        "Programming and Computation Certificate": {
+          "Credit Hours Required": 18,
+          "Requirements": [
+            { "Course": "C S 303E", "Title": "Elements of Computers and Programming", "Hours": 3 },
+            { "Course": "C S 313E", "Title": "Elements of Software Design", "Hours": 3 },
+            {
+              "Group": "Choose Four",
+              "Courses": [
+                { "Course": "C S 323E", "Title": "Elements of Scientific Computing", "Hours": 3 },
+                { "Course": "C S 326E", "Title": "Elements of Networking", "Hours": 3 },
+                { "Course": "C S 328E", "Title": "Topics in Elements of Computing", "Hours": 3 }
+              ]
+            }
+          ],
+          "Notes": [
+            "Up to two substitute courses may be counted toward the elective requirement with faculty approval.",
+            "Students may attempt C S 303E and C S 313E only twice."
+          ]
+        },
+        "Evidence and Inquiry Certificate": {
+          "Credit Hours Required": 22,
+          "Admission": "open by application to students outside the Polymathic Scholars Program",
+          "Requirements": [
+            { "Course": "UGS 303", "Title": "First-Year Signature Course", "Hours": 3 },
+            { "Course": "NSC 109", "Title": "Polymathic Capstone Field Invention", "Hours": 1 },
+            { "Group": "Four Additional Courses", "Hours": 12 },
+            { "Group": "Senior Capstone Sequence", "Courses": [
+              { "Course": "NSC 323", "Title": "Polymathic Capstone Thesis Preparation Seminar", "Hours": 3 },
+              { "Course": "NSC 371", "Title": "Capstone Thesis Seminar", "Hours": 3 }
+            ]}
+          ],
+          "Notes": [
+            "At least 11 hours must be completed in residence.",
+            "The certificate can be used to complement any major in the College of Natural Sciences."
+          ]
+        },
+        "Food and Society Certificate": {
+        "Credit Hours Required": 18,
+        "Requirements": [
+          {
+            "Course": "NTR 306",
+            "Title": "Fundamentals of Nutrition",
+            "Hours": 3,
+            "Options": [
+              { "Course": "NTR 312", "Title": "Introduction to Nutritional Sciences", "Hours": 3 },
+              { "Course": "NTR 312H", "Title": "Introduction to Nutritional Sciences: Honors", "Hours": 3 }
+            ]
+          },
+          {
+            "Group": "Choose courses from at least two themes",
+            "Themes": [
+              {
+                "Theme": "Nutrition and Health",
+                "Courses": [
+                  { "Course": "NTR 218 & NTR 118L", "Title": "Assessment of Nutritional Status", "Hours": 3 },
+                  { "Course": "NTR 315", "Title": "Nutrition through the Life Cycle", "Hours": 3 }
+                ]
+              },
+              {
+                "Theme": "Culture and History",
+                "Courses": [
+                  { "Course": "NTR 316", "Title": "Culture and Food", "Hours": 3 },
+                  { "Course": "AMS 370", "Title": "American Food", "Hours": 3 }
+                ]
+              },
+              {
+                "Theme": "Politics, Economics, and Environment",
+                "Courses": [
+                  { "Course": "NTR 331", "Title": "International Nutrition: Social and Environmental Policies", "Hours": 3 },
+                  { "Course": "GRG 331K", "Title": "Nature, Society, and Adaptation", "Hours": 3 }
+                ]
+              }
+            ]
+          }
+        ],
+        "Notes": [
+          "Nine hours must be upper-division coursework.",
+          "Students seeking the BS in Nutrition may count a maximum of six hours in nutrition toward the certificate."
+        ]
+        },
+        "Forensic Science Certificate": {
+            "Credit Hours Required": 18,
+            "Requirements": [
+            { "Course": "ANT 301", "Title": "Biological Anthropology", "Hours": 3 },
+            { "Course": "NSC 309", "Title": "Introduction to Forensic Science", "Hours": 3 },
+            {
+                "Group": "Choose six hours from Criminalistics, Behavioral Science, and Forensic Science",
+                "Options": [
+                { "Course": "SOC 302", "Title": "Introduction to the Study of Society", "Hours": 3 },
+                { "Course": "PSY 301", "Title": "Introduction to Psychology", "Hours": 3 }
+                ]
+            },
+            {
+                "Group": "Choose six hours from Anatomy, Chemistry, Genetics, or Statistics",
+                "Options": [
+                { "Course": "ANT 432L", "Title": "Primate Anatomy", "Hours": 3 },
+                { "Course": "BCH 369", "Title": "Fundamentals of Biochemistry", "Hours": 3 }
+                ]
+            }
+            ],
+            "Notes": [
+            "Courses may have additional prerequisites.",
+            "A course may not count toward both six-hour requirements."
+            ]
+        },
+        "Marine Science Certificate": {
+            "Credit Hours Required": 19,
+            "Requirements": [
+            { "Course": "MNS 310", "Title": "Fundamentals of Marine Science", "Hours": 3 },
+            { "Course": "MNS 320", "Title": "Marine Ecology", "Hours": 3 },
+            { "Course": "MNS 120L", "Title": "Laboratory Studies in Marine Ecology", "Hours": 1 },
+            {
+                "Group": "Choose three hours from Biology or Chemistry",
+                "Options": [
+                { "Course": "BIO 311C", "Title": "Introductory Biology I", "Hours": 3 },
+                { "Course": "CH 301", "Title": "Principles of Chemistry I", "Hours": 3 }
+                ]
+            },
+            {
+                "Group": "Nine additional hours, including six at the Marine Science Institute",
+                "Options": [
+                { "Course": "MNS 352", "Title": "Principles of Marine Science", "Hours": 3 },
+                { "Course": "MNS 354", "Title": "Marine Invertebrates", "Hours": 3 }
+                ]
+            }
+            ],
+            "Notes": [
+            "Marine and Freshwater Biology majors are not eligible for this certificate.",
+            "Environmental Science majors may count no more than nine hours toward the certificate."
+            ]
+        },
+        "Pre-Health Professions Certificate": {
+            "Credit Hours Required": 20,
+            "Tracks": {
+            "Science Major Track": {
+                "Requirements": [
+                {
+                    "Group": "Two of the following",
+                    "Courses": [
+                    { "Course": "NSC 107J", "Title": "The Effective Health Care Professional", "Hours": 1 },
+                    { "Course": "NSC 107K", "Title": "Thriving in a Collaborative Healthcare Environment", "Hours": 1 },
+                    { "Course": "NSC 107M", "Title": "Introduction to the Health Professions Action Plan", "Hours": 1 }
+                    ]
+                },
+                {
+                    "Group": "Complete 18 hours from the following themes",
+                    "Themes": {
+                    "Cultural Awareness": [
+                        { "Course": "AAS 301", "Title": "Introduction to Asian American Studies", "Hours": 3 },
+                        { "Course": "AFR 301", "Title": "African American Culture", "Hours": 3 }
+                    ],
+                    "Health and Anatomy": [
+                        { "Course": "ARH 339R", "Title": "Art, Art History, and Medicine", "Hours": 3 },
+                        { "Course": "KIN 424K", "Title": "Applied Human Anatomy", "Hours": 3 }
+                    ],
+                    "Healthcare Policy": [
+                        { "Course": "CMS 322E", "Title": "Communication Ethics", "Hours": 3 },
+                        { "Course": "N 309", "Title": "Global Health", "Hours": 3 }
+                    ],
+                    "Human and Societal Development": [
+                        { "Course": "EDP 350E", "Title": "Introduction to Life Span Development", "Hours": 3 },
+                        { "Course": "HDF 304", "Title": "Family Relationships", "Hours": 3 }
+                    ],
+                    "Nutrition": [
+                        { "Course": "NTR 306", "Title": "Fundamentals of Nutrition", "Hours": 3 },
+                        { "Course": "NTR 331", "Title": "International Nutrition: Social and Environmental Policies", "Hours": 3 }
+                    ]
+                    }
+                },
+                {
+                    "Group": "Optional additional hours if needed",
+                    "Options": [
+                    { "Course": "BCH 369", "Title": "Fundamentals of Biochemistry", "Hours": 3 },
+                    { "Course": "BIO 311C", "Title": "Introductory Biology I", "Hours": 3 }
+                    ]
+                }
+                ]
+            },
+            "Non-Science Major Track": {
+                "Requirements": [
+                {
+                    "Group": "Two of the following",
+                    "Courses": [
+                    { "Course": "NSC 107J", "Title": "The Effective Health Care Professional", "Hours": 1 },
+                    { "Course": "NSC 107K", "Title": "Thriving in a Collaborative Healthcare Environment", "Hours": 1 },
+                    { "Course": "NSC 107M", "Title": "Introduction to the Health Professions Action Plan", "Hours": 1 }
+                    ]
+                },
+                {
+                    "Group": "Complete 18 hours from health professions preparation sequences",
+                    "Themes": {
+                    "Pre-dental Preparation": [
+                        { "Course": "BIO 311C", "Title": "Introductory Biology I", "Hours": 3 },
+                        { "Course": "BCH 369", "Title": "Fundamentals of Biochemistry", "Hours": 3 }
+                    ],
+                    "Pre-medical Preparation": [
+                        { "Course": "BIO 206L", "Title": "Introductory Laboratory Experiments in Biology", "Hours": 3 },
+                        { "Course": "CH 320M", "Title": "Organic Chemistry I", "Hours": 3 }
+                    ],
+                    "Pre-occupational Therapy Preparation": [
+                        { "Course": "BIO 311D", "Title": "Introductory Biology II", "Hours": 3 },
+                        { "Course": "INB 446L", "Title": "Human Microscopic and Gross Anatomy", "Hours": 3 }
+                    ],
+                    "Pre-optometry Preparation": [
+                        { "Course": "PHY 302K", "Title": "General Physics Technical Course: Mechanics, Heat, and Sound", "Hours": 3 },
+                        { "Course": "BCH 369", "Title": "Fundamentals of Biochemistry", "Hours": 3 }
+                    ]
+                    }
+                }
+                ]
+            }
+            },
+            "Notes": [
+            "Students must complete at least nine hours in residence.",
+            "Each course must be completed with a grade of at least C-.",
+            "Non-science majors must apply to the certificate program upon completing prerequisites."
+            ]
+        },
+        "Quantum Information Science Certificate": {
+            "Credit Hours Required": 18,
+            "Requirements": [
+            {
+                "Group": "Six hours from the following",
+                "Courses": [
+                { "Course": "C S 309", "Title": "Quantum Computing I", "Hours": 3 },
+                { "Course": "C S 358H", "Title": "Introduction to Quantum Information Science: Honors", "Hours": 3 }
+                ]
+            },
+            {
+                "Group": "Twelve hours from supplementary courses",
+                "Options": [
+                { "Course": "PHY 373", "Title": "Quantum Physics I: Foundations", "Hours": 3 },
+                { "Course": "M 340L", "Title": "Matrices and Matrix Calculations", "Hours": 3 },
+                { "Course": "C S 331", "Title": "Algorithms and Complexity", "Hours": 3 }
+                ]
+            },
+            {
+                "Group": "Independent Research Project",
+                "Options": [
+                { "Course": "PHY 371C", "Title": "Individual Study in Physics", "Hours": 3 },
+                { "Course": "C S 370", "Title": "Undergraduate Reading and Research", "Hours": 3 }
+                ]
+            }
+            ],
+            "Notes": [
+            "C S 358H may only count towards one requirement.",
+            "The research project must be approved by a university faculty or research staff member."
+            ]
+        },
+        "Scientific Computation and Data Sciences Certificate": {
+            "Credit Hours Required": 18,
+            "Requirements": [
+            {
+                "Group": "One course in computer programming",
+                "Courses": [
+                { "Course": "COE 301", "Title": "Introduction to Computer Programming", "Hours": 3 },
+                { "Course": "BME 303", "Title": "Introduction to Computing", "Hours": 3 },
+                { "Course": "C S 303E", "Title": "Elements of Computers and Programming", "Hours": 3 }
+                ]
+            },
+            {
+                "Group": "One course in linear algebra, discrete mathematics, or differential equations",
+                "Courses": [
+                { "Course": "M 340L", "Title": "Matrices and Matrix Calculations", "Hours": 3 },
+                { "Course": "M 341", "Title": "Linear Algebra and Matrix Theory", "Hours": 3 }
+                ]
+            },
+            {
+                "Group": "Two courses in scientific computing, chosen from two areas",
+                "Areas": {
+                "Numerical Methods": [
+                    { "Course": "BME 313L", "Title": "Introduction to Numerical Methods in Biomedical Engineering", "Hours": 3 },
+                    { "Course": "CHE 348", "Title": "Numerical Methods in Chemical Engineering and Problem Solving", "Hours": 3 }
+                ],
+                "Statistical Methods": [
+                    { "Course": "BME 335", "Title": "Engineering Probability and Statistics", "Hours": 3 },
+                    { "Course": "M 358K", "Title": "Applied Statistics", "Hours": 3 }
+                ]
+                }
+            },
+            {
+                "Group": "One course in applied computational science",
+                "Courses": [
+                { "Course": "BCH 339N", "Title": "Systems Biology and Bioinformatics", "Hours": 3 },
+                { "Course": "INB 321G", "Title": "Principles of Computational Biology", "Hours": 3 }
+                ]
+            },
+            {
+                "Group": "Independent research course",
+                "Courses": [
+                { "Course": "SDS 379R", "Title": "Undergraduate Research", "Hours": 3 },
+                { "Course": "SDS 479R", "Title": "Undergraduate Research", "Hours": 4 }
+                ]
+            }
+            ],
+            "Notes": [
+            "Students must complete Mathematics 408D or 408M as a prerequisite.",
+            "No single course or topic may be used to meet more than one requirement."
+            ]
+        },
+        "Textile Conservation and Museum Studies Certificate": {
+            "Credit Hours Required": 18,
+            "Requirements": [
+            {
+                "Group": "Required Courses",
+                "Courses": [
+                { "Course": "I 301", "Title": "Introduction to Informatics", "Hours": 3 },
+                { "Course": "TXA 205 & TXA 105L", "Title": "Textiles and Textiles Laboratory", "Hours": 3 }
+                ]
+            },
+            {
+                "Group": "Additional Courses",
+                "Courses": [
+                { "Course": "TXA 325L", "Title": "History of Dress and Cultural Change I", "Hours": 3 },
+                { "Course": "TXA 325M", "Title": "History of Dress and Cultural Change II", "Hours": 3 },
+                { "Course": "TXA 352C", "Title": "Field Experience in Textile Conservation Internship", "Hours": 3 },
+                { "Course": "TXA 355D", "Title": "Textile Artifact Management and Conservation", "Hours": 3 }
+                ]
+            }
+            ],
+            "Notes": [
+            "Students must have earned a grade of at least C- in each certificate course.",
+            "Students may apply for admission at any point in their undergraduate study."
+            ]
+        },
+        "UTeach-Natural Sciences Secondary Teaching Option Certificate": {
+            "Credit Hours Required": 21,
+            "Tracks": {
+            "UTeach Undergraduate Track": {
+                "Requirements": [
+                {
+                    "Group": "One of the following courses",
+                    "Courses": [
+                    { "Course": "BIO 337", "Title": "Research Methods: UTeach", "Hours": 3 },
+                    { "Course": "CH 368", "Title": "Research Methods: UTeach", "Hours": 3 },
+                    { "Course": "PHY 341", "Title": "Research Methods: UTeach", "Hours": 3 }
+                    ]
+                },
+                {
+                    "Group": "Eighteen hours of professional development coursework",
+                    "Courses": [
+                    { "Course": "EDC 365C", "Title": "Knowing and Learning in Math and Science", "Hours": 3 },
+                    { "Course": "UTS 101", "Title": "Secondary Teacher Education Preparation: Step 1", "Hours": 1 },
+                    { "Course": "EDC 651S", "Title": "Secondary School Teaching Practicum", "Hours": 6 }
+                    ]
+                }
+                ],
+                "Additional Requirements": [
+                "University grade point average of at least 2.50.",
+                "Successful completion of content courses with a grade of at least C-."
+                ]
+            },
+            "UTeach Accelerate Track": {
+                "Requirements": [
+                {
+                    "Group": "One of the following courses",
+                    "Courses": [
+                    { "Course": "BIO 337", "Title": "Research Methods: UTeach", "Hours": 3 },
+                    { "Course": "CH 368", "Title": "Research Methods: UTeach", "Hours": 3 }
+                    ]
+                },
+                {
+                    "Group": "Eighteen hours of professional development coursework",
+                    "Courses": [
+                    { "Course": "UTS 211", "Title": "Secondary Teacher Education Prep: Advanced Steps", "Hours": 3 },
+                    { "Course": "EDC 651S", "Title": "Secondary School Teaching Practicum", "Hours": 6 }
+                    ]
+                }
+                ],
+                "Additional Requirements": [
+                "University grade point average of at least 2.50.",
+                "Successful completion of content courses with a grade of at least C-."
+                ]
+            }
+        }
+    }
+    }
+}
+}

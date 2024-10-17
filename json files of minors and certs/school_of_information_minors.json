@@ -1,0 +1,55 @@
+{
+    "School of Information": {
+        "Informatics Minor": {
+            "Description": "Focuses on understanding the management, analysis, and design of information systems.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core": [
+                    {
+                        "Course": "I 301",
+                        "Title": "Introduction to Informatics",
+                        "Hours": 3
+                    }
+                ],
+                "Electives": [
+                    {
+                        "Group": "Introduction Course",
+                        "Courses": [
+                            "I 310C",
+                            "I 310D",
+                            "I 310J",
+                            "I 310M",
+                            "I 310S",
+                            "I 310U"
+                        ],
+                        "Hours": 3
+                    },
+                    {
+                        "Group": "Two Topics Courses",
+                        "Courses": [
+                            "I 320C",
+                            "I 320D",
+                            "I 320J",
+                            "I 320M",
+                            "I 320S",
+                            "I 320U"
+                        ],
+                        "Hours": 6,
+                        "Details": "Must be within the same concentration as the Introduction course taken above."
+                    },
+                    {
+                        "Group": "Additional Informatics Course",
+                        "Hours": 3
+                    }
+                ],
+                "Notes": "Courses presented for the minor must have grades of at least C-."
+            }
+        },
+        "Certificates": {
+            "Digital Humanities Certificate": {
+                "Description": "Sponsored by the College of Liberal Arts and the School of Information, focusing on the integration of digital tools with humanities research.",
+                "Notes": "Information about the specific requirements can be found in the College of Liberal Arts' Minor and Certificate Programs section of the Undergraduate Catalog."
+            }
+        }
+    }
+}

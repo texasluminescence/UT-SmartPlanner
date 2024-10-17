@@ -1,0 +1,72 @@
+{
+    "College of Education": {
+        "Educational Psychology Minor": {
+            "Description": "Focuses on foundational concepts in educational psychology.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core": [
+                    {
+                        "Details": "Completion of 15 undergraduate semester credit hours in educational psychology."
+                    },
+                    {
+                        "Details": "At least six hours must be upper-division."
+                    }
+                ],
+                "Notes": "Information about available courses and certification process is available from the Department of Educational Psychology, George I. Sanchez Building 504."
+            }
+        },
+        "Kinesiology and Health Education Minor": {
+            "Description": "Provides a foundation in kinesiology and health education concepts.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core": [
+                    {
+                        "Details": "A cumulative 2.5 UT Austin GPA is required for admission."
+                    },
+                    {
+                        "Details": "Completion of 15 undergraduate semester credit hours in Kinesiology (KIN) or Health Education (HED)."
+                    },
+                    {
+                        "Details": "At least six hours must be upper-division."
+                    }
+                ],
+                "Notes": "Information about available courses and certification process is available from the Student Dean's Office, George I. Sanchez Building 2.110."
+            }
+        },
+        "Urban Teachers Minor": {
+            "Description": "Prepares students for secondary teacher certification in English/Language Arts or Social Studies.",
+            "Credit Hours Required": 18,
+            "Admission": "By admission only with a 2.5 overall UT Austin GPA.",
+            "Requirements": {
+                "Core": [
+                    {
+                        "Group": "Sociocultural Influences and Educational Studies",
+                        "Hours": 6,
+                        "Courses": [
+                            "EDU 327",
+                            "EDC 350 (Topic 3: Teaching Secondary Social Studies)",
+                            "EDC 339F"
+                        ]
+                    },
+                    {
+                        "Group": "Advanced Methods",
+                        "Hours": 3,
+                        "Courses": [
+                            "EDC 370S (Topic 1: Advanced Methods in English, Language Arts, and Reading)",
+                            "EDC 370S (Topic 3: Advanced Methods in Social Studies)"
+                        ]
+                    },
+                    {
+                        "Group": "Practicum and Student Teaching",
+                        "Hours": 9,
+                        "Details": [
+                            "EDC 351S with EDC 671S or EDC 371S with EDC 651S for English",
+                            "EDC 351S with EDC 671S or EDC 371S with EDC 651S for Social Studies"
+                        ]
+                    }
+                ],
+                "Notes": "The minor requires a three-semester commitment (summer, fall, spring)."
+            }
+        }
+    }
+}

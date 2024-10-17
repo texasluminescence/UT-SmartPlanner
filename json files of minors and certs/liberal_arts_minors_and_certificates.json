@@ -1,0 +1,1112 @@
+{
+    "College of Liberal Arts": {
+      "Minors": {
+        "African and African Diaspora Studies Minor": {
+          "Credit Hours Required": 15,
+          "Requirements": [
+            { "Course": "AFR 303", "Title": "Introduction to Black Studies", "Hours": 3 },
+            { "Course": "AFR 304", "Title": "Introduction to the Study of Africa", "Hours": 3 },
+            { "Course": "One additional course on the subject of the continent of Africa", "Example": "AFR 310K", "Hours": 3 },
+            {
+              "Group": "Upper-Division Track Courses",
+              "Tracks": [
+                "Critical Race, Gender, and Sexuality Theories",
+                "Performance, Music, Art, and Literature",
+                "Language, History, and Behavioral and Social Sciences",
+                "Law, Education, Health, and Policy"
+              ],
+              "Hours": 6
+            }
+          ],
+          "Notes": [
+            "Full list of courses available from the department.",
+            "Track lists available from the department."
+          ]
+        },
+        "American Sign Language Minor": {
+          "Credit Hours Required": 21,
+          "Admission": "by admission only",
+          "Requirements": [
+            { "Course": "ASL 601D & ASL 610D", "Title": "American Sign Language I & II: Beginning", "Hours": 12 },
+            { "Course": "ASL 311D", "Title": "American Sign Language III: Intermediate", "Hours": 3 },
+            { "Group": "Upper-Division American Sign Language", "Hours": 6 }
+          ],
+          "Notes": [
+            "Candidates must apply for the ASL minor.",
+            "Certification of completion is made by the ASL program director."
+          ]
+        },
+        "American Studies Minor": {
+          "Credit Hours Required": 15,
+          "Requirements": [
+            { "Course": "AMS 310", "Title": "Introduction to American Studies", "Hours": 3 },
+            { "Course": "AMS 311S", "Title": "Introductory Seminar in American Studies", "Hours": 3 },
+            {
+              "Course": "AMS 355 or AMS 356",
+              "Title": "Main Currents of American Culture to 1865 or since 1865",
+              "Hours": 3
+            },
+            { "Course": "AMS 370", "Title": "Seminar in American Culture", "Hours": 3 },
+            { "Course": "Additional American Studies Course", "Hours": 3 }
+          ],
+          "Notes": "Must include nine hours of upper-division courses."
+        },
+        "Anthropology Minor": {
+          "Credit Hours Required": 15,
+          "Requirements": [
+            {
+              "Group": "Choose Two",
+              "Courses": [
+                { "Course": "ANT 301", "Title": "Biological Anthropology", "Hours": 3 },
+                { "Course": "ANT 302", "Title": "Cultural Anthropology", "Hours": 3 },
+                { "Course": "ANT 304", "Title": "Introduction to Archaeological Studies", "Hours": 3 },
+                { "Course": "ANT 307", "Title": "Culture and Communication", "Hours": 3 }
+              ],
+              "Hours": 6
+            },
+            { "Group": "Upper-Division Anthropology", "Hours": 9 }
+          ],
+          "Notes": [
+            "A minimum of nine hours must be completed in residence.",
+            "A student must earn a GPA of at least 2.00 in courses counted toward the minor."
+          ]
+        },
+        "Applied Economics Minor": {
+          "Credit Hours Required": 15,
+          "Requirements": [
+            { "Course": "ECO 304K", "Title": "Introduction to Microeconomics", "Hours": 3 },
+            { "Course": "ECO 304L", "Title": "Introduction to Macroeconomics", "Hours": 3 },
+            { "Group": "Upper-Division ECO Courses", "Hours": 9 }
+          ],
+          "Notes": [
+            "All courses must be taken in residence.",
+            "All courses must be taken on a letter-grade basis.",
+            "A student may complete only one of the Economics Minor and the Applied Economics Minor."
+          ]
+        },
+        "Arabic Minor": {
+            "Credit Hours Required": 18,
+            "Requirements": [
+              { "Course": "ARA 601C", "Title": "Intensive Arabic I", "Hours": 6 },
+              { "Course": "ARA 611C", "Title": "Intensive Arabic II", "Hours": 6 },
+              { "Group": "Upper-Division Arabic", "Hours": 6 }
+            ]
+        },
+        "Archaeology Minor": {
+        "Credit Hours Required": 15,
+        "Requirements": [
+            { "Course": "ANT 304 or ANT 304T", "Title": "Introduction to Archaeological Studies: Prehistoric Archaeology or Texas Archaeology", "Hours": 3 },
+            {
+            "Group": "Choose one",
+            "Courses": [
+                { "Course": "ANT 324L", "Title": "Topics in Anthropology", "Hours": 3 },
+                { "Course": "ANT 453", "Title": "Archaeological Analysis", "Hours": 3 },
+                { "Course": "ANT 353E", "Title": "Archaeological Laboratory Analysis", "Hours": 3 },
+                { "Course": "ANT 662", "Title": "Field Archaeology", "Hours": 3 },
+                { "Course": "ANT 462M", "Title": "Archaeological Techniques", "Hours": 3 }
+            ]
+            },
+            { "Group": "Upper-Division Archaeology", "Hours": 9 }
+        ],
+        "Notes": "Chosen from three approved topics such as Primitive Technology, GIS and Remote Sensing, or Digital Data Systems."
+        },
+        "Asian American Studies Minor": {
+        "Credit Hours Required": 15,
+        "Requirements": [
+            { "Course": "AAS 301 or AAS 312", "Title": "Introduction to Asian American Studies or History", "Hours": 3 },
+            { "Group": "Upper-Division Asian American Studies", "Hours": 9 },
+            { "Course": "Additional Asian American Studies Course", "Hours": 3 }
+        ]
+        },
+        "Asian Religions Minor": {
+        "Credit Hours Required": 15,
+        "Requirements": [
+            { "Course": "R S 310", "Title": "Introduction to the Study of Religion", "Hours": 3 },
+            { "Course": "ANS 301R", "Title": "History of the Religions of Asia", "Hours": 3 },
+            { "Group": "Upper-Division Asian Religions", "Hours": 9 }
+        ]
+        },
+        "Bengali Minor": {
+        "Credit Hours Required": 19,
+        "Requirements": [
+            { "Course": "BEN 506", "Title": "First-Year Bengali I", "Hours": 5 },
+            { "Course": "BEN 507", "Title": "First-Year Bengali II", "Hours": 5 },
+            { "Course": "BEN 312K", "Title": "Second-Year Bengali I", "Hours": 3 },
+            { "Course": "BEN 312L", "Title": "Second-Year Bengali II", "Hours": 3 },
+            { "Course": "Upper-Division Bengali", "Hours": 3 }
+        ]
+        },
+        "Chinese Minor": {
+        "Credit Hours Required": 15,
+        "Requirements": [
+            {
+            "Group": "First-Year Chinese Requirement",
+            "Courses": [
+                { "Course": "CHI 606 & CHI 607", "Title": "First-Year Chinese I and II", "Hours": 6 },
+                { "Course": "CHI 604", "Title": "Accelerated First-Year Chinese", "Hours": 12 }
+            ]
+            },
+            {
+            "Group": "Second-Year Chinese Requirement",
+            "Courses": [
+                { "Course": "CHI 312K & CHI 312L", "Title": "Second-Year Chinese I and II", "Hours": 6 },
+                { "Course": "CHI 612", "Title": "Accelerated Second-Year Chinese", "Hours": 12 }
+            ]
+            },
+            { "Course": "Upper-Division Chinese", "Hours": 3 }
+        ]
+        },
+        "Classical Studies Minor": {
+        "Credit Hours Required": 17,
+        "Requirements": [
+            { "Course": "GK 506 or LAT 506", "Title": "First-Year Greek or Latin I", "Hours": 5 },
+            { "Group": "Classical Civilization or Ancient History", "Hours": 12 }
+        ],
+        "Notes": "At least six hours must be upper-division."
+        },
+        "Comparative Literature Minor": {
+        "Credit Hours Required": 15,
+        "Requirements": [
+            { "Course": "C L 315", "Title": "World Literature", "Hours": 3 },
+            { "Group": "Any Comparative Literature Course", "Hours": 12 }
+        ],
+        "Notes": "Must include six upper-division hours."
+        },
+        "Core Texts and Ideas Minor": {
+        "Credit Hours Required": 15,
+        "Requirements": [
+            { "Group": "Core Texts and Ideas Courses", "Hours": 15 }
+        ],
+        "Notes": "Must include at least six hours of upper-division courses and nine hours in residence."
+        },
+        "Creative Writing in Spanish Minor": {
+        "Credit Hours Required": 15,
+        "Requirements": [
+            {
+            "Group": "Choose one",
+            "Courses": [
+                { "Course": "SPN 327C", "Title": "Advanced Grammar and Writing in Context", "Hours": 3 },
+                { "Course": "SPN 327N", "Title": "Academic Writing for Heritage Speakers", "Hours": 3 },
+                { "Course": "SPN 327V", "Title": "Advanced Writing and Service Learning", "Hours": 3 }
+            ]
+            },
+            { "Course": "SPN 328C", "Title": "Introduction to Literatures and Cultures", "Hours": 3 },
+            { "Group": "Elective Course in Iberian/Latin American Literatures and Cultures", "Hours": 3 },
+            { "Group": "Choose two", "Courses": [
+                { "Course": "SPN 357E", "Title": "Spanish Translation and the Social Sciences", "Hours": 6 },
+                { "Course": "SPN 358D", "Title": "Spanish Creative Writing Fiction", "Hours": 6 },
+                { "Course": "SPN 358E", "Title": "Spanish Creative Writing Nonfiction", "Hours": 6 }
+            ]
+            }
+        ]
+        },
+        "Cultural Anthropology Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+                { "Course": "ANT 302", "Title": "Cultural Anthropology", "Hours": 3 },
+                { "Course": "ANT 305", "Title": "Expressive Culture", "Hours": 3 },
+                { "Group": "Upper-Division Courses", "Hours": 9, "Notes": "Chosen from an approved list." }
+            ]
+        },
+        "Cultural Expression, Human Experience, and Thought Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+                { "Group": "Cultural Expression, Human Experience, and Thought Courses", "Hours": 15 }
+            ],
+            "Notes": [
+                "Must be chosen from a list of approved courses.",
+                "Must include six upper-division hours."
+            ]
+        },
+        "Economics Minor": {
+            "Description": "The transcript-recognized Economics Minor allows students not majoring in economics to master important and useful concepts, models, and analytical skills in economics.",
+            "Credit Hours Required": 15,
+            "Requirements": [
+                { "Course": "ECO 304K", "Title": "Introduction to Microeconomics", "Hours": 3 },
+                { "Course": "ECO 304L", "Title": "Introduction to Macroeconomics", "Hours": 3 },
+                {
+                    "Group": "Intermediate Microeconomic Theory or Equivalent",
+                    "Courses": [
+                        { "Course": "ECO 420K", "Title": "Microeconomic Theory" },
+                        { "Course": "ECO 421K", "Title": "Microeconomic Theory For Business" },
+                        { "Course": "ECO 420S", "Title": "Mathematical Microeconomic Theory with Advanced Applications" },
+                        { "Course": "FIN 321K", "Title": "Intermediate Microeconomics for Business" }
+                    ],
+                    "Hours": 3
+                },
+                { "Group": "Upper-Division Economics Courses", "Hours": 6, "Notes": "Excludes ECO 420K, 421K, 420S, and FIN 321K." }
+            ],
+            "Notes": [
+                "All upper-division economics courses must be taken in residence at UT Austin.",
+                "All courses must be taken on a letter-grade basis.",
+                "A student may complete only one of the Economics Minor and the Applied Economics Minor."
+            ]
+        },
+        "English Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Group": "English Courses", "Hours": 15 }
+            ],
+            "Notes": [
+            "A grade of C- or higher is required in each course.",
+            "Must include at least nine hours of upper-division coursework and nine hours in residence."
+            ]
+        },
+        "European Studies Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "EUS 305", "Title": "Introduction to European Studies", "Hours": 3 },
+            {
+                "Course": "EUS 350 or GOV 351D",
+                "Title": "Governments and Politics of Western Europe or The Theoretical Foundations of Modern Politics",
+                "Hours": 3
+            },
+            { "Course": "EUS 346, EUS 347, or EUS 348", "Title": "Topics in European Anthropology, Culture, or Economics", "Hours": 3 },
+            { "Group": "Upper-Division European Studies Courses", "Hours": 6 }
+            ]
+        },
+        "Evolutionary and Functional Anatomy Minor": {
+            "Credit Hours Required": 15,
+            "Admission": "by admission only",
+            "Requirements": [
+            { "Course": "ANT 301", "Title": "Biological Anthropology", "Hours": 3 },
+            {
+                "Group": "Choose from the following",
+                "Courses": [
+                "ANT 432L", "ANT 348", "ANT 348K (Topic 8 or 11)", "ANT 349C", "ANT 350C", "ANT 351E", "ANT 366"
+                ],
+                "Hours": 12
+            }
+            ],
+            "Notes": [
+            "A minimum of nine hours must be upper-division.",
+            "A minimum of nine hours must be completed in residence.",
+            "A GPA of at least 2.00 is required for courses counted toward the minor."
+            ]
+        },
+        "French Studies Minor": {
+            "Credit Hours Required": 21,
+            "Pathways": [
+            {
+                "Pathway": "Option 1",
+                "Requirements": [
+                { "Course": "FR 601C", "Title": "Beginning French", "Hours": 6 },
+                { "Course": "FR 611C", "Title": "Intermediate French", "Hours": 6 },
+                { "Course": "FR 317C", "Title": "Enhancing French Skills", "Hours": 3 },
+                { "Course": "FR 320E", "Title": "Advanced French I", "Hours": 3 },
+                { "Course": "Upper-Division French", "Hours": 3 }
+                ]
+            },
+            {
+                "Pathway": "Option 2",
+                "Requirements": [
+                { "Course": "FR 406 & FR 407", "Title": "Introductory French I & II", "Hours": 8 },
+                { "Course": "FR 412K", "Title": "Intermediate French I", "Hours": 4 },
+                { "Course": "FR 317C", "Title": "Enhancing French Skills", "Hours": 3 },
+                { "Course": "FR 320E", "Title": "Advanced French I", "Hours": 3 },
+                { "Course": "Upper-Division French", "Hours": 3 }
+                ]
+            }
+            ]
+        },
+        "Geography Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            {
+                "Course": "GRG 301C or GRG 401C or GRG 301K",
+                "Title": "The Natural Environment or Weather and Climate",
+                "Hours": 3
+            },
+            { "Course": "GRG 305", "Title": "This Human World: An Introduction to Geography", "Hours": 3 },
+            {
+                "Course": "GRG 310C or GRG 460G or GRG 462K",
+                "Title": "Spatial Data and Analysis, Environmental GIS, or Remote Sensing",
+                "Hours": 3
+            },
+            { "Group": "Upper-Division Geography", "Hours": 6 }
+            ]
+        },
+        "German, Scandinavian, and Dutch Studies Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Group": "German, Scandinavian, and Dutch Studies Coursework", "Hours": 15 }
+            ],
+            "Notes": [
+            "Must include at least nine hours of upper-division coursework and nine hours in residence.",
+            "Up to six hours of lower-division DAN/DCH/NOR/SWE/YID can be substituted for GSD coursework.",
+            "Up to three hours of upper-division DAN/DCH/NOR/SWE/YID can be substituted for GSD coursework."
+            ]
+        },
+        "Global Interreligious Dynamics Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "R S 307", "Title": "Introduction to Interreligious Dynamics", "Hours": 3 },
+            { "Course": "R S 375S", "Title": "Advanced Seminars in Religious Studies", "Hours": 3 },
+            { "Group": "Additional Courses", "Hours": 9 }
+            ],
+            "Notes": "Must include at least six hours of upper-division coursework."
+        },
+        "Government Minor": {
+            "Credit Hours Required": 18,
+            "Requirements": [
+            { "Group": "Government Courses", "Hours": 18 }
+            ],
+            "Notes": [
+            "Must include at least nine hours of upper-division coursework.",
+            "Must include at least nine hours in residence."
+            ]
+        },
+        "Greek Minor": {
+            "Credit Hours Required": 19,
+            "Requirements": [
+            { "Course": "GK 506 & GK 507", "Title": "First-Year Greek I & II", "Hours": 10 },
+            { "Course": "GK 311", "Title": "Intermediate Greek I", "Hours": 3 },
+            {
+                "Course": "GK 312K or GK 312L",
+                "Title": "Intermediate Greek II or Intermediate Greek II: Biblical Greek",
+                "Hours": 3
+            },
+            { "Course": "GK 324", "Title": "Advanced Greek", "Hours": 3 }
+            ]
+        },
+        "Hebrew Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            {
+                "Group": "First-Year Hebrew",
+                "Courses": [
+                { "Course": "HEB 506 & HEB 507", "Title": "First-Year Hebrew I & II", "Hours": 6 },
+                { "Course": "HEB 601C", "Title": "Intensive Hebrew I", "Hours": 10 }
+                ]
+            },
+            {
+                "Group": "Second-Year Hebrew",
+                "Courses": [
+                { "Course": "HEB 412K & HEB 412L", "Title": "Second-Year Hebrew I & II", "Hours": 6 },
+                { "Course": "HEB 611C", "Title": "Intensive Hebrew II", "Hours": 8 }
+                ]
+            },
+            { "Course": "Upper-Division Hebrew", "Hours": 3 }
+            ]
+        },
+        "Hindi Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            {
+                "Group": "First-Year and Second-Year Hindi",
+                "Courses": [
+                { "Course": "HIN 506 & HIN 507", "Title": "First-Year Hindi I & II", "Hours": 6 },
+                { "Course": "HIN 312K & HIN 312L", "Title": "Second-Year Hindi I & II", "Hours": 6 }
+                ]
+            },
+            { "Course": "Upper-Division Hindi", "Hours": 3 }
+            ]
+        },
+        "History Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Group": "History Courses", "Hours": 15 }
+            ],
+            "Notes": [
+            "Must include at least nine hours of upper-division coursework."
+            ]
+        },
+        "Holocaust and Genocide Studies Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "J S 307", "Title": "Introduction to Holocaust and Genocide Studies", "Hours": 3 },
+            {
+                "Group": "Choose from the following courses",
+                "Courses": [
+                "AFR 302M", "AFR 360", "AMS 321", "AMS 321P", "C L 323 (Topic 19 or 40)", 
+                "GOV 360R", "GSD 361L", "HIS 322R", "HIS 322S", "HIS 317L", "HIS 337N", 
+                "HIS 350L (Topic 56, 73, 79, 83)", "HIS 350R", "HIS 366N", "J S 304N", 
+                "L A 320J", "MAS 374"
+                ],
+                "Hours": 12
+            }
+            ],
+            "Notes": [
+            "The internship must include content related to the minor and be pre-approved by the Jewish Studies faculty advisor."
+            ]
+        },
+        "Italian Studies Minor": {
+            "Credit Hours Required": 18,
+            "Requirements": [
+            { "Course": "ITL 601C", "Title": "Beginning Italian", "Hours": 6 },
+            { "Course": "ITL 611C", "Title": "Intermediate Italian", "Hours": 6 },
+            { "Course": "ITL 320", "Title": "Advanced Italian", "Hours": 3 },
+            { "Course": "Upper-Division Italian", "Hours": 3 }
+            ],
+            "Notes": "Six of the credit hours must be upper-division."
+        },
+        "Jewish Studies Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "J S 304M or J S 304N", "Title": "Jewish Civilization: Beginnings to 1492 or 1492 to the Present", "Hours": 3 },
+            {
+                "Group": "Additional Jewish Studies Courses",
+                "Details": "Of the nine upper-division hours, three must be in humanities and three in history and social science.",
+                "Hours": 12
+            }
+            ]
+        },
+        "Korean Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            {
+                "Group": "First-Year Korean Requirement",
+                "Courses": [
+                { "Course": "KOR 606 & KOR 607", "Title": "First-Year Korean I & II", "Hours": 6 },
+                { "Course": "KOR 604", "Title": "Accelerated First-Year Korean", "Hours": 12 }
+                ]
+            },
+            {
+                "Group": "Second-Year Korean Requirement",
+                "Courses": [
+                { "Course": "KOR 312K & KOR 312L", "Title": "Second-Year Korean I & II", "Hours": 6 },
+                { "Course": "KOR 612", "Title": "Accelerated Second-Year Korean", "Hours": 6 }
+                ]
+            },
+            { "Course": "Upper-Division Korean", "Hours": 3 }
+            ]
+        },
+        "Language, Culture, and Communication Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "ANT 302", "Title": "Cultural Anthropology", "Hours": 3 },
+            { "Course": "ANT 307", "Title": "Culture and Communication", "Hours": 3 },
+            { "Group": "Upper-Division Courses", "Hours": 9 }
+            ]
+        },
+        "Latin Minor": {
+            "Credit Hours Required": 18,
+            "Requirements": [
+            { "Course": "LAT 506 & LAT 507", "Title": "First-Year Latin I & II", "Hours": 10 },
+            { "Course": "LAT 511K", "Title": "Accelerated Intermediate Latin", "Hours": 5 },
+            { "Course": "LAT 322", "Title": "Advanced Latin I", "Hours": 3 }
+            ]
+        },
+        "Law and Religion Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            {
+                "Group": "Non-U.S.-Focused Coursework",
+                "Courses": [
+                "AHC 378", "MES 341 (Topic 9 or 11)", "MES 342 (Topic 27 or 66)", 
+                "R S 306C", "GOV 365S"
+                ],
+                "Hours": 6
+            },
+            {
+                "Group": "Additional Courses",
+                "Courses": [
+                "CTI 302", "CTI 320", "CTI 325", "CTI 355C", "GOV 335C", 
+                "GOV 371R", "PHL 347", "PHL 342", "PHL 375M"
+                ],
+                "Hours": 6
+            }
+            ]
+        },
+        "Law, Justice, and Society Minor": {
+            "Credit Hours Required": 18,
+            "Requirements": [
+            {
+                "Group": "Government Courses",
+                "Courses": [
+                "GOV 312P", "GOV 314D", "GOV 320K", "GOV 320N", "GOV 331L", 
+                "GOV 335D", "GOV 335Q", "GOV 337D", "GOV 351C", "GOV 357L", 
+                "GOV 357M", "GOV 365S", "GOV 365W"
+                ],
+                "Hours": 6
+            },
+            {
+                "Group": "Sociology Courses",
+                "Courses": [
+                "SOC 307D", "SOC 307T", "SOC 318", "SOC 321D", "SOC 323C", 
+                "SOC 325K", "SOC 325L", "SOC 336P", "SOC 340D", "SOC 366"
+                ],
+                "Hours": 3
+            },
+            {
+                "Group": "Additional Courses",
+                "Courses": [
+                "AFR 360", "C C 375", "CTI 326C", "EUS 346", "HIS 350R", 
+                "HIS 355S", "LAH 369H", "PHL 342", "PHL 347", "R S 358K", 
+                "URB 325L"
+                ],
+                "Hours": 9
+            }
+            ],
+            "Notes": [
+            "Must include twelve hours of upper-division coursework.",
+            "At least half of the courses must be completed in residence.",
+            "At least one course must be from outside the student's major."
+            ]
+        },
+        "Lesbian, Gay, Bisexual, Transgender, and Queer/Sexualities Studies Minor": {
+            "Credit Hours Required": 15,
+            "Admission": "by admission only",
+            "Requirements": [
+            { "Course": "WGS 303 or WGS 305", "Title": "Introduction to LGBTQ Studies or Women's and Gender Studies", "Hours": 3 },
+            { "Course": "WGS 335", "Title": "Topics in LGBTQ Studies", "Hours": 3 },
+            { "Group": "Additional Courses", "Hours": 6 }
+            ]
+        },
+        "Malayalam Minor": {
+            "Credit Hours Required": 19,
+            "Requirements": [
+            { "Course": "MAL 506", "Title": "First-Year Malayalam I", "Hours": 5 },
+            { "Course": "MAL 507", "Title": "First-Year Malayalam II", "Hours": 5 },
+            { "Course": "MAL 312K", "Title": "Second-Year Malayalam I", "Hours": 3 },
+            { "Course": "MAL 312L", "Title": "Second-Year Malayalam II", "Hours": 3 },
+            { "Course": "Upper-Division Malayalam", "Hours": 3 }
+            ]
+        },
+        "Medieval Studies Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "Literary Approaches to the Middle Ages", "Hours": 3 },
+            { "Course": "Historical Approaches to the Middle Ages", "Hours": 3 },
+            { "Group": "Additional Courses", "Hours": 9 }
+            ],
+            "Notes": [
+            "Must include nine hours of upper-division coursework.",
+            "Must include nine hours in residence."
+            ]
+        },
+        "Middle Eastern Languages and Cultures Minor": {
+        "Credit Hours Required": 15,
+        "Requirements": [
+          { "Group": "Middle Eastern Languages and Cultures Courses", "Hours": 15 }
+        ],
+        "Notes": [
+          "Must include at least nine hours of upper-division coursework.",
+          "At least six hours must be taken in residence."
+        ]
+        },
+        "Modern Hebrew Minor": {
+            "Credit Hours Required": 19,
+            "Requirements": [
+            { "Course": "HEB 506 & HEB 507", "Title": "First-Year Hebrew I & II", "Hours": 10 },
+            { "Course": "HEB 601C", "Title": "Intensive Hebrew I", "Hours": 10 },
+            { "Course": "HEB 312K & HEB 312L", "Title": "Second-Year Hebrew I & II", "Hours": 6 },
+            { "Course": "Upper-Division Hebrew", "Hours": 3 }
+            ],
+            "Notes": "Must include at least three hours of upper-division Hebrew."
+        },
+        "Museum Studies Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "MSP 301", "Title": "Introduction to Museum Studies", "Hours": 3 },
+            {
+                "Group": "Additional Courses",
+                "Courses": [
+                { "Course": "MSP 370", "Title": "Museum Internship", "Hours": 3 },
+                { "Course": "MSP 371", "Title": "Advanced Museum Seminar", "Hours": 3 },
+                { "Course": "HIS 350L", "Title": "Public History", "Hours": 3 }
+                ],
+                "Hours": 9
+            }
+            ]
+        },
+        "Native American and Indigenous Studies Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "NAIS 301", "Title": "Introduction to Native American and Indigenous Studies", "Hours": 3 },
+            { "Course": "NAIS 360", "Title": "Topics in Native American and Indigenous Studies", "Hours": 9 },
+            { "Course": "NAIS 370", "Title": "Seminar in Native American and Indigenous Studies", "Hours": 3 }
+            ],
+            "Notes": [
+            "Must include at least nine hours of upper-division coursework.",
+            "At least nine hours must be completed in residence."
+            ]
+        },
+        "Philosophy Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "PHL 301", "Title": "Introduction to Philosophy", "Hours": 3 },
+            {
+                "Group": "Upper-Division Philosophy Courses",
+                "Courses": [
+                { "Course": "PHL 323", "Title": "Philosophy of Science", "Hours": 3 },
+                { "Course": "PHL 347", "Title": "Philosophy of Law", "Hours": 3 }
+                ],
+                "Hours": 6
+            },
+            { "Course": "Additional Philosophy Courses", "Hours": 6 }
+            ]
+        },
+        "Portuguese Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "POR 601C", "Title": "Beginning Portuguese", "Hours": 6 },
+            { "Course": "POR 611C", "Title": "Intermediate Portuguese", "Hours": 6 },
+            { "Course": "Upper-Division Portuguese", "Hours": 3 }
+            ]
+        },
+        "Religious Studies Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "R S 310", "Title": "Introduction to the Study of Religion", "Hours": 3 },
+            {
+                "Group": "Upper-Division Religious Studies Courses",
+                "Courses": [
+                { "Course": "R S 346", "Title": "Religious Ethics", "Hours": 3 },
+                { "Course": "R S 354", "Title": "Religion and Society", "Hours": 3 }
+                ],
+                "Hours": 6
+            },
+            { "Course": "Additional Religious Studies Courses", "Hours": 6 }
+            ]
+        },
+        "Russian, East European, and Eurasian Studies Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "REE 301", "Title": "Introduction to Russian, East European, and Eurasian Studies", "Hours": 3 },
+            {
+                "Group": "Upper-Division REE Courses",
+                "Courses": [
+                { "Course": "REE 325", "Title": "Russian and East European Politics", "Hours": 3 },
+                { "Course": "REE 345", "Title": "Topics in Russian and East European History", "Hours": 3 }
+                ],
+                "Hours": 6
+            },
+            { "Course": "Additional REE Courses", "Hours": 6 }
+            ]
+        },
+        "Sociology Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "SOC 302", "Title": "Introduction to Sociology", "Hours": 3 },
+            {
+                "Group": "Upper-Division Sociology Courses",
+                "Courses": [
+                { "Course": "SOC 320", "Title": "Social Theory", "Hours": 3 },
+                { "Course": "SOC 333K", "Title": "Sociology of Education", "Hours": 3 }
+                ],
+                "Hours": 6
+            },
+            { "Course": "Additional Sociology Courses", "Hours": 6 }
+            ]
+        },
+        "Spanish Minor": {
+        "Credit Hours Required": 18,
+        "Requirements": [
+          { "Course": "SPC 320C", "Title": "Topics in Iberian or Latin American Studies", "Hours": 3 },
+          {
+            "Group": "Choose one",
+            "Courses": [
+              { "Course": "SPN 327C", "Title": "Advanced Grammar and Writing in Context", "Hours": 3 },
+              { "Course": "SPN 327N", "Title": "Academic Writing for Heritage Speakers", "Hours": 3 },
+              { "Course": "SPN 327V", "Title": "Advanced Writing and Service Learning", "Hours": 3 }
+            ]
+          },
+          {
+            "Group": "Choose one",
+            "Courses": [
+              { "Course": "SPN 328C", "Title": "Introduction to Literatures and Cultures", "Hours": 3 },
+              { "Course": "SPN 330L", "Title": "Introduction to Language and Linguistics in Society", "Hours": 3 }
+            ]
+          },
+          { "Group": "Upper-Division Spanish Courses", "Hours": 9 }
+        ]
+        },
+        "Tamil Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            {
+                "Pathway": "Option 1",
+                "Courses": [
+                { "Course": "TAM 506 & TAM 507", "Title": "First-Year Tamil I & II", "Hours": 12 },
+                { "Course": "TAM 312K & TAM 312L", "Title": "Second-Year Tamil I & II", "Hours": 12 }
+                ]
+            },
+            {
+                "Pathway": "Option 2",
+                "Courses": [
+                { "Course": "TAM 604 & TAM 612", "Title": "Accelerated First-Year Tamil & Accelerated Second-Year Tamil", "Hours": 12 }
+                ]
+            },
+            { "Course": "Upper-Division Tamil", "Hours": 3 }
+            ]
+        },
+        "Turkish Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            {
+                "Pathway": "Option 1",
+                "Courses": [
+                { "Course": "TUR 506 & TUR 507", "Title": "First-Year Turkish I & II", "Hours": 6 }
+                ]
+            },
+            {
+                "Pathway": "Option 2",
+                "Courses": [
+                { "Course": "TUR 601C", "Title": "Intensive Turkish I", "Hours": 6 }
+                ]
+            },
+            {
+                "Pathway": "Second-Year Turkish",
+                "Courses": [
+                { "Course": "TUR 412K & TUR 412L", "Title": "Second-Year Turkish I & II", "Hours": 6 },
+                { "Course": "TUR 611C", "Title": "Intensive Turkish II", "Hours": 6 }
+                ]
+            },
+            { "Course": "Upper-Division Turkish", "Hours": 3 }
+            ]
+        },
+        "Ukrainian Minor": {
+            "Credit Hours Required": 14,
+            "Requirements": [
+            { "Course": "UKR 406", "Title": "First-Year Ukrainian I", "Hours": 4 },
+            { "Course": "UKR 407", "Title": "First-Year Ukrainian II", "Hours": 4 },
+            { "Course": "UKR 312K", "Title": "Second-Year Ukrainian I", "Hours": 3 },
+            { "Course": "UKR 312L", "Title": "Second-Year Ukrainian II", "Hours": 3 },
+            { "Course": "Upper-Division Ukrainian", "Hours": 3 }
+            ]
+        },
+        "Urban Studies Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            { "Course": "URB 301", "Title": "Introduction to Urban Studies", "Hours": 3 },
+            { "Group": "Additional Urban Studies Courses", "Hours": 12 }
+            ],
+            "Notes": "At least nine of the twelve additional semester hours must be upper-division."
+        },
+        "Urdu Minor": {
+            "Credit Hours Required": 15,
+            "Requirements": [
+            {
+                "Pathway": "Option 1",
+                "Courses": [
+                { "Course": "URD 506 & URD 507", "Title": "First-Year Urdu I & II", "Hours": 12 },
+                { "Course": "URD 312K & URD 312L", "Title": "Second-Year Urdu I & II", "Hours": 12 }
+                ]
+            },
+            {
+                "Pathway": "Option 2",
+                "Courses": [
+                { "Course": "URD 604 & URD 612", "Title": "Accelerated First-Year Urdu & Accelerated Second-Year Urdu", "Hours": 12 }
+                ]
+            },
+            { "Course": "Upper-Division Urdu", "Hours": 3 }
+            ]
+        },
+        "UTeach-Liberal Arts Minor": {
+            "Credit Hours Required": 15,
+            "Admission": "by admission only",
+            "Requirements": [
+            { "Course": "UTL 101", "Title": "Introduction to the Teaching Profession", "Hours": 1 },
+            { "Course": "UTL 202", "Title": "Introduction to Teaching in the Middle School", "Hours": 2 },
+            { "Course": "EDP 350G", "Title": "Adolescent Development", "Hours": 3 },
+            {
+                "Group": "Choose from the following",
+                "Courses": [
+                { "Course": "UTL 640", "Title": "Teaching in Secondary Schools (LOTE, English, Social Studies)", "Hours": 6 }
+                ]
+            },
+            { "Course": "SED 322C", "Title": "Individual Differences", "Hours": 3 }
+            ],
+            "Notes": [
+            "State of Texas teacher certification requirements are subject to change.",
+            "UTeach course requirements are governed by the State Coordinating Board for Higher Education and may change independently of major and university requirements."
+            ]
+        },
+        "Women's and Gender Studies Minor": {
+            "Credit Hours Required": 15,
+            "Admission": "by admission only",
+            "Requirements": [
+            {
+                "Group": "Choose one",
+                "Courses": [
+                { "Course": "WGS 301", "Title": "Introductory Topics in Women's and Gender Studies", "Hours": 3 },
+                { "Course": "WGS 303", "Title": "Introduction to LGBTQ Studies", "Hours": 3 },
+                { "Course": "WGS 305", "Title": "Introduction to Women's and Gender Studies", "Hours": 3 }
+                ]
+            },
+            { "Course": "WGS 340", "Title": "Cross-Cultural Topics in Women's and Gender Studies", "Hours": 3 },
+            { "Course": "WGS 340", "Title": "Cross-Cultural Topics in Women's and Gender Studies (Different topic)", "Hours": 3 },
+            { "Course": "WGS 350", "Title": "Feminist Theory", "Hours": 3 },
+            { "Course": "Additional Women's and Gender Studies Course", "Hours": 3 }
+            ]
+        }
+        },
+        "Certificates": {
+            "African Studies Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                { "Course": "AFR 304", "Title": "Introduction to the Study of Africa", "Hours": 3 },
+                { "Course": "AFR 310K", "Title": "Introduction to Modern Africa", "Hours": 3 },
+                { "Group": "Additional Courses", "Hours": 12 }
+                ],
+                "Notes": [
+                "At least one course must be outside of the requirements of the student's undergraduate degree.",
+                "A minimum grade of C is required for each course taken toward the certificate.",
+                "Approved course lists are available in the African and African Diaspora Studies undergraduate advising office."
+                ]
+            },
+            "Business Spanish Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                {
+                    "Pathway": "Non-Heritage Speakers",
+                    "Courses": [
+                    { "Course": "SPN 601D", "Title": "First-Year Spanish I", "Hours": 6 },
+                    { "Course": "SPN 610D", "Title": "First-Year Spanish II", "Hours": 6 },
+                    { "Course": "SPN 311", "Title": "Intermediate Spanish", "Hours": 3 },
+                    { "Course": "SPN 314", "Title": "Spanish Conversation and Culture", "Hours": 3 },
+                    {
+                        "Group": "Choose one",
+                        "Courses": [
+                        { "Course": "SPN 327C", "Title": "Advanced Grammar and Writing in Context", "Hours": 3 },
+                        { "Course": "SPN 327N", "Title": "Academic Writing for Heritage Speakers", "Hours": 3 },
+                        { "Course": "SPN 327V", "Title": "Advanced Writing and Service Learning", "Hours": 3 }
+                        ]
+                    },
+                    { "Course": "SPN 367D", "Title": "Business in Hispanic Life and Culture", "Hours": 3 }
+                    ]
+                },
+                {
+                    "Pathway": "Heritage Speakers",
+                    "Courses": [
+                    { "Course": "SPN 604", "Title": "Accelerated Introductory Spanish for Heritage Learners", "Hours": 6 },
+                    { "Course": "SPN 311J", "Title": "Intermediate Spanish for Heritage Learners", "Hours": 3 },
+                    { "Course": "SPN 314J", "Title": "Writing and Culture in Context for Heritage Learners", "Hours": 3 },
+                    {
+                        "Group": "Choose one",
+                        "Courses": [
+                        { "Course": "SPN 327C", "Title": "Advanced Grammar and Writing in Context", "Hours": 3 },
+                        { "Course": "SPN 327N", "Title": "Academic Writing for Heritage Speakers", "Hours": 3 },
+                        { "Course": "SPN 327V", "Title": "Advanced Writing and Service Learning", "Hours": 3 }
+                        ]
+                    },
+                    { "Course": "SPN 367D", "Title": "Business in Hispanic Life and Culture", "Hours": 3 }
+                    ]
+                }
+                ]
+            },
+            "Computational Science and Engineering Certificate": {
+                "Credit Hours Required": 18,
+                "Notes": "Details about the specific requirements of the certificate can be found in the Cockrell School of Engineering's Minor and Certificates section of the Undergraduate Catalog."
+            },
+            "Core Texts and Ideas Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                { "Course": "CTI 301G", "Title": "Introduction to Ancient Greece", "Hours": 3 },
+                { "Course": "CTI 302", "Title": "Classics of Social and Political Thought", "Hours": 3 },
+                { "Course": "CTI 304", "Title": "World Religions: Traditions and Texts", "Hours": 3 },
+                { "Course": "GOV 312P", "Title": "Constitutional Principles: Core Texts", "Hours": 3 },
+                { "Group": "Additional CTI Electives", "Hours": 6 }
+                ],
+                "Notes": [
+                "All courses must be taken on the letter-grade basis.",
+                "Approved electives are available from the academic advisor in the Thomas Jefferson Center for the Study of Core Texts and Ideas."
+                ]
+            },
+            "Creative Writing Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                { "Group": "English, Theatre, Radio-TV-Film Courses", "Hours": 6 },
+                {
+                    "Group": "Choose one",
+                    "Courses": [
+                    { "Course": "CRW 315D", "Title": "Playwriting I", "Hours": 3 },
+                    { "Course": "CRW 325F", "Title": "Fiction Writing", "Hours": 3 },
+                    { "Course": "CRW 325M", "Title": "Creative Writing", "Hours": 3 },
+                    { "Course": "CRW 325P", "Title": "Poetry Writing", "Hours": 3 }
+                    ]
+                },
+                {
+                    "Group": "Choose one",
+                    "Courses": [
+                    { "Course": "CRW 340D", "Title": "Playwriting II", "Hours": 3 },
+                    { "Course": "CRW 340F", "Title": "Short Story Workshop", "Hours": 3 },
+                    { "Course": "CRW 340P", "Title": "Poetry Workshop", "Hours": 3 },
+                    { "Course": "CRW 660A", "Title": "Intensive Creative Writing (Part A)", "Hours": 3 }
+                    ]
+                },
+                {
+                    "Group": "Choose one",
+                    "Courses": [
+                    { "Course": "CRW 355D", "Title": "Playwriting III", "Hours": 3 },
+                    { "Course": "CRW 355F", "Title": "Advanced Fiction Workshop", "Hours": 3 },
+                    { "Course": "CRW 355P", "Title": "Advanced Poetry Workshop", "Hours": 3 },
+                    { "Course": "CRW 660B", "Title": "Intensive Creative Writing (Part B)", "Hours": 3 }
+                    ]
+                },
+                { "Group": "Additional Creative Writing Courses", "Hours": 3 }
+                ],
+                "Honors Option": {
+                "Requirements": [
+                    { "Course": "CRW 370H", "Title": "Honors Creative Writing Project", "Hours": 3 }
+                ],
+                "GPA Requirement": "A minimum GPA of 3.66 in Creative Writing Certificate courses and a cumulative GPA of at least 3.33."
+                }
+            },
+            "Digital Humanities Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                { "Course": "E 310D", "Title": "Introduction to Digital Studies", "Hours": 3 },
+                { "Group": "Methods-Based Courses", "Hours": 3 },
+                { "Group": "Digital Humanities Topics", "Hours": 3 },
+                { "Group": "Additional Digital Humanities and Informatics Courses", "Hours": 6 },
+                { "Course": "Capstone Course", "Hours": 3 }
+                ],
+                "Notes": [
+                "At least twelve hours must be completed before the capstone course can be counted."
+                ]
+            },
+            "German Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                { "Group": "German Coursework", "Hours": 18 }
+                ],
+                "Notes": [
+                "At least six hours must be upper-division."
+                ]
+            },
+            "History and Philosophy of Science Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                { "Group": "History of Science Courses", "Hours": 6 },
+                { "Course": "PHL 313", "Title": "Introductory Symbolic Logic", "Hours": 3 },
+                {
+                    "Group": "Choose one",
+                    "Courses": [
+                    { "Course": "PHL 316K", "Title": "Science and Philosophy", "Hours": 3 },
+                    { "Course": "PHL 322", "Title": "Science and the Modern World", "Hours": 3 },
+                    { "Course": "PHL 363L", "Title": "Topics in Philosophy of Science", "Hours": 3 }
+                    ]
+                },
+                { "Group": "Additional Approved Courses", "Hours": 6 }
+                ]
+            },
+            "Indigenous Studies Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                { "Course": "Introductory Indigenous Studies Course", "Hours": 3 },
+                { "Course": "Upper-Division Capstone Course", "Hours": 3 },
+                { "Group": "Additional Courses with Indigenous Content", "Hours": 12 }
+                ],
+                "Notes": [
+                "Students may enroll in a conference course that addresses Indigenous Texas or the Southwest.",
+                "At least six hours must be taken outside the student's major."
+                ]
+            },
+            "Japanese Certificate": {
+                "Credit Hours Required": 24,
+                "Requirements": [
+                { "Course": "JPN 601D", "Title": "Japanese I", "Hours": 6 },
+                { "Course": "JPN 610D", "Title": "Japanese II", "Hours": 6 },
+                { "Course": "JPN 611D", "Title": "Intermediate Japanese", "Hours": 6 },
+                { "Course": "JPN 317C", "Title": "Japanese Grammar, Composition, and Conversation", "Hours": 3 },
+                { "Course": "Upper-Division Japanese", "Hours": 3 }
+                ]
+            },
+            "Lesbian, Gay, Bisexual, Transgender, and Queer/Sexualities Studies Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                { "Course": "WGS 303", "Title": "Introduction to LGBTQ Studies", "Hours": 3 },
+                { "Group": "Topics in LGBTQ Studies", "Hours": 6 },
+                { "Group": "Upper-Division LGBTQ Studies Courses", "Hours": 9 }
+                ],
+                "Notes": [
+                "At least three hours must be outside the student's major field."
+                ]
+            },
+            "Security Studies Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                { "Course": "GOV 360D", "Title": "International Security", "Hours": 3 },
+                { "Group": "Additional Courses from Two Departments", "Hours": 15 },
+                { "Course": "Internship", "Hours": "Required" }
+                ],
+                "Notes": [
+                "Internships must be at least 240 hours and can be paid or unpaid.",
+                "Students may apply to waive the internship if they are enrolled in ROTC, have prior military experience, or extensive civilian job experience related to security studies."
+                ]
+            },
+            "Spanish for Medical Professions Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                {
+                    "Pathway": "Non-Heritage Speakers",
+                    "Courses": [
+                    { "Course": "SPN 601D", "Title": "First-Year Spanish I", "Hours": 6 },
+                    { "Course": "SPN 610D", "Title": "First-Year Spanish II", "Hours": 6 },
+                    { "Course": "SPN 311", "Title": "Intermediate Spanish", "Hours": 3 },
+                    { "Course": "SPN 314", "Title": "Spanish Conversation and Culture", "Hours": 3 },
+                    {
+                        "Group": "Choose one",
+                        "Courses": [
+                        { "Course": "SPN 327C", "Title": "Advanced Grammar and Writing in Context", "Hours": 3 },
+                        { "Course": "SPN 327N", "Title": "Academic Writing for Heritage Speakers", "Hours": 3 },
+                        { "Course": "SPN 327V", "Title": "Advanced Writing and Service Learning", "Hours": 3 }
+                        ]
+                    },
+                    { "Course": "SPN 367C", "Title": "Spanish for Health Care Professions", "Hours": 3 }
+                    ]
+                },
+                {
+                    "Pathway": "Heritage Speakers",
+                    "Courses": [
+                    { "Course": "SPN 604", "Title": "Accelerated Introductory Spanish for Heritage Learners", "Hours": 6 },
+                    { "Course": "SPN 311J", "Title": "Intermediate Spanish for Heritage Learners", "Hours": 3 },
+                    { "Course": "SPN 314J", "Title": "Writing and Culture in Context for Heritage Learners", "Hours": 3 },
+                    {
+                        "Group": "Choose one",
+                        "Courses": [
+                        { "Course": "SPN 327C", "Title": "Advanced Grammar and Writing in Context", "Hours": 3 },
+                        { "Course": "SPN 327N", "Title": "Academic Writing for Heritage Speakers", "Hours": 3 },
+                        { "Course": "SPN 327V", "Title": "Advanced Writing and Service Learning", "Hours": 3 }
+                        ]
+                    },
+                    { "Course": "SPN 367C", "Title": "Spanish for Health Care Professions", "Hours": 3 }
+                    ]
+                }
+                ]
+            },
+            "Spanish for Mental Health Professions Certificate": {
+                "Credit Hours Required": 18,
+                "Requirements": [
+                {
+                    "Pathway": "Non-Heritage Speakers",
+                    "Courses": [
+                    { "Course": "SPN 601D", "Title": "First-Year Spanish I", "Hours": 6 },
+                    { "Course": "SPN 610D", "Title": "First-Year Spanish II", "Hours": 6 },
+                    { "Course": "SPN 311", "Title": "Intermediate Spanish", "Hours": 3 },
+                    { "Course": "SPN 314", "Title": "Spanish Conversation and Culture", "Hours": 3 },
+                    {
+                        "Group": "Choose one",
+                        "Courses": [
+                        { "Course": "SPN 327C", "Title": "Advanced Grammar and Writing in Context", "Hours": 3 },
+                        { "Course": "SPN 327N", "Title": "Academic Writing for Heritage Speakers", "Hours": 3 },
+                        { "Course": "SPN 327V", "Title": "Advanced Writing and Service Learning", "Hours": 3 }
+                        ]
+                    },
+                    { "Course": "SPN 368F", "Title": "Spanish in Mental Health Contexts", "Hours": 3 }
+                    ]
+                },
+                {
+                    "Pathway": "Heritage Speakers",
+                    "Courses": [
+                    { "Course": "SPN 604", "Title": "Accelerated Introductory Spanish for Heritage Learners", "Hours": 6 },
+                    { "Course": "SPN 311J", "Title": "Intermediate Spanish for Heritage Learners", "Hours": 3 },
+                    { "Course": "SPN 314J", "Title": "Writing and Culture in Context for Heritage Learners", "Hours": 3 },
+                    {
+                        "Group": "Choose one",
+                        "Courses": [
+                        { "Course": "SPN 327C", "Title": "Advanced Grammar and Writing in Context", "Hours": 3 },
+                        { "Course": "SPN 327N", "Title": "Academic Writing for Heritage Speakers", "Hours": 3 },
+                        { "Course": "SPN 327V", "Title": "Advanced Writing and Service Learning", "Hours": 3 }
+                        ]
+                    },
+                    { "Course": "SPN 368F", "Title": "Spanish in Mental Health Contexts", "Hours": 3 }
+                    ]
+                }
+                ]
+            }
+            }
+        }
+        }

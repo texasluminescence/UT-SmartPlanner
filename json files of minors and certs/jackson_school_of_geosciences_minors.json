@@ -1,0 +1,165 @@
+{
+    "Jackson School of Geosciences": {
+        "Computational Geosciences Minor": {
+            "Description": "Focuses on computational methods in geosciences using high-level programming tools.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Core": [
+                    {
+                        "Course": "GEO 303 or GEO 401",
+                        "Title": "Introduction to Geology or Physical Geology",
+                        "Hours": "3 or 4"
+                    },
+                    {
+                        "Course": "GEO 354",
+                        "Title": "Physics of Earth",
+                        "Hours": 3
+                    },
+                    {
+                        "Group": "One of the following courses",
+                        "Courses": [
+                            "GEO 325G",
+                            "GEO 325K",
+                            "GEO 325M",
+                            "GEO 366M"
+                        ],
+                        "Hours": 3
+                    },
+                    {
+                        "Group": "Two upper-division GEO courses",
+                        "Courses": [
+                            "GEO 344U",
+                            "GEO 347G",
+                            "GEO 355G",
+                            "GEO 360G",
+                            "GEO 365N",
+                            "GEO 365P",
+                            "GEO 465K"
+                        ],
+                        "Hours": "6 or 7"
+                    }
+                ],
+                "Notes": [
+                    "Registration for any of these courses requires that existing prerequisite course requirements are adequately met.",
+                    "Petitions to substitute another course to use toward any requirement must be submitted to the JSG Advising Office prior to the start of the semester in question."
+                ]
+            }
+        },
+        "Geosciences Minor": {
+            "Description": "Provides an understanding of the Earth\u2019s history, evolution, and properties.",
+            "Credit Hours Required": 16,
+            "Requirements": {
+                "Core": [
+                    {
+                        "Course": "GEO 303 or GEO 401",
+                        "Title": "Introduction to Geology or Physical Geology",
+                        "Hours": "3 or 4"
+                    },
+                    {
+                        "Group": "One of the following courses",
+                        "Courses": [
+                            "GEO 405",
+                            "GEO 416K",
+                            "GEO 416M"
+                        ],
+                        "Hours": 4
+                    },
+                    {
+                        "Group": "Three upper-division GEO courses",
+                        "Courses": [
+                            "GEO 320L",
+                            "GEO 325G",
+                            "GEO 339T",
+                            "GEO 346C",
+                            "GEO 347K"
+                        ],
+                        "Hours": 9
+                    }
+                ],
+                "Notes": [
+                    "Registration for any of these courses requires that existing prerequisite course requirements are adequately met.",
+                    "Petitions to substitute another course to use toward any requirement must be submitted to the JSG Advising Office prior to the start of the semester in question."
+                ]
+            }
+        },
+        "Hydrology Minor": {
+            "Description": "Focuses on the water cycle and associated hydrological processes.",
+            "Credit Hours Required": 16,
+            "Requirements": {
+                "Core": [
+                    {
+                        "Course": "GEO 303 or GEO 401",
+                        "Title": "Introduction to Geology or Physical Geology",
+                        "Hours": "3 or 4"
+                    },
+                    {
+                        "Course": "GEO 346C",
+                        "Title": "Introduction to Physical and Chemical Hydrogeology",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "GEO 476K",
+                        "Title": "Groundwater Hydrology",
+                        "Hours": 4
+                    },
+                    {
+                        "Group": "Two upper-division GEO courses",
+                        "Courses": [
+                            "GEO 372S",
+                            "GEO 376S",
+                            "GEO 476M",
+                            "GEO 476W",
+                            "GEO 377K"
+                        ],
+                        "Hours": "6 or 7"
+                    }
+                ],
+                "Notes": [
+                    "Registration for any of these courses requires that existing prerequisite course requirements are adequately met.",
+                    "Petitions to substitute another course to use toward any requirement must be submitted to the JSG Advising Office prior to the start of the semester in question."
+                ]
+            }
+        },
+        "Sedimentology and Earth Surface Processes Minor": {
+            "Description": "Focuses on processes shaping the Earth\u2019s surface and the rock record.",
+            "Credit Hours Required": 16,
+            "Requirements": {
+                "Core": [
+                    {
+                        "Course": "GEO 303 or GEO 401",
+                        "Title": "Introduction to Geology or Physical Geology",
+                        "Hours": "3 or 4"
+                    },
+                    {
+                        "Course": "GEO 416M or GEO 416K",
+                        "Title": "Sedimentary Rocks or Earth Materials",
+                        "Hours": 4
+                    },
+                    {
+                        "Group": "Three upper-division GEO courses",
+                        "Courses": [
+                            "GEO 322J",
+                            "GEO 330K",
+                            "GEO 344U",
+                            "GEO 355G",
+                            "GEO 360G",
+                            "GEO 365Q",
+                            "GEO 369E"
+                        ],
+                        "Hours": "9 or 10"
+                    }
+                ],
+                "Notes": [
+                    "Registration for any of these courses requires that existing prerequisite course requirements are adequately met.",
+                    "Petitions to substitute another course to use toward any requirement must be submitted to the JSG Advising Office prior to the start of the semester in question."
+                ]
+            }
+        },
+        "Certificates": {
+            "Computational Science and Engineering Certificate": {
+                "Description": "Sponsored by multiple schools including the Jackson School of Geosciences, it focuses on advanced computational methods in science and engineering.",
+                "Notes": "Details about the requirements for this certificate can be found in the Cockrell School of Engineering's Minor and Certificates section of the Undergraduate Catalog."
+            }
+        }
+    }
+}

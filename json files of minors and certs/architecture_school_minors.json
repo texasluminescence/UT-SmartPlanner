@@ -1,0 +1,202 @@
+{
+    "School of Architecture": {
+        "Architectural History Minor": {
+            "Description": "Provides a foundation in architectural history concepts for students outside of the School of Architecture.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Lower-division": [
+                    {
+                        "Course": "ARC 308",
+                        "Title": "Architecture and Society",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARC 318K",
+                        "Title": "World Architecture: Origins to 1750",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARC 318L",
+                        "Title": "World Architecture: The Industrial Revolution to the Present",
+                        "Hours": 3
+                    }
+                ],
+                "Upper-division": [
+                    {
+                        "Courses": "All Architecture 342 courses (Architecture 342C through 342W)"
+                    },
+                    {
+                        "Courses": "Advanced architectural history topics courses (Architecture 368R) prior to Fall 2016"
+                    },
+                    {
+                        "Courses": "Architecture theory courses (Architecture 327C through Architecture 327U or Architecture 350R topics) by petition"
+                    }
+                ]
+            }
+        },
+        "Architectural Studies Minor": {
+            "Description": "Provides a foundation in architecture concepts for students in majors outside of the School of Architecture.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Lower-division": [
+                    {
+                        "Course": "ARC 308",
+                        "Title": "Architecture and Society",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARC 318K",
+                        "Title": "World Architecture: Origins to 1750",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARC 318L",
+                        "Title": "World Architecture: The Industrial Revolution to the Present",
+                        "Hours": 3
+                    }
+                ],
+                "Upper-division": [
+                    {
+                        "Courses": "Architecture 327C through 327W courses"
+                    },
+                    {
+                        "Courses": "Architecture 342C through 342W courses"
+                    },
+                    {
+                        "Course": "ARC 350R",
+                        "Title": "Topics in Design Theory (Topic 1, 3, OR 4)",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARC 369J",
+                        "Title": "City Architecture",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "CRP 369K",
+                        "Title": "Principles of Physical Planning",
+                        "Hours": 3
+                    }
+                ]
+            }
+        },
+        "Interior Design Minor": {
+            "Description": "Provides a foundation in interior design and architecture concepts for students outside of the School of Architecture.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Lower-division": [
+                    {
+                        "Course": "ARI 318K",
+                        "Title": "Interiors and Society",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARI 318M",
+                        "Title": "Interior Design History",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARC 308",
+                        "Title": "Architecture and Society",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARC 318K",
+                        "Title": "World Architecture: Origins to 1750",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARC 318L",
+                        "Title": "World Architecture: The Industrial Revolution to the Present",
+                        "Hours": 3
+                    }
+                ],
+                "Upper-division": [
+                    {
+                        "Course": "ARI 338",
+                        "Title": "Designing for Human Behavior",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARI 368R",
+                        "Title": "Interior Design History II",
+                        "Hours": 3
+                    },
+                    {
+                        "Courses": "Architectural Interior Design 342C through 342W courses"
+                    },
+                    {
+                        "Courses": "Architecture 342C through 342W courses"
+                    }
+                ]
+            }
+        },
+        "Landscape Studies Minor": {
+            "Description": "Provides a foundation in landscape studies concepts for students outside of the School of Architecture.",
+            "Credit Hours Required": 15,
+            "Requirements": {
+                "Lower-division": [
+                    {
+                        "Course": "ARC 318K",
+                        "Title": "World Architecture: Origins to 1750",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARC 318L",
+                        "Title": "World Architecture: The Industrial Revolution to the Present",
+                        "Hours": 3
+                    }
+                ],
+                "Upper-division": [
+                    {
+                        "Course": "ARC 327C",
+                        "Title": "Urban Design History, Theory, and Criticism",
+                        "Hours": 3
+                    },
+                    {
+                        "Courses": "ARC 327R Topics in Architectural Theory (All ARC 327 courses in the series ARC 327C-W)"
+                    },
+                    {
+                        "Course": "ARC 327R",
+                        "Title": "Topics in Architectural Theory (Topic 6: Design of New Communities)",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "ARC 342C",
+                        "Title": "Mexican Architecture and Urbanism: From Pre-Columbian to Contemporary",
+                        "Hours": 3
+                    },
+                    {
+                        "Courses": "ARC 342R Topics in the History of Architecture (All ARC 342 courses in the series ARC 342C-W)"
+                    },
+                    {
+                        "Course": "LAR 342K",
+                        "Title": "History and Theories of Landscape Architecture I",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "LAR 342L",
+                        "Title": "History and Theories of Landscape Architecture II",
+                        "Hours": 3
+                    },
+                    {
+                        "Courses": "LAR 342R Topics in Landscape Architectural History (various topics)"
+                    },
+                    {
+                        "Courses": "LAR 346R Topics in Landscape Architectural Theory"
+                    },
+                    {
+                        "Course": "LAR 347K",
+                        "Title": "Living Systems Design I",
+                        "Hours": 3
+                    },
+                    {
+                        "Course": "LAR 347L",
+                        "Title": "Living Systems Design II",
+                        "Hours": 3
+                    }
+                ]
+            }
+        }
+    }
+}
