@@ -3,6 +3,6 @@
     "name": "UT Smart Planner", 
     "icons": {
         "32": "icon.png"
-    }
+    },
     "version": "1.0.0"
 }
