@@ -1,0 +1,18 @@
+.container .chart-container .back {
+    stroke: #f3bfdf;
+    stroke-width: 10;
+  }
+  
+  .container .chart-container .front {
+    stroke: #d9359a;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 234;
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+  
+  .container .chart-container .text {
+    font-size: 32px;
+    fill: #d9359a;
+  }

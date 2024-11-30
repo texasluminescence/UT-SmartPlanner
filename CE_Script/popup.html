@@ -5,12 +5,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>UT Course Planner</title>
-        <script src="script.js" defer></script>
+        <!-- <script src=".js" defer></script> -->
+        <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
         <div>
-            <h2>Welcome!</h2>
+            <h2>UT Course Planner</h2>
+
+            <div class='container'>
+                <svg width='200' height='150' class='chart-container'>
+                    <circle cx='60' cy='60' r='50' class='back' fill='none'
+                        class='back' />
+                    <circle cx='95' cy='35' r='50' class='front' fill='none' />
+                    <g class='text'>
+                        <text x='60' y='60' alignment-baseline="central"
+                            text-anchor="middle" id='percentage'>65%</text>
+                        <!-- make this so that it is different percentage based on completion -->
+                    </g>
+                </svg>
+            </div>
 
             <button id="landing_page_button">My Planner</button>
         </div>
