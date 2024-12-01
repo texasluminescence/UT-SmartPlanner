@@ -1,12 +1,11 @@
 .container .chart-container .back {
-    stroke: #f3bfdf;
-    stroke-width: 10;
+    stroke: #dfdfdf;
+    stroke-width: 20;
   }
   
   .container .chart-container .front {
-    stroke: #d9359a;
-    stroke-width: 10;
-    stroke-linecap: round;
+    stroke: #bf5700;
+    stroke-width: 20;
     stroke-dasharray: 234;
     transform: rotate(-90deg);
     transform-origin: center;
@@ -14,5 +13,29 @@
   
   .container .chart-container .text {
     font-size: 32px;
-    fill: #d9359a;
+    fill: #bf5700;
+  }
+
+  .chart-container {
+    /* background-color: red; */
+    display: flex;
+    place-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container {
+    display: grid;
+    place-items: center;
+    /* justify-content: center; */
+    min-height: 10vh;
+    min-width: 100vh;
+    /* align-items: center; */
+  }
+
+  .parent_popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
