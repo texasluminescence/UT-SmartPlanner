@@ -1,0 +1,96 @@
+.App {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #944c0f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile .avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 1rem 0;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .schedule-container {
+    width: 80%;
+    padding: 1rem;
+    background-color: #fff5e8;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .week-navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .week-navigation button {
+    margin: 0 0.5rem;
+  }
+  
+  .schedule {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+  }
+  
+  .day-column {
+    flex: 1;
+    padding: 0.5rem;
+  }
+  
+  .day-column h3 {
+    text-align: center;
+    color: #944c0f;
+  }
+  
+  .course {
+    border-radius: 8px;
+    padding: 0.5rem;
+    color: white;
+    margin: 0.5rem 0;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .action-star, .action-delete {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 1rem;
+    color: #944c0f;
+  }
+  

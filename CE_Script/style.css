@@ -1,0 +1,99 @@
+a {
+    color:#bf5700;
+    text-decoration: none;
+}
+
+.container .chart-container .back {
+    stroke: #dfdfdf;
+    stroke-width: 20;
+  }
+  
+  .container .chart-container .front {
+    stroke: #bf5700;
+    stroke-width: 20;
+    stroke-dasharray: 234;
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+  
+  .container .chart-container .text {
+    font-size: 32px;
+    fill: #bf5700;
+  }
+
+  .chart-container {
+    /* background-color: red; */
+    display: flex;
+    place-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    /* place-items: center; */
+    justify-content: center;
+    min-height: 10vh;
+    min-width: 70vh;
+    /* background-color: burlywood; */
+    align-items: center;
+    text-align: center;
+  }
+
+  .schedule {
+    align-items: center;
+  }
+
+  .block {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    min-height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures the items are spaced out */
+    text-align: center;
+    color: white;
+    background-color: rgb(26, 86, 183);
+    padding: 0 15px; /* Adds some padding for spacing within the block */
+    gap: 10px; /* Adds spacing between the items */
+}
+
+.unique_id {
+    width: 20%; /* Fixed width ensures consistent alignment */
+    font-weight: bold;
+    text-align: left;
+}
+
+.class_name {
+    width: 60%; /* Center text will take up most of the space */
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden; /* Prevents text overflow */
+    text-overflow: ellipsis; /* Adds "..." if the text is too long */
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.prof_name {
+    width: 20%; /* Fixed width ensures consistent alignment */
+    font-weight: bold;
+    text-align: right;
+}
+
+  .parent_popup {
+    text-align: center;
+    color:#bf5700;
+    /* background-color: antiquewhite; */
+  }
+
+  #landing_page_button {
+    border-color: #bf5700;
+    border-style: solid;
+    height: 10vh;
+    width: 25vh;
+    font-weight: bold;
+    border-width: 5px;
+    border-radius: 5px;
+    color:#bf5700;
+    background-color: transparent;
+  }
