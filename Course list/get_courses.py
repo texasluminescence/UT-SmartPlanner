@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import time
 import json
+import re
 
 def main():
 
@@ -51,6 +52,16 @@ def main():
     time.sleep(5)
     driver.quit()
 
+def extract_major(header_text):
+    # Get the letters+spaces until the first digit
+    match = re.match(r'^([A-Za-z\s]+)(?=\d)', header_text)
+    if match:
+        # remove any spaces so that "A I" becomes "AI"
+        return match.group(1).replace(" ", "")
+    else:
+        #return the first word
+        return header_text.split()[0]
+
 def getCourseData(courses_table, json_file, level):
         # Initialize an empty list to hold the course details
     courses = []
@@ -65,7 +76,7 @@ def getCourseData(courses_table, json_file, level):
             # Extract course name from the header row
             current_course_name = course_header[0].text.strip()
             # Extract major from the course name (e.g., "ARC 308" => major is "ARC")
-            current_major = current_course_name.split()[0]  # Assuming major is the first part (e.g., ARC)
+            current_major = extract_major(current_course_name)  # Assuming major is the first part (e.g., ARC)
         else:
             # Extract individual course details
             cells = row.find_elements(By.TAG_NAME, "td")
