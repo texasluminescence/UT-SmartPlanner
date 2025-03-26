@@ -1,0 +1,174 @@
+.coursesLayout {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.coursesSidebar {
+    width: 250px;
+    background-color: #BF5700; 
+    padding: 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userProfile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 48px;
+}
+
+.profileImage {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.welcomeText {
+    font-size: 18px;
+    text-align: center;
+}
+
+.navMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+}
+
+.navItem {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navItemActive {
+    font-weight: bold;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 24px;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.headerTitle {
+    color: #BF5700;
+    font-size: 28px;
+}
+
+.headerButtons {
+    display: flex;
+    gap: 16px;
+}
+
+.iconButton {
+    padding: 8px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #666;
+}
+
+.courseTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+.courseTable th {
+    background-color: #BF5700;
+    color: white;
+    text-align: left;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.courseTable td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.courseRow {
+    background-color: #f0f0f0;
+}
+
+.courseRowSelected {
+    background-color: #90EE90;
+}
+
+.courseRowPotential {
+    background-color: #FFD700;
+}
+
+.courseRowConflict {
+    background-color: #EF5C5C;
+}
+
+.flag {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: white;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.statusLegend {
+    display: flex;
+    gap: 32px;
+    margin: 32px 0;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.statusDot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.dotSelected {
+    background-color: #64DA84;
+}
+
+.dotPotential {
+    background-color: #FFBF47;
+}
+
+.dotConflict {
+    background-color: #EF5C5C;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.navArrow {
+    font-size: 24px;
+    color: #BF5700;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
