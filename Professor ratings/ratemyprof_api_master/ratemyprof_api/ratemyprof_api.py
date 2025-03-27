@@ -100,9 +100,9 @@ class RateMyProfApi:
         Case insenstive.
         '''
         last_name = last_name.lower()
-        for name in professors:
-            if last_name == professors[name].last_name.lower():
-                return professors[name]
+        for name in self.professors:
+            if last_name == self.professors[name].last_name.lower():
+                return self.professors[name]
 
         # Raise error if no matching professor found
         raise ProfessorNotFound(last_name, "Last Name")
