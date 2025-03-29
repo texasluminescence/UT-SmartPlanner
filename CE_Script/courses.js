@@ -1,106 +1,3 @@
-// sample data
-let courseData = [
-    {
-        id: "52433",
-        title: "INTRODUCTION TO PROGRAMMING",
-        professor: "RAMSEY, CAROL",
-        flags: ["CD", "WR II", "WR"],
-        rmp: 3,
-        status: "normal"
-    },
-    {
-        id: "52433",
-        title: "INTRODUCTION TO PROGRAMMING",
-        professor: "RAMSEY, CAROL",
-        flags: ["CD", "WR II", "WR"],
-        rmp: 3,
-        status: "conflict"
-    },
-    {
-        id: "52433",
-        title: "INTRODUCTION TO PROGRAMMING",
-        professor: "RAMSEY, CAROL",
-        flags: ["CD", "WR II", "WR"],
-        rmp: 3,
-        status: "selected"
-    },
-    {
-        id: "52433",
-        title: "INTRODUCTION TO PROGRAMMING",
-        professor: "RAMSEY, CAROL",
-        flags: ["CD", "WR II", "WR"],
-        rmp: 3,
-        status: "normal"
-    },
-    {
-        id: "52433",
-        title: "INTRODUCTION TO PROGRAMMING",
-        professor: "RAMSEY, CAROL",
-        flags: ["CD", "WR II", "WR"],
-        rmp: 3,
-        status: "potential"
-    },
-    // page 2 courses
-    {
-        id: "57801",
-        title: "DATA STRUCTURES",
-        professor: "ABRAHAM, JOANNE",
-        flags: ["QR", "WR"],
-        rmp: 4,
-        status: "normal"
-    },
-    {
-        id: "59723",
-        title: "ALGORITHMS AND COMPLEXITY",
-        professor: "BAKER, DAVID",
-        flags: ["QR", "IL"],
-        rmp: 5,
-        status: "selected"
-    },
-    {
-        id: "54219",
-        title: "COMPUTER ARCHITECTURE",
-        professor: "JOHNSON, MICHAEL",
-        flags: ["CD", "IL"],
-        rmp: 2,
-        status: "conflict"
-    },
-    // page 3 courses
-    {
-        id: "51094",
-        title: "OPERATING SYSTEMS",
-        professor: "CHANG, SARAH",
-        flags: ["QR", "WR II"],
-        rmp: 4,
-        status: "potential"
-    },
-    {
-        id: "58612",
-        title: "DATABASE MANAGEMENT",
-        professor: "WILSON, PATRICIA",
-        flags: ["CD", "IL"],
-        rmp: 3,
-        status: "normal"
-    },
-    {
-        id: "53978",
-        title: "COMPUTER NETWORKS",
-        professor: "MARTINEZ, JAMES",
-        flags: ["QR", "WR"],
-        rmp: 4,
-        status: "selected"
-    },
-    {
-        id: "55321",
-        title: "SOFTWARE ENGINEERING",
-        professor: "THOMPSON, RICHARD",
-        flags: ["IL", "WR II"],
-        rmp: 5,
-        status: "normal"
-    }
-];
-
-
 const courseTableBody = document.querySelector('.courseTable tbody');
 const prevButton = document.querySelector('.navigation button:first-child');
 const nextButton = document.querySelector('.navigation button:last-child');
@@ -108,16 +5,40 @@ const nextButton = document.querySelector('.navigation button:last-child');
 
 let currentPage = 0;
 const coursesPerPage = 5; 
+let flags_dict = {
+    "Independent Inquiry": "II",
+    "Writing": "WR",
+    "Global Cultures": "GC",
+    "Cultural Diversity": "CD",
+    "Quantitative Reasoning": "QR",
+    "Ethics": "E"
+};
 
 // star rating for each course
 function renderStars(count) {
-    return '★'.repeat(count);
+    if (count > 0 && count <= 5) {
+        return count + '       ' + '★'.repeat(count);
+    }
+    return '';
+}
+
+function renderFlags(flags) {
+    if (!flags) {
+        return "";
+    }
+    flags = flags.split("\n");
+
+    for (let i = 0; i < flags.length; i++) {
+        flags[i] = flags_dict[flags[i]];
+    }
+
+    return flags.map(flag => `<span class="flag">${flag}</span>`).join('');
 }
 
 // converts course object to HTML table row
 function renderCourseRow(course) {
     let rowClass = 'courseRow';
-    
+
    // picks color for course
     if (course.status === 'selected') {
         rowClass = 'courseRowSelected';
@@ -126,17 +47,17 @@ function renderCourseRow(course) {
     } else if (course.status === 'conflict') {
         rowClass = 'courseRowConflict';
     }
-    
+
     // course data
     return `
         <tr class="${rowClass}" data-id="${course.id}">
-            <td>${course.id}</td>
-            <td>${course.title}</td>
-            <td>${course.professor}</td>
+            <td>${course.unique}</td>
+            <td>${course.course_name}</td>
+            <td>${course.instructor}</td>
             <td>
-                ${course.flags.map(flag => `<span class="flag">${flag}</span>`).join('')}
+                ${renderFlags(course.flags)}
             </td>
-            <td>${renderStars(course.rmp)}</td>
+            <td>${renderStars(course.professor_rating)}</td>
         </tr>
     `;
 }
@@ -191,8 +112,14 @@ nextButton.addEventListener('click', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    
-    renderCoursesTable();
+    fetch('courses.json')
+    .then(response => response.json())
+    .then(data => {
+        courseData = data;
+        renderCoursesTable();
+    })
+    .catch(error => console.error('Error loading courses:', error));
+
     
     // keyboard shortcuts to navigate between pages
     document.addEventListener('keydown', function(e) {
