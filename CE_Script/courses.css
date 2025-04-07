@@ -3,16 +3,28 @@
     height: 100vh;
     font-family: Arial, sans-serif;
 }
-
-.coursesSidebar {
-    width: 250px;
-    background-color: #BF5700; 
-    padding: 24px;
+.sidebar {
+    width: 270px;
+    background-color: #BF5700;
     color: white;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
+
+.sidebar-item {
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sidebar-item.selected {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.sidebar-gap {
+    height: 90px; 
+}
+
 
 .userProfile {
     width: 100%;
