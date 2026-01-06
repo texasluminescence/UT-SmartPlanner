@@ -73,14 +73,21 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 12px;
     margin-bottom: 24px;
+}
+
+.headerButtons {
+    align-self: flex-end;
 }
 
 .headerTitle {
     color: #BF5700;
     font-size: 28px;
+    text-align: center;
+    width: 100%;
 }
 
 .headerButtons {
@@ -88,6 +95,57 @@
     gap: 16px;
 }
 
+.filterContainer {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.searchWrap { position: relative; display: inline-block; }
+
+.searchInput {
+    padding: 8px 10px;
+    padding-right: 34px; /* room for clear button */
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 60vw;
+    max-width: 45%;
+}
+
+.searchClear {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #666;
+    width: 26px;
+    height: 26px;
+    display: none; /* hidden until there is text */
+}
+
+.no-results {
+    text-align: center;
+    color: #666;
+    margin-top: 12px;
+    font-size: 16px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.major-filter {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
 .iconButton {
     padding: 8px;
     cursor: pointer;
@@ -101,6 +159,9 @@
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 24px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .courseTable th {
@@ -144,7 +205,9 @@
 .statusLegend {
     display: flex;
     gap: 32px;
-    margin: 32px 0;
+    margin: 16px auto;
+    max-width: 900px;
+    justify-content: center;
 }
 
 .legendItem {
@@ -173,8 +236,10 @@
 
 .navigation {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 16px;
+    margin: 8px auto 24px;
+    max-width: 900px;
 }
 
 .navArrow {

@@ -6,6 +6,7 @@ const nextButton = document.querySelector('.navigation button:last-child');
 let currentPage = 0;
 const coursesPerPage = 6; 
 let courseData = [];
+let filteredData = []; // data after applying major filter
 let flags_dict = {
     "Independent Inquiry": "II",
     "Writing": "WR",
@@ -65,43 +66,33 @@ function renderCourseRow(course) {
 }
 
 function renderCoursesTable() {
+    // ensure currentPage is within valid range for filtered data
+    const totalPages = Math.ceil(filteredData.length / coursesPerPage) || 1;
+    if (currentPage >= totalPages) currentPage = Math.max(0, totalPages - 1);
+
     // calculate pagination
     const startIndex = currentPage * coursesPerPage;
-    const endIndex = Math.min(startIndex + coursesPerPage, courseData.length);
-    const currentCourses = courseData.slice(startIndex, endIndex);
-    
+    const endIndex = Math.min(startIndex + coursesPerPage, filteredData.length);
+    const currentCourses = filteredData.slice(startIndex, endIndex);
+
     // clears rows
     courseTableBody.innerHTML = '';
-    
+
     // add new rows
     currentCourses.forEach(course => {
         courseTableBody.innerHTML += renderCourseRow(course);
     });
-    
-    
+
+    // show/hide 'no results' message
+    const noEl = document.getElementById('noResults');
+    if (noEl) {
+        if (filteredData.length === 0) noEl.style.display = 'block';
+        else noEl.style.display = 'none';
+    }
+
     updatePaginationButtons();
     // reflect schedule state on visible Add buttons
     updateAddButtonsFromSchedule();
-}
-
-// mark buttons for a course as added
-function idMatch(a, b) {
-    if (a === b) return true;
-    const an = Number(a);
-    const bn = Number(b);
-    if (!Number.isNaN(an) && !Number.isNaN(bn) && an === bn) return true;
-    return false;
-}
-
-function markCourseAsAdded(uniqueId) {
-    const btns = document.querySelectorAll('.add-btn');
-    btns.forEach(b => {
-        if (idMatch(b.dataset.id, String(uniqueId))) {
-            b.textContent = 'Added';
-            b.classList.add('added');
-            b.disabled = true;
-        }
-    });
 }
 
 // revert buttons for a course to Add
@@ -137,15 +128,13 @@ function updateAddButtonsFromSchedule() {
 
 function updatePaginationButtons() {
     
-    prevButton.disabled = currentPage === 0;
-    
-    
-    const totalPages = Math.ceil(courseData.length / coursesPerPage);
-    nextButton.disabled = currentPage >= totalPages - 1 || totalPages === 0;
-    
-    
-    prevButton.style.opacity = prevButton.disabled ? 0.5 : 1;
-    nextButton.style.opacity = nextButton.disabled ? 0.5 : 1;
+        const totalPages = Math.ceil(filteredData.length / coursesPerPage) || 0;
+        prevButton.disabled = currentPage === 0 || totalPages === 0;
+
+        nextButton.disabled = currentPage >= totalPages - 1 || totalPages === 0;
+
+        prevButton.style.opacity = prevButton.disabled ? 0.5 : 1;
+        nextButton.style.opacity = nextButton.disabled ? 0.5 : 1;
 }
 
 // redraw table if prev button clicked
@@ -191,6 +180,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // keep course data in a global array for paging and lookups
         courseData = data;
         window.courseData = data;
+        // initialize filtered data and populate filters
+        filteredData = courseData.slice();
+        populateMajorFilter();
         renderCoursesTable();
     })
     .catch(error => console.error('Error loading courses:', error));
@@ -207,6 +199,78 @@ document.addEventListener('DOMContentLoaded', function() {
             nextButton.click();
         }
     });
+
+    // populate majors filter UI and set up live search
+    function populateMajorFilter() {
+        const select = document.getElementById('majorFilter');
+        if (!select) return;
+        // collect unique majors
+        const majors = new Set();
+        courseData.forEach(c => {
+            const m = (c.major || '').trim();
+            if (!m) return;
+            majors.add(m);
+        });
+        const sorted = Array.from(majors).sort();
+        // clear existing options except the ALL option
+        select.innerHTML = '<option value="ALL">All</option>';
+        sorted.forEach(m => {
+            const opt = document.createElement('option');
+            opt.value = m;
+            opt.textContent = m;
+            select.appendChild(opt);
+        });
+
+        // update filters when major changes
+        select.addEventListener('change', function() {
+            currentPage = 0;
+            applyFilters();
+        });
+
+        // wire up the search input to filter as the user types
+        const searchInput = document.getElementById('courseSearch');
+        const clearBtn = document.getElementById('clearSearch');
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                currentPage = 0;
+                applyFilters();
+                if (clearBtn) clearBtn.style.display = this.value ? 'block' : 'none';
+            });
+            // initialize clear visibility
+            if (clearBtn) clearBtn.style.display = searchInput.value ? 'block' : 'none';
+            if (clearBtn) {
+                clearBtn.addEventListener('click', function() {
+                    searchInput.value = '';
+                    clearBtn.style.display = 'none';
+                    currentPage = 0;
+                    applyFilters();
+                    searchInput.focus();
+                });
+            }
+        }
+    }
+
+    // apply major + search filters and re-render table
+    function applyFilters() {
+        const select = document.getElementById('majorFilter');
+        const searchInput = document.getElementById('courseSearch');
+        const majorVal = select ? select.value : 'ALL';
+        let data = courseData.slice();
+        if (majorVal && majorVal !== 'ALL') {
+            data = data.filter(c => (c.major || '').trim() === majorVal);
+        }
+        const q = searchInput ? searchInput.value.trim().toLowerCase() : '';
+        if (q) {
+            data = data.filter(c => {
+                const idStr = String(c.unique || c.id || '').toLowerCase();
+                const title = (c.course_name || '').toLowerCase();
+                const prof = (c.instructor || '').toLowerCase();
+                return idStr.includes(q) || title.includes(q) || prof.includes(q);
+            });
+        }
+        filteredData = data;
+        renderCoursesTable();
+    }
 
     // helper to parse days string into day numbers (1=Mon .. 5=Fri)
     function parseDays(daysStr) {

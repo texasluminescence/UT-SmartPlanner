@@ -27,18 +27,41 @@
                         <button class="iconButton">?</button>
                         <button class="iconButton">×</button>
                     </div>
-                </div>
+                    <div class="filterContainer">
+                        <div class="searchWrap">
+                            <input id="courseSearch" class="searchInput"
+                                type="search"
+                                placeholder="Search by id,  title, or professor"
+                                aria-label="Search courses">
+                            <button id="clearSearch" class="searchClear"
+                                aria-label="Clear search">×</button>
+                        </div>
+                        <label for="majorFilter">Major:</label>
+                        <select id="majorFilter" class="major-filter">
+                            <option value="ALL">All</option>
+                        </select>
+                    </div>
 
-                <table class="courseTable">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>TITLE</th>
-                            <th>PROFESSOR</th>
-                            <th>FLAGS</th>
-                            <th>ADD</th>
-                            <th>RMP</th>
-                        </tr>
+                    <table class="courseTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>TITLE</th>
+                                <th>PROFESSOR</th>
+                                <th>FLAGS</th>
+                                <th>ADD</th>
+                                <th>RMP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+
+                    <div id="noResults" class="no-results"
+                        style="display:none;">No courses match your
+                        search.</div> <thead>
+
                     </thead>
                     <tbody>
 
