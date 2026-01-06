@@ -5,13 +5,13 @@ function Schedule() {
   const [week, setWeek] = useState(1);
 
   const courses = [
-    { day: "MON", name: "COURSE NAME", instructor: "Last, First", code: "55555", color: "red" },
-    { day: "TUE", name: "COURSE NAME", instructor: "Last, First", code: "54682", color: "blue" },
-    { day: "TUE", name: "COURSE NAME", instructor: "Last, First", code: "55555", color: "red" },
-    { day: "WED", name: "COURSE NAME", instructor: "Last, First", code: "55555", color: "blue" },
-    { day: "THU", name: "COURSE NAME", instructor: "Last, First", code: "54682", color: "red" },
-    { day: "THU", name: "COURSE NAME", instructor: "Last, First", code: "55555", color: "blue" },
-    { day: "FRI", name: "COURSE NAME", instructor: "Last, First", code: "55555", color: "red" },
+    // { day: "MON", name: "COURSE NAME", instructor: "Last, First", code: "55555", color: "red" },
+    // { day: "TUE", name: "COURSE NAME", instructor: "Last, First", code: "54682", color: "blue" },
+    // { day: "TUE", name: "COURSE NAME", instructor: "Last, First", code: "55555", color: "red" },
+    // { day: "WED", name: "COURSE NAME", instructor: "Last, First", code: "55555", color: "blue" },
+    // { day: "THU", name: "COURSE NAME", instructor: "Last, First", code: "54682", color: "red" },
+    // { day: "THU", name: "COURSE NAME", instructor: "Last, First", code: "55555", color: "blue" },
+    // { day: "FRI", name: "COURSE NAME", instructor: "Last, First", code: "55555", color: "red" },
   ];
 
   const days = ["MON", "TUE", "WED", "THU", "FRI"];

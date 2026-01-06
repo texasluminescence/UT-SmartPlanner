@@ -184,3 +184,20 @@
     border: none;
     cursor: pointer;
 }
+
+.add-btn {
+    padding: 6px 8px;
+    background: #2B7AE4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.add-btn:active { transform: translateY(1px); }
+
+.add-btn.added {
+    background: #CCCCCC;
+    color: #666666;
+    cursor: default;
+}
+.add-btn.added:active { transform: none; }

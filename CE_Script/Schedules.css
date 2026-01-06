@@ -87,6 +87,12 @@
     border-radius: 5px;
     margin-bottom: 10px;
   }
+
+   .course-title {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  
   
   .course-card {
     border-radius: 10px;
@@ -97,13 +103,9 @@
     margin-bottom: 10px;
   }
   
-  .course-title {
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
+ 
   .instructor, .course-code {
-    font-size: 12px;
+    font-size: 1rem;
   }
   
 

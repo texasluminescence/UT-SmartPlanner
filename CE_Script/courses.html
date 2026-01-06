@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UT Smart Planner - Courses</title>
-    <link rel="stylesheet" href="courses.css" />
-</head>
-<body>
-    <div class="coursesLayout">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UT Smart Planner - Courses</title>
+        <link rel="stylesheet" href="courses.css" />
+    </head>
+    <body>
+        <div class="coursesLayout">
 
-    
-        <div class="sidebar">
-            <div class="sidebar-item">IDAI+</div>
-            <div class="sidebar-item">SCHEDULES</div>
-            <div class="sidebar-item selected">COURSES</div>
-            <div class="sidebar-gap"></div> 
-            <div class="sidebar-item">COURSE SCHEDULE</div>
-            <div class="sidebar-item">MY UT</div>
-            <div class="sidebar-item">COURSES</div>
+            <div class="sidebar">
+                <div class="sidebar-item">IDAI+</div>
+                <div class="sidebar-item">SCHEDULES</div>
+                <div class="sidebar-item selected">COURSES</div>
+                <div class="sidebar-gap"></div>
+                <div class="sidebar-item">COURSE SCHEDULE</div>
+                <div class="sidebar-item">MY UT</div>
+                <div class="sidebar-item">COURSES</div>
+            </div>
+
+            <div class="mainContent">
+                <div class="header">
+                    <h1 class="headerTitle">COURSES</h1>
+                    <div class="headerButtons">
+                        <button class="iconButton">?</button>
+                        <button class="iconButton">×</button>
+                    </div>
+                </div>
+
+                <table class="courseTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>TITLE</th>
+                            <th>PROFESSOR</th>
+                            <th>FLAGS</th>
+                            <th>ADD</th>
+                            <th>RMP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+                <div class="statusLegend">
+                    <div class="legendItem">
+                        <div class="statusDot dotSelected"></div>
+                        <span>Selected</span>
+                    </div>
+                    <div class="legendItem">
+                        <div class="statusDot dotPotential"></div>
+                        <span>Potential</span>
+                    </div>
+                    <div class="legendItem">
+                        <div class="statusDot dotConflict"></div>
+                        <span>Time Conflict</span>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <button class="navArrow">←</button>
+                    <button class="navArrow">→</button>
+                </div>
+            </div>
         </div>
 
-
-        <div class="mainContent">
-            <div class="header">
-                <h1 class="headerTitle">COURSES</h1>
-                <div class="headerButtons">
-                    <button class="iconButton">?</button>
-                    <button class="iconButton">×</button>
-                </div>
-            </div>
-
-            <table class="courseTable">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>TITLE</th>
-                        <th>PROFESSOR</th>
-                        <th>FLAGS</th>
-                        <th>RMP</th>
-                    </tr>
-                </thead>
-                <tbody>
-                   
-                </tbody>
-            </table>
-
-            <div class="statusLegend">
-                <div class="legendItem">
-                    <div class="statusDot dotSelected"></div>
-                    <span>Selected</span>
-                </div>
-                <div class="legendItem">
-                    <div class="statusDot dotPotential"></div>
-                    <span>Potential</span>
-                </div>
-                <div class="legendItem">
-                    <div class="statusDot dotConflict"></div>
-                    <span>Time Conflict</span>
-                </div>
-            </div>
-
-            <div class="navigation">
-                <button class="navArrow">←</button>
-                <button class="navArrow">→</button>
-            </div>
-        </div>
-    </div>
-    
-    
-    <script src="courses.js"></script>
-</body>
+        <script src="courses.js"></script>
+    </body>
 </html>
