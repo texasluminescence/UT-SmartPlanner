@@ -1,7 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body { overflow-x: hidden; }
+
 .coursesLayout {
     display: flex;
     height: 100vh;
-    font-family: Arial, sans-serif;
+    width: 100vw;
 }
 
 /* Sidebar styling moved to sidebar.css for consistent cross-page styling */
