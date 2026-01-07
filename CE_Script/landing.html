@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Course Planning Extension</title>
         <link rel="stylesheet" href="landing.css">
+        <link rel="stylesheet" href="sidebar.css">
     </head>
     <body>
         <div class="container">
@@ -19,12 +20,6 @@
             </div>
             <div class="main-content">
                 <div class="header">
-                    <div class="progress-container">
-                        <div class="progress-circle">
-                            <div class="progress-text">65%</div>
-                        </div>
-
-                    </div>
                     <div class="close-btn">
                         <span class="help-btn">?</span>
                         <span class="x-btn">X</span>
@@ -33,6 +28,14 @@
 
                 <div class="schedule-title">
                     <h2>CURRENT SCHEDULE</h2>
+                </div>
+
+                <div class="schedule-controls">
+                    <select id="schedule-select" aria-label="Select schedule"></select>
+                    <button id="new-schedule-btn" title="Create new schedule">+ New</button>
+                    <button id="duplicate-schedule-btn" title="Duplicate selected schedule">Duplicate</button>
+                    <button id="rename-schedule-btn" title="Rename selected schedule">Rename</button>
+                    <button id="delete-schedule-btn" title="Delete selected schedule">Delete</button>
                 </div>
 
                 <div class="schedule-container">

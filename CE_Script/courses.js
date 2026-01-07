@@ -65,6 +65,68 @@ function renderCourseRow(course) {
     `;
 }
 
+// helper to parse days string into day numbers (1=Mon .. 5=Fri)
+function parseDays(daysStr) {
+    if (!daysStr) return [];
+    let s = daysStr.toUpperCase().replace(/\s+/g, '');
+    const days = [];
+    // handle TTH (Tue/Thu) explicitly
+    if (s.includes('TTH')) {
+        days.push(2, 4);
+        s = s.replace(/TTH/g, '');
+    }
+    // handle TH token for Thursday
+    if (s.includes('TH')) {
+        days.push(4);
+        s = s.replace(/TH/g, '');
+    }
+    // now remaining single-letter tokens
+    if (s.includes('M')) days.push(1);
+    if (s.includes('T')) days.push(2);
+    if (s.includes('W')) days.push(3);
+    if (s.includes('R')) days.push(4);
+    if (s.includes('F')) days.push(5);
+    return Array.from(new Set(days)).sort((a,b)=>a-b);
+}
+
+// map start time to a row index in the schedule grid
+function hourToRow(hourStr) {
+    if (!hourStr) return null;
+    const parts = hourStr.split('-');
+    if (!parts || parts.length === 0) return null;
+    const start = parts[0].trim().toLowerCase();
+    const m = start.match(/(\d{1,2}):(\d{2})/);
+    if (!m) return null;
+    const hour = parseInt(m[1], 10);
+    const min = parseInt(m[2], 10);
+    // convert to minutes since midnight (assume a.m./p.m. in string)
+    const isPM = /p\.m\.|pm/.test(start);
+    let totalHour = hour % 12;
+    if (isPM) totalHour += 12;
+    const minutes = totalHour * 60 + min;
+
+    // time buckets based on dataset common start times
+    // 8:00 -> row 1, 9:30 -> row 2, 11:00 -> row 3, 12:30 -> row 4, 2:00 -> row 5, 3:30 -> row 6
+    if (minutes <= (8*60 + 30)) return 1;
+    if (minutes <= (9*60 + 59)) return 2;
+    if (minutes <= (11*60 + 59)) return 3;
+    if (minutes <= (13*60 + 30)) return 4;
+    if (minutes <= (15*60 + 0)) return 5;
+    return 6;
+}
+
+// find first free slot (day 1..5, row 1..6)
+function findFirstFreeSlot(schedule) {
+    for (let r = 1; r <= 6; r++) {
+        for (let d = 1; d <= 5; d++) {
+            if (!schedule.find(s => s.day === d && s.row === r)) {
+                return { day: d, row: r };
+            }
+        }
+    }
+    return null;
+}
+
 function renderCoursesTable() {
     // ensure currentPage is within valid range for filtered data
     const totalPages = Math.ceil(filteredData.length / coursesPerPage) || 1;
@@ -78,8 +140,25 @@ function renderCoursesTable() {
     // clears rows
     courseTableBody.innerHTML = '';
 
-    // add new rows
+    // determine per-course status (selected, conflict)
+    const { schedule } = getSelectedScheduleItems();
     currentCourses.forEach(course => {
+        // default status
+        course.status = course.status || '';
+        // if course is already in the selected schedule -> selected
+        const inSchedule = schedule.items.some(s => idMatch(s.id, String(course.unique) || String(course.id)));
+        if (inSchedule) {
+            course.status = 'selected';
+        } else {
+            // attempt to detect time overlap
+            const days = parseDays(course.days || '');
+            const row = hourToRow(course.hour || '');
+            let conflict = false;
+            if (days.length > 0 && row) {
+                conflict = schedule.items.some(s => days.includes(Number(s.day)) && Number(s.row) === Number(row));
+            }
+            course.status = conflict ? 'conflict' : '';
+        }
         courseTableBody.innerHTML += renderCourseRow(course);
     });
 
@@ -95,7 +174,12 @@ function renderCoursesTable() {
     updateAddButtonsFromSchedule();
 }
 
-// revert buttons for a course to Add
+// helper to compare IDs robustly (strings/numbers)
+function idMatch(a, b) {
+    return String(a) === String(b);
+}
+
+// revert buttons for a course to Add and reset row class
 function markCourseAsRemoved(uniqueId) {
     const btns = document.querySelectorAll('.add-btn');
     btns.forEach(b => {
@@ -105,15 +189,85 @@ function markCourseAsRemoved(uniqueId) {
             b.disabled = false;
         }
     });
+
+    // update table row appearance
+    const rows = document.querySelectorAll('.courseTable tr[data-id]');
+    rows.forEach(r => {
+        const id = r.getAttribute('data-id');
+        if (idMatch(id, String(uniqueId))) {
+            r.classList.remove('courseRowSelected', 'courseRowConflict', 'courseRowPotential');
+            r.classList.add('courseRow');
+        }
+    });
+}
+
+// set buttons for a course to Added and mark row as selected (green)
+function markCourseAsAdded(uniqueId) {
+    const btns = document.querySelectorAll('.add-btn');
+    btns.forEach(b => {
+        if (idMatch(b.dataset.id, String(uniqueId))) {
+            b.textContent = 'Added';
+            b.classList.add('added');
+            b.disabled = true;
+        }
+    });
+
+    // mark the table row as selected
+    const rows = document.querySelectorAll('.courseTable tr[data-id]');
+    rows.forEach(r => {
+        const id = r.getAttribute('data-id');
+        if (idMatch(id, String(uniqueId))) {
+            r.classList.remove('courseRowConflict', 'courseRowPotential', 'courseRow');
+            r.classList.add('courseRowSelected');
+        }
+    });
 }
 
 // update all add buttons based on current schedule
+function getUserSchedulesStore() {
+    const DEFAULT = { schedules: [ { id: 'default', name: 'Schedule 1', items: [] } ], selectedId: 'default' };
+    try {
+        const raw = localStorage.getItem('userSchedules');
+        if (raw) {
+            const parsed = JSON.parse(raw);
+            // validate shape
+            if (parsed && Array.isArray(parsed.schedules)) return parsed;
+            // if parsed contains schedules but not as array, attempt to coerce
+            if (parsed && parsed.schedules && typeof parsed.schedules === 'object') {
+                const coerced = { schedules: Array.isArray(parsed.schedules) ? parsed.schedules : Object.values(parsed.schedules), selectedId: parsed.selectedId || (Array.isArray(parsed.schedules) && parsed.schedules[0] && parsed.schedules[0].id) };
+                return coerced;
+            }
+            // otherwise fall through to migrate legacy if possible
+        }
+        const legacy = JSON.parse(localStorage.getItem('userSchedule') || 'null');
+        if (legacy && Array.isArray(legacy)) {
+            const migrated = { schedules: [ { id: 'default', name: 'Schedule 1', items: legacy } ], selectedId: 'default' };
+            localStorage.setItem('userSchedules', JSON.stringify(migrated));
+            localStorage.removeItem('userSchedule');
+            return migrated;
+        }
+    } catch (e) {
+        console.warn('Failed to parse schedules from localStorage, resetting to default', e);
+        // clear malformed key to recover gracefully
+        try { localStorage.removeItem('userSchedules'); } catch (err) {}
+        return DEFAULT;
+    }
+    return DEFAULT;
+}
+
+function getSelectedScheduleItems() {
+    const store = getUserSchedulesStore() || { schedules: [] };
+    const schedulesArr = Array.isArray(store.schedules) && store.schedules.length ? store.schedules : [ { id: 'default', name: 'Schedule 1', items: [] } ];
+    const schedule = schedulesArr.find(s => s.id === store.selectedId) || schedulesArr[0];
+    return { store: { schedules: schedulesArr, selectedId: store.selectedId || schedulesArr[0].id }, schedule };
+}
+
 function updateAddButtonsFromSchedule() {
-    const schedule = JSON.parse(localStorage.getItem('userSchedule') || '[]');
+    const { schedule } = getSelectedScheduleItems();
     const allBtns = document.querySelectorAll('.add-btn');
     allBtns.forEach(b => {
         const id = String(b.dataset.id);
-        const exists = schedule.some(s => idMatch(id, String(s.id)));
+        const exists = schedule.items.some(s => idMatch(id, String(s.id)));
         if (exists) {
             b.textContent = 'Added';
             b.classList.add('added');
@@ -172,6 +326,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const text = this.textContent.trim().toUpperCase();
             const dest = navMap[text];
             if (dest) window.location.href = dest;
+        });
+    });
+
+    // generic sidebar clicks to navigate to schedule or courses for consistency across pages
+    document.querySelectorAll('.sidebar-item').forEach(it => {
+        it.addEventListener('click', function() {
+            const text = this.textContent.trim().toUpperCase();
+            if (text === 'SCHEDULES' || text === 'COURSE SCHEDULE') {
+                window.location.href = 'landing.html';
+            } else if (text === 'COURSES') {
+                window.location.href = 'courses.html';
+            }
         });
     });
     fetch('courses.json')
@@ -272,67 +438,8 @@ document.addEventListener('DOMContentLoaded', function() {
         renderCoursesTable();
     }
 
-    // helper to parse days string into day numbers (1=Mon .. 5=Fri)
-    function parseDays(daysStr) {
-        if (!daysStr) return [];
-        let s = daysStr.toUpperCase().replace(/\s+/g, '');
-        const days = [];
-        // handle TTH (Tue/Thu) explicitly
-        if (s.includes('TTH')) {
-            days.push(2, 4);
-            s = s.replace(/TTH/g, '');
-        }
-        // handle TH token for Thursday
-        if (s.includes('TH')) {
-            days.push(4);
-            s = s.replace(/TH/g, '');
-        }
-        // now remaining single-letter tokens
-        if (s.includes('M')) days.push(1);
-        if (s.includes('T')) days.push(2);
-        if (s.includes('W')) days.push(3);
-        if (s.includes('R')) days.push(4);
-        if (s.includes('F')) days.push(5);
-        return Array.from(new Set(days)).sort((a,b)=>a-b);
-    }
-
-    // map start time to a row index in the schedule grid
-    function hourToRow(hourStr) {
-        if (!hourStr) return null;
-        const parts = hourStr.split('-');
-        if (!parts || parts.length === 0) return null;
-        const start = parts[0].trim().toLowerCase();
-        const m = start.match(/(\d{1,2}):(\d{2})/);
-        if (!m) return null;
-        const hour = parseInt(m[1], 10);
-        const min = parseInt(m[2], 10);
-        // convert to minutes since midnight (assume a.m./p.m. in string)
-        const isPM = /p\.m\.|pm/.test(start);
-        let totalHour = hour % 12;
-        if (isPM) totalHour += 12;
-        const minutes = totalHour * 60 + min;
-
-        // time buckets based on dataset common start times
-        // 8:00 -> row 1, 9:30 -> row 2, 11:00 -> row 3, 12:30 -> row 4, 2:00 -> row 5, 3:30 -> row 6
-        if (minutes <= (8*60 + 30)) return 1;
-        if (minutes <= (9*60 + 59)) return 2;
-        if (minutes <= (11*60 + 59)) return 3;
-        if (minutes <= (13*60 + 30)) return 4;
-        if (minutes <= (15*60 + 0)) return 5;
-        return 6;
-    }
-
-    // find first free slot (day 1..5, row 1..6)
-    function findFirstFreeSlot(schedule) {
-        for (let r = 1; r <= 6; r++) {
-            for (let d = 1; d <= 5; d++) {
-                if (!schedule.find(s => s.day === d && s.row === r)) {
-                    return { day: d, row: r };
-                }
-            }
-        }
-        return null;
-    }
+    // (helpers moved to module scope to support renderCoursesTable)
+    
 
     // pick a random color class for course cards, avoiding colors in excludeColors when possible
     function getRandomColor(excludeColors = []) {
@@ -341,8 +448,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const available = colors.filter(c => !excludeSet.has(c));
         if (available.length > 0) return available[Math.floor(Math.random() * available.length)];
         // if all colors are excluded, try to avoid the most recent color in schedule
-        const schedule = JSON.parse(localStorage.getItem('userSchedule') || '[]');
-        const lastColor = (schedule.length && schedule[schedule.length - 1].color) || null;
+        const { schedule } = getSelectedScheduleItems();
+        const lastColor = (schedule.items.length && schedule.items[schedule.items.length - 1].color) || null;
         const alt = colors.filter(c => c !== lastColor);
         return alt[Math.floor(Math.random() * alt.length)];
     }
@@ -354,7 +461,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const course = (window.courseData || []).find(c => String(c.unique) === String(courseId) || String(c.id) === String(courseId));
         if (!course) return alert('Could not find course data.');
 
-        const schedule = JSON.parse(localStorage.getItem('userSchedule') || '[]');
+        const { store, schedule } = getSelectedScheduleItems();
 
         const days = parseDays(course.days || '');
         const row = hourToRow(course.hour || '');
@@ -366,15 +473,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const planned = [];
             days.forEach(day => {
                 // skip if same course already added to this slot
-                if (schedule.find(s => String(s.id) === String(course.unique) && s.day === day && s.row === row)) return;
+                if (schedule.items.find(s => String(s.id) === String(course.unique) && s.day === day && s.row === row)) return;
 
-                const conflict = schedule.find(s => s.day === day && s.row === row);
+                const conflict = schedule.items.find(s => s.day === day && s.row === row);
                 if (conflict) {
                     const replace = confirm(`Time slot on ${['Mon','Tue','Wed','Thu','Fri'][day-1]} at ${course.hour} is occupied by ${conflict.course_name}. Replace?`);
                     if (!replace) return; // skip this day
                     // remove conflict entry
-                    const idx = schedule.findIndex(s => s.day === day && s.row === row);
-                    if (idx !== -1) schedule.splice(idx, 1);
+                    const idx = schedule.items.findIndex(s => s.day === day && s.row === row);
+                    if (idx !== -1) schedule.items.splice(idx, 1);
                 }
 
                 planned.push({ day, row });
@@ -382,10 +489,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (planned.length > 0) {
                 // choose a color not currently used in schedule
-                const usedColors = schedule.map(s => s.color).filter(Boolean);
+                const usedColors = schedule.items.map(s => s.color).filter(Boolean);
                 const color = getRandomColor(usedColors);
                 planned.forEach(slot => {
-                    schedule.push({
+                    schedule.items.push({
                         id: course.unique,
                         unique: course.unique,
                         course_name: course.course_name,
@@ -399,11 +506,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         } else {
             // fallback: find first free slot
-            const free = findFirstFreeSlot(schedule);
+            const free = findFirstFreeSlot(schedule.items);
             if (!free) return alert('No free slots available to place this course.');
-            const usedColors = schedule.map(s => s.color).filter(Boolean);
+            const usedColors = schedule.items.map(s => s.color).filter(Boolean);
             const color = getRandomColor(usedColors);
-            schedule.push({
+            schedule.items.push({
                 id: course.unique,
                 unique: course.unique,
                 course_name: course.course_name,
@@ -415,9 +522,11 @@ document.addEventListener('DOMContentLoaded', function() {
             addedSlots.push({day: free.day, row: free.row});
         }
 
-        localStorage.setItem('userSchedule', JSON.stringify(schedule));
-        // signal other pages that schedule was updated
-        try { localStorage.setItem('userScheduleUpdated', String(Date.now())); } catch (e) {}
+        // persist back to storage under userSchedules
+        try {
+            localStorage.setItem('userSchedules', JSON.stringify(store));
+            localStorage.setItem('userSchedulesUpdated', String(Date.now()));
+        } catch (e) { console.error('Failed to save schedule', e); }
         // update Add buttons on this page
         if (addedSlots.length > 0) {
             markCourseAsAdded(course.unique);
@@ -428,10 +537,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // listen for storage changes in other tabs and update Add buttons
+    // listen for storage changes in other tabs and update UI (support userSchedules)
     window.addEventListener('storage', function(e) {
-        if (e.key === 'userSchedule' || e.key === 'userScheduleUpdated') {
+        if (e.key === 'userSchedules' || e.key === 'userSchedulesUpdated' || e.key === 'userSchedule' || e.key === 'userScheduleUpdated') {
             updateAddButtonsFromSchedule();
+            // re-render table so conflicts (row color) update to reflect selected schedule
+            renderCoursesTable();
         }
     });
 });

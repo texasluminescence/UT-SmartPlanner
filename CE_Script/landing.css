@@ -58,11 +58,7 @@ body {
 }
 
 .progress-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    display: none !important;
 }
 
 .progress-circle {
@@ -130,12 +126,34 @@ body {
     padding-left: 10px;
 }
 
-.schedule-title h2 {
+/* schedule control bar for multiple schedules */
+.schedule-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 12px;
+}
+
+.schedule-controls select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: white;
+    min-width: 180px;
+}
+
+.schedule-controls button {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #BF5700;
+    background: white;
     color: #BF5700;
-    font-size: 28px;
+    cursor: pointer;
     font-weight: bold;
 }
 
+.schedule-controls button:hover { background: #FFF6EE; }
 .close-btn {
     position: absolute;
     top: 20px;
@@ -183,7 +201,8 @@ body {
     background: #fafafa;
     border-right: 1px solid #eee;
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
+    /* make rows smaller but flexible so schedule fits vertically */
+    grid-template-rows: repeat(6, minmax(48px, 1fr));
     align-items: stretch;
 }
 
@@ -222,9 +241,10 @@ body {
 .courses-grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    grid-template-rows: repeat(6, 1fr); /* align with times column */
+    /* smaller flexible row heights so full schedule fits on screen */
+    grid-template-rows: repeat(6, minmax(48px, 1fr)); /* align with times column */
     gap: clamp(6px, 0.6vw, 12px);
-    padding: clamp(6px, 0.6vw, 12px);
+    padding: clamp(4px, 0.4vw, 8px);
     background-color: white;
     width: 100%;
     box-sizing: border-box;
@@ -241,17 +261,18 @@ body {
 .time-slot:last-child { border-bottom: none; }
 
 .course-card {
-    padding: clamp(6px, 0.6vw, 10px);
-    border-radius: 10px;
+    padding: clamp(4px, 0.4vw, 8px);
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     color: white;
     text-align: center;
     align-items: center;
     justify-content: center;
-    min-height: 80px;
+    min-height: 48px; /* smaller to fit more rows on screen */
     /* ensure content wraps and scales */
     word-wrap: break-word;
+    font-size: 0.95em;
     /* subtle top border to help indicate time rows even when slots are filled */
     border-top: 1px solid rgba(0,0,0,0.06);
 }
@@ -309,6 +330,14 @@ body {
 @media (min-width: 1400px) {
     .courses-grid { grid-template-rows: repeat(6, 1fr); }
 }
+
+/* tighter rows for short/tall-constrained screens */
+@media (max-height: 900px) {
+    .times { grid-template-rows: repeat(6, minmax(40px, 1fr)); }
+    .courses-grid { grid-template-rows: repeat(6, minmax(40px, 1fr)); }
+    .course-card { min-height: 40px; padding: 6px; }
+}
+
 
 /* layout tweak for smaller desktops/laptops */
 @media (max-width: 1024px) {

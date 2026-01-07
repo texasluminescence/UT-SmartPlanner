@@ -10,62 +10,64 @@
     </head>
 
     <body>
-        <div class="parent_popup">
-            <h2>UT Course Planner</h2>
-
-            <div class='container'>
-                <svg width='200' height='150' class='chart-container'>
-                    <circle cx='100' cy='60' r='50' class='back' fill='none'
-                        class='back' />
-                    <circle cx='115' cy='75' r='50' class='front'
-                        fill='none' />
-                    <g class='text'>
-                        <text x='100' y='60' alignment-baseline="central"
-                            text-anchor="middle" id='percentage'>65%</text>
-                        <!-- make this so that it is different percentage based on completion -->
-                    </g>
-                </svg>
+        <div class="popup-layout">
+            <div class="sidebar compact">
+                <div class="sidebar-item">IDAI+</div>
+                <div class="sidebar-item">SCHEDULES</div>
+                <div class="sidebar-item selected">COURSES</div>
+                <div class="sidebar-gap"></div>
+                <a class="sidebar-item" href="landing.html" target="_blank">COURSE SCHEDULE</a>
+                <div class="sidebar-item">MY UT</div>
+                <div class="sidebar-item">COURSES</div>
             </div>
 
-            <div class="schedule">
-                <div class="block">
-                    <div class="unique_id">
-                        50350
+            <div class="popup-main">
+                <div class="parent_popup">
+                    <h2>UT Course Planner</h2>
+
+                    <div class='container'>
+                        <!-- progress visualization removed -->
                     </div>
-                    <div class="class_name">
-                        INTRO TO PROGR...
+
+                    <div class="schedule">
+                        <div class="block">
+                            <div class="unique_id">
+                                50350
+                            </div>
+                            <div class="class_name">
+                                INTRO TO PROGR...
+                            </div>
+                            <div class="prof_name">
+                                RAMSEY
+                            </div>
+                        </div>
+                        <div class="block" style="background-color: rgb(126, 52, 195);">
+                            <div class="unique_id">
+                                50275
+                            </div>
+                            <div class="class_name">
+                                INTRO TO WRITING...
+                            </div>
+                            <div class="prof_name">
+                                KB
+                            </div>
+                        </div>
+                        <div class="block" style="background-color: rgb(24, 163, 89);">
+                            <div class="unique_id">
+                                50410
+                            </div>
+                            <div class="class_name">
+                                DATA STRUCTURES
+                            </div>
+                            <div class="prof_name">
+                                SCOTT
+                            </div>
+                        </div>
                     </div>
-                    <div class="prof_name">
-                        RAMSEY
-                    </div>
-                </div>
-                <div class="block" style="background-color: rgb(126, 52, 195);">
-                    <div class="unique_id">
-                        50275
-                    </div>
-                    <div class="class_name">
-                        INTRO TO WRITING...
-                    </div>
-                    <div class="prof_name">
-                        KB
-                    </div>
-                </div>
-                <div class="block" style="background-color: rgb(24, 163, 89);">
-                    <div class="unique_id">
-                        50410
-                    </div>
-                    <div class="class_name">
-                        DATA STRUCTURES
-                    </div>
-                    <div class="prof_name">
-                        SCOTT
-                    </div>
+
+                    <div style="text-align:center; margin-top:12px;"><a id="landing_page_button" class="button-link" href="landing.html" target="_blank">MY PLANNER</a></div>
                 </div>
             </div>
-
-            <button id="landing_page_button"> <a href="landing.html"
-                    target="_blank">
-                    MY PLANNER</a></button>
         </div>
     </body>
 </html>

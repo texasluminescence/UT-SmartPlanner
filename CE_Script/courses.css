@@ -3,27 +3,9 @@
     height: 100vh;
     font-family: Arial, sans-serif;
 }
-.sidebar {
-    width: 270px;
-    background-color: #BF5700;
-    color: white;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-}
 
-.sidebar-item {
-    padding: 15px 30px;
-    font-weight: bold;
-    cursor: pointer;
-}
+/* Sidebar styling moved to sidebar.css for consistent cross-page styling */
 
-.sidebar-item.selected {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-.sidebar-gap {
-    height: 90px; 
-}
 
 
 .userProfile {
@@ -75,7 +57,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
     margin-bottom: 24px;
 }
 

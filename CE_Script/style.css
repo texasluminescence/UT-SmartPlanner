@@ -86,14 +86,42 @@ a {
     /* background-color: antiquewhite; */
   }
 
-  #landing_page_button {
-    border-color: #bf5700;
-    border-style: solid;
-    height: 10vh;
-    width: 25vh;
+/* Sidebar (shared, compact variant for popup) */
+.sidebar.compact {
+  width: 160px;
+  background-color: #BF5700;
+  color: white;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sidebar.compact .sidebar-item {
+  padding: 10px 14px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.sidebar.compact .sidebar-item.selected {
+  background-color: rgba(255,255,255,0.12);
+}
+
+.popup-layout { display: flex; min-width: 420px; }
+.popup-main { flex: 1; padding: 12px; }
+
+.sidebar-gap { height: 36px; }
+
+.sidebar.compact .sidebar-item:hover { background: rgba(255,255,255,0.08); }
+
+
+  .button-link {
+    display: inline-block;
+    border: 3px solid #bf5700;
+    padding: 8px 18px;
+    border-radius: 6px;
+    color: #bf5700;
     font-weight: bold;
-    border-width: 5px;
-    border-radius: 5px;
-    color:#bf5700;
-    background-color: transparent;
+    text-decoration: none;
   }

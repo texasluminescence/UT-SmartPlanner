@@ -1,0 +1,38 @@
+.sidebar {
+    width: 270px;
+    background-color: #BF5700;
+    color: white;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .sidebar-item {
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sidebar .sidebar-item.selected {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-gap {
+    height: 90px;
+}
+
+/* small compact variant used by popup */
+.sidebar.compact {
+    width: 160px;
+    padding-top: 18px;
+}
+
+.sidebar.compact .sidebar-item {
+    padding: 10px 14px;
+    font-size: 12px;
+}
+
+.sidebar .sidebar-item:hover, .sidebar.compact .sidebar-item:hover {
+    background: rgba(255,255,255,0.08);
+    cursor: pointer;
+}
