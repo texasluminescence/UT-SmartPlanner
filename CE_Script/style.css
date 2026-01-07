@@ -83,7 +83,12 @@ a {
   .parent_popup {
     text-align: center;
     color:#bf5700;
-    /* background-color: antiquewhite; */
+    /* Make popup container width match course boxes */
+    width: 350px;
+    margin: 10px auto;
+    padding: 8px;
+    box-sizing: border-box;
+    background: transparent;
   }
 
 /* Sidebar (shared, compact variant for popup) */
@@ -108,7 +113,8 @@ a {
   background-color: rgba(255,255,255,0.12);
 }
 
-.popup-layout { display: flex; min-width: 420px; }
+/* popup layout default reduced */
+.popup-layout { display: flex; min-width: 320px; }
 .popup-main { flex: 1; padding: 12px; }
 
 .sidebar-gap { height: 36px; }
@@ -119,9 +125,18 @@ a {
   .button-link {
     display: inline-block;
     border: 3px solid #bf5700;
-    padding: 8px 18px;
+    padding: 6px 14px;
     border-radius: 6px;
     color: #bf5700;
     font-weight: bold;
     text-decoration: none;
+    font-size: 13px;
   }
+
+  /* selected schedule list in popup */
+  .selected-schedule-list { display:flex; flex-direction:column; gap:8px; margin-top:12px; align-items:center; }
+  .course-item { display:flex; gap:8px; align-items:center; background:#f7f7f7; padding:6px; border-radius:6px; width:100%; max-width:320px; justify-content:space-between; box-sizing: border-box; }
+  .course-item .unique_id { font-weight:bold; color:#bf5700; width:56px; text-align:left; font-size:0.95em; }
+  .course-item .course-name { font-weight:bold; font-size:0.95em; }
+  .course-item .instructor { font-size:0.85em; color:#555; }
+  .no-courses { color:#666; font-size:13px; }

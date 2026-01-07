@@ -10,70 +10,19 @@
     </head>
 
     <body>
-        <div class="popup-layout">
-            <div class="sidebar compact">
-                <div class="sidebar-item">IDAI+</div>
-                <div class="sidebar-item">SCHEDULES</div>
-                <div class="sidebar-item selected">COURSES</div>
-                <div class="sidebar-gap"></div>
-                <a class="sidebar-item" href="landing.html"
-                    target="_blank">COURSE SCHEDULE</a>
-                <div class="sidebar-item">MY UT</div>
-                <div class="sidebar-item">COURSES</div>
+        <div class="parent_popup">
+            <h2>My Planner</h2>
+            <div id="popup-script-status" style="font-size:12px;color:#333;margin-top:6px">Script: not loaded</div>
+
+            <div id="selected-schedule-list" class="selected-schedule-list"></div>
+            <div id="no-courses" class="no-courses" style="display:none; margin-top:12px;">No courses selected.</div>
+
+            <div style="text-align:center; margin-top:16px;">
+                <a id="landing_page_button" class="button-link" href="landing.html" target="_blank">MY PLANNER</a>
+                <button id="popup-refresh" class="button-link" style="margin-left:8px;">Refresh</button>
+                <button id="popup-debug-toggle" class="button-link" style="margin-left:8px;">Toggle Debug</button>
+                <div id="popup-meta" style="font-size:12px;color:#666;margin-top:8px;"></div>
             </div>
-
-            <div class="popup-main">
-                <div class="parent_popup">
-                    <h2>UT Course Planner</h2>
-
-                    <div class='container'>
-                        <!-- progress visualization removed -->
-                    </div>
-
-                    <div class="schedule">
-                        <div class="block">
-                            <div class="unique_id">
-                                50350
-                            </div>
-                            <div class="class_name">
-                                INTRO TO PROGR...
-                            </div>
-                            <div class="prof_name">
-                                RAMSEY
-                            </div>
-                        </div>
-                        <div class="block"
-                            style="background-color: rgb(126, 52, 195);">
-                            <div class="unique_id">
-                                50275
-                            </div>
-                            <div class="class_name">
-                                INTRO TO WRITING...
-                            </div>
-                            <div class="prof_name">
-                                KB
-                            </div>
-                        </div>
-                        <div class="block"
-                            style="background-color: rgb(24, 163, 89);">
-                            <div class="unique_id">
-                                50410
-                            </div>
-                            <div class="class_name">
-                                DATA STRUCTURES
-                            </div>
-                            <div class="prof_name">
-                                SCOTT
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="text-align:center; margin-top:12px;"><a
-                            id="landing_page_button" class="button-link"
-                            href="landing.html" target="_blank">MY
-                            PLANNER</a></div>
-                </div>
-            </div>
-        </div>
+        <script src="popup.js"></script>
     </body>
 </html>
