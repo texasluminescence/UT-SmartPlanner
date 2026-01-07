@@ -99,7 +99,7 @@ a {
     text-align: center;
     color:var(--brand);
     /* Wider popup and centered */
-    width: 92vw;
+    width: 350px;
     max-width: 520px;
     margin: 10px auto;
     padding: 12px;
