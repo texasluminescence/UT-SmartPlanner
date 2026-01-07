@@ -80,13 +80,29 @@ a {
     text-align: right;
 }
 
+  /* Theme variables */
+  :root{
+    --brand: #bf5700;
+    --brand-strong: #9c4100;
+    --bg: #ffffff;
+    --muted: #666;
+    --card-bg: #f7f7f7;
+    --radius: 8px;
+    --shadow: 0 6px 18px rgba(16,24,40,0.06);
+  }
+
+  /* Base typography & layout */
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#222; background: #fafafa; }
+  h2 { margin:0 0 8px 0; font-size:18px; color:var(--brand); }
+
   .parent_popup {
     text-align: center;
-    color:#bf5700;
-    /* Make popup container width match course boxes */
-    width: 350px;
+    color:var(--brand);
+    /* Wider popup and centered */
+    width: 92vw;
+    max-width: 520px;
     margin: 10px auto;
-    padding: 8px;
+    padding: 12px;
     box-sizing: border-box;
     background: transparent;
   }
@@ -94,7 +110,7 @@ a {
 /* Sidebar (shared, compact variant for popup) */
 .sidebar.compact {
   width: 160px;
-  background-color: #BF5700;
+  background-color: var(--brand);
   color: white;
   padding-top: 18px;
   display: flex;
@@ -114,7 +130,7 @@ a {
 }
 
 /* popup layout default reduced */
-.popup-layout { display: flex; min-width: 320px; }
+.popup-layout { display: flex; min-width: 360px; }
 .popup-main { flex: 1; padding: 12px; }
 
 .sidebar-gap { height: 36px; }
@@ -122,21 +138,34 @@ a {
 .sidebar.compact .sidebar-item:hover { background: rgba(255,255,255,0.08); }
 
 
-  .button-link {
+  .button-link, .btn {
     display: inline-block;
-    border: 3px solid #bf5700;
-    padding: 6px 14px;
-    border-radius: 6px;
-    color: #bf5700;
-    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-weight: 600;
     text-decoration: none;
+    transition: all .18s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background: transparent;
+    color: var(--brand);
     font-size: 13px;
   }
+  .btn-primary { background: linear-gradient(180deg,var(--brand),var(--brand-strong)); color: #fff; border-color: transparent; box-shadow: 0 6px 14px rgba(191,87,0,0.12); }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary:hover { filter:brightness(.97); }
 
   /* selected schedule list in popup */
   .selected-schedule-list { display:flex; flex-direction:column; gap:8px; margin-top:12px; align-items:center; }
-  .course-item { display:flex; gap:8px; align-items:center; background:#f7f7f7; padding:6px; border-radius:6px; width:100%; max-width:320px; justify-content:space-between; box-sizing: border-box; }
-  .course-item .unique_id { font-weight:bold; color:#bf5700; width:56px; text-align:left; font-size:0.95em; }
-  .course-item .course-name { font-weight:bold; font-size:0.95em; }
-  .course-item .instructor { font-size:0.85em; color:#555; }
-  .no-courses { color:#666; font-size:13px; }
+  .course-item { display:flex; gap:12px; align-items:center; background:var(--card-bg); padding:8px 10px; border-radius:var(--radius); width:100%; max-width:480px; justify-content:space-between; box-sizing: border-box; box-shadow: var(--shadow); transition: transform .15s ease, box-shadow .15s ease; }
+  .course-item:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(16,24,40,0.08); }
+  .course-item .unique_id { font-weight:700; color:var(--brand); width:64px; text-align:left; font-size:0.95em; }
+  .course-item .course-name { font-weight:700; font-size:0.96em; color:#222 }
+  .course-item .instructor { font-size:0.85em; color:var(--muted); }
+  .no-courses { color:var(--muted); font-size:13px; }
+
+  /* responsive tweaks */
+  @media (max-width:420px){
+    .parent_popup { max-width: 360px; }
+    .course-item { max-width: 320px; }
+  }

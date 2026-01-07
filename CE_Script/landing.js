@@ -229,18 +229,20 @@ document.addEventListener('DOMContentLoaded', function() {
             e.stopPropagation();
             const card = btn.closest('.course-card');
             if (!card) return;
-            if (!confirm('Remove ALL instances of this course from your schedule?')) return;
             const id = card.querySelector('.course-id')?.textContent;
             // remove from selected schedule only
             const store = getUserSchedules();
             const schedule = store.schedules.find(s => s.id === store.selectedId) || store.schedules[0];
             schedule.items = schedule.items.filter(s => String(s.id) !== String(id));
             saveUserSchedules(store);
-            // remove all course cards in the grid that match this id
+            // animate & remove all course cards in the grid that match this id
             const allCards = coursesGrid.querySelectorAll('.course-card');
             allCards.forEach(c => {
                 const cid = c.querySelector('.course-id')?.textContent;
-                if (String(cid) === String(id)) c.remove();
+                if (String(cid) === String(id)) {
+                    c.classList.add('removing');
+                    setTimeout(() => c.remove(), 260);
+                }
             });
         });
     })();

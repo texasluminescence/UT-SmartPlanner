@@ -65,15 +65,16 @@
 }
 
 .headerTitle {
-    color: #BF5700;
-    font-size: 28px;
+    color: var(--brand);
+    font-size: 26px;
     text-align: center;
     width: 100%;
+    letter-spacing: 0.2px;
 }
 
 .headerButtons {
     display: flex;
-    gap: 16px;
+    gap: 12px;
 }
 
 .filterContainer {
@@ -87,13 +88,14 @@
 .searchWrap { position: relative; display: inline-block; }
 
 .searchInput {
-    padding: 8px 10px;
-    padding-right: 34px; /* room for clear button */
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    padding: 10px 12px;
+    padding-right: 36px; /* room for clear button */
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
     font-size: 14px;
     width: 60vw;
     max-width: 45%;
+    box-shadow: 0 4px 10px rgba(16,24,40,0.04);
 }
 
 .searchClear {
@@ -140,39 +142,45 @@
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 24px;
-    max-width: 900px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(16,24,40,0.05);
 }
 
 .courseTable th {
-    background-color: #BF5700;
+    background-color: var(--brand);
     color: white;
     text-align: left;
-    padding: 16px;
-    font-size: 16px;
+    padding: 12px 16px;
+    font-size: 15px;
 }
 
 .courseTable td {
-    padding: 16px;
-    border-bottom: 1px solid #eee;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .courseRow {
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 
+.courseRow:hover { background: #fbfbfb; transform: translateY(0); }
+
 .courseRowSelected {
-    background-color: #90EE90;
+    background-color: #e8ffef;
 }
 
 .courseRowPotential {
-    background-color: #FFD700;
+    background-color: #fff7e6;
 }
 
 .courseRowConflict {
-    background-color: #EF5C5C;
+    background-color: #fff0f0;
 }
+
 
 .flag {
     display: inline-block;
@@ -232,18 +240,26 @@
 }
 
 .add-btn {
-    padding: 6px 8px;
-    background: #2B7AE4;
-    color: white;
+    padding: 6px 10px;
+    background: linear-gradient(180deg,var(--brand),#a44a00);
+    color: black;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 6px 16px rgba(191,87,0,0.12);
+    transition: transform .12s ease, box-shadow .12s ease;
 }
-.add-btn:active { transform: translateY(1px); }
+.add-btn:hover { transform: translateY(-2px); }
+.add-btn:active { transform: translateY(0); box-shadow: 0 4px 10px rgba(16,24,40,0.06); }
 
 .add-btn.added {
-    background: #CCCCCC;
+    background: #EEEEEE;
     color: #666666;
     cursor: default;
+    box-shadow: none;
 }
 .add-btn.added:active { transform: none; }
+
+/* removal animation for course grid cards */
+.course-card { transition: opacity .22s ease, transform .22s ease; }
+.course-card.removing { opacity: 0; transform: translateY(-8px) scale(.995); pointer-events: none; }
