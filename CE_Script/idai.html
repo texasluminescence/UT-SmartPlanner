@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDAI+ - Smart Schedule Generator</title>
+    <link rel="stylesheet" href="idai.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-item selected">IDAI+</div>
+            <div class="sidebar-item">COURSES</div>
+            <div class="sidebar-item">COURSE SCHEDULE</div>
+            <div class="sidebar-item">MY UT</div>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <h1>IDAI+ Smart Schedule Generator</h1>
+                <div class="close-btn">
+                    <span class="help-btn">?</span>
+                    <span class="x-btn">X</span>
+                </div>
+            </div>
+
+            <div class="chat-container">
+                <!-- Upload Section -->
+                <div class="upload-section" id="upload-section">
+                    <div class="upload-card">
+                        <h2>📄 Upload Your Degree Audit</h2>
+                        <p>Upload your IDA (Interactive Degree Audit) PDF to get started</p>
+                        <input type="file" id="pdf-upload" accept=".pdf" style="display: none;">
+                        <button class="upload-btn" onclick="document.getElementById('pdf-upload').click()">
+                            Choose PDF File
+                        </button>
+                        <div id="file-name" class="file-name"></div>
+                        <div id="upload-status" class="upload-status"></div>
+                    </div>
+
+                    <div class="upload-card">
+                        <h2>⚙️ Schedule Preferences</h2>
+                        <div class="preference-group">
+                            <label>
+                                <input type="checkbox" id="pref-morning" checked>
+                                Prefer morning classes (8:00 AM - 12:00 PM)
+                            </label>
+                            <label>
+                                <input type="checkbox" id="pref-afternoon" checked>
+                                Prefer afternoon classes (12:00 PM - 5:00 PM)
+                            </label>
+                            <label>
+                                <input type="checkbox" id="pref-evening">
+                                Open to evening classes (5:00 PM+)
+                            </label>
+                        </div>
+
+                        <div class="preference-group">
+                            <label>Professor Rating Preference:</label>
+                            <select id="pref-rmp">
+                                <option value="any">Any rating</option>
+                                <option value="3.5+">3.5+ stars</option>
+                                <option value="4.0+" selected>4.0+ stars (recommended)</option>
+                                <option value="4.5+">4.5+ stars only</option>
+                            </select>
+                        </div>
+
+                        <div class="preference-group">
+                            <label>Days per week preference:</label>
+                            <select id="pref-days">
+                                <option value="any">Any days</option>
+                                <option value="mwf" selected>MWF (Mon/Wed/Fri)</option>
+                                <option value="tth">TTH (Tue/Thu)</option>
+                                <option value="compact">Most compact schedule</option>
+                            </select>
+                        </div>
+
+                        <div class="preference-group">
+                            <label>Number of schedules to generate:</label>
+                            <input type="number" id="num-schedules" min="1" max="5" value="3">
+                        </div>
+
+                        <button class="generate-btn" id="generate-btn" disabled>
+                            🚀 Generate Schedules
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Chat Section (shown after generation) -->
+                <div class="chat-section" id="chat-section" style="display: none;">
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- Messages will be added here -->
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <input 
+                            type="text" 
+                            id="chat-input" 
+                            placeholder="Ask me to adjust your schedule, add constraints, or regenerate..."
+                            autocomplete="off"
+                        >
+                        <button class="send-btn" id="send-btn">Send</button>
+                    </div>
+
+                    <button class="back-to-upload-btn" onclick="resetToUpload()">
+                        ← Start Over
+                    </button>
+                </div>
+
+                <!-- Loading Indicator -->
+                <div class="loading" id="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Analyzing your degree audit and generating optimal schedules...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="idai.js"></script>
+</body>
+</html>

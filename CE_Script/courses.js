@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'SCHEDULES': 'landing.html',
         'COURSE SCHEDULE': 'landing.html',
         'MY UT': 'index.html',
-        'IDAI+': 'index.html'
+        'IDAI+': 'idai.html'
     };
     sidebarItems.forEach(item => {
         item.addEventListener('click', function() {
