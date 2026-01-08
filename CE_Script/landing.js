@@ -36,7 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.sidebar-item').forEach(it => {
         it.addEventListener('click', function() {
             const text = this.textContent.trim().toUpperCase();
-            if (text === 'SCHEDULES' || text === 'COURSE SCHEDULE') {
+            if (text === 'SCHEDULES') {
+                window.location.href = 'schedules.html';  // Changed!
+            } else if (text === 'COURSE SCHEDULE') {
                 window.location.href = 'landing.html';
             } else if (text === 'COURSES') {
                 window.location.href = 'courses.html';
@@ -192,6 +194,87 @@ document.addEventListener('DOMContentLoaded', function() {
                 loadSelectedSchedule();
             });
         }
+        
+        // Initialize navigation buttons
+        const prevBtn = document.getElementById('prev-schedule-btn');
+        const nextBtn = document.getElementById('next-schedule-btn');
+        const counter = document.getElementById('schedule-counter');
+
+        function updateNavButtons() {
+            const store = getUserSchedules();
+            const currentIndex = store.schedules.findIndex(s => s.id === store.selectedId);
+            
+            if (counter) {
+                counter.textContent = `${currentIndex + 1} / ${store.schedules.length}`;
+            }
+            
+            if (prevBtn) prevBtn.disabled = currentIndex <= 0;
+            if (nextBtn) nextBtn.disabled = currentIndex >= store.schedules.length - 1;
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function() {
+                const store = getUserSchedules();
+                const currentIndex = store.schedules.findIndex(s => s.id === store.selectedId);
+                
+                if (currentIndex > 0) {
+                    store.selectedId = store.schedules[currentIndex - 1].id;
+                    saveUserSchedules(store);
+                    if (sel) sel.value = store.selectedId;
+                    loadSelectedSchedule();
+                    updateNavButtons();
+                }
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function() {
+                const store = getUserSchedules();
+                const currentIndex = store.schedules.findIndex(s => s.id === store.selectedId);
+                
+                if (currentIndex < store.schedules.length - 1) {
+                    store.selectedId = store.schedules[currentIndex + 1].id;
+                    saveUserSchedules(store);
+                    if (sel) sel.value = store.selectedId;
+                    loadSelectedSchedule();
+                    updateNavButtons();
+                }
+            });
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft' && prevBtn && !prevBtn.disabled) {
+                prevBtn.click();
+            } else if (e.key === 'ArrowRight' && nextBtn && !nextBtn.disabled) {
+                nextBtn.click();
+            }
+        });
+
+        // Update nav buttons on schedule change
+        if (sel) {
+            const originalChange = sel.onchange;
+            sel.addEventListener('change', function() {
+                updateNavButtons();
+            });
+        }
+
+        // Call updateNavButtons after schedule operations
+        const originalCreateNew = createNewSchedule;
+        const originalDeleteSched = deleteSchedule;
+
+        createNewSchedule = function(name, copyFromId) {
+            originalCreateNew(name, copyFromId);
+            updateNavButtons();
+        };
+
+        deleteSchedule = function(id) {
+            originalDeleteSched(id);
+            updateNavButtons();
+        };
+
+        // Initial update
+        updateNavButtons();
 
         const newBtn = document.getElementById('new-schedule-btn');
         if (newBtn) newBtn.addEventListener('click', function() {

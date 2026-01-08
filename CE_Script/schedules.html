@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT Smart Planner - Schedules</title>
+    <link rel="stylesheet" href="Schedules.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div class="schedule-page">
+        <aside class="sidebar">
+            <div class="sidebar-item">IDAI+</div>
+            <div class="sidebar-item">COURSES</div>
+            <div class="sidebar-gap"></div>
+            <div class="sidebar-item selected">COURSE SCHEDULE</div>
+            <div class="sidebar-item">MY UT</div>
+        </aside>
+
+        <main class="schedule-main">
+            <header class="top-bar">
+                <h2>MY SCHEDULES</h2>
+                <div class="schedule-actions">
+                    <button id="new-sched-btn">+ New Schedule</button>
+                </div>
+            </header>
+
+            <section class="schedules-browser">
+                <button class="nav-btn prev-btn" id="prev-schedule">←</button>
+                
+                <div class="schedule-display">
+                    <div class="schedule-header">
+                        <h3 id="current-schedule-name">Schedule 1</h3>
+                        <span id="schedule-counter">1 / 1</span>
+                    </div>
+                    
+                    <div class="schedule-actions-row">
+                        <button id="duplicate-btn">Duplicate</button>
+                        <button id="rename-btn">Rename</button>
+                        <button id="delete-btn">Delete</button>
+                        <button id="view-full-btn">View Full Schedule</button>
+                    </div>
+
+                    <div class="schedule-preview">
+                        <div class="days-header">
+                            <div class="day-label">MON</div>
+                            <div class="day-label">TUE</div>
+                            <div class="day-label">WED</div>
+                            <div class="day-label">THU</div>
+                            <div class="day-label">FRI</div>
+                        </div>
+                        <div id="schedule-grid" class="schedule-grid">
+                            <!-- Courses will be rendered here -->
+                        </div>
+                    </div>
+                </div>
+
+                <button class="nav-btn next-btn" id="next-schedule">→</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="schedules-browser.js"></script>
+</body>
+</html>

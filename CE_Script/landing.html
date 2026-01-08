@@ -11,12 +11,10 @@
         <div class="container">
             <div class="sidebar">
                 <div class="sidebar-item">IDAI+</div>
-                <div class="sidebar-item">SCHEDULES</div>
                 <div class="sidebar-item">COURSES</div>
                 <div class="sidebar-gap"></div>
                 <div class="sidebar-item selected">COURSE SCHEDULE</div>
                 <div class="sidebar-item">MY UT</div>
-                <div class="sidebar-item">COURSES</div>
             </div>
             <div class="main-content">
                 <div class="header">
@@ -31,8 +29,14 @@
                 </div>
 
                 <div class="schedule-controls">
+                    <button id="prev-schedule-btn" class="nav-arrow-btn" 
+                        title="Previous schedule">←</button>
                     <select id="schedule-select"
                         aria-label="Select schedule"></select>
+                    <button id="next-schedule-btn" class="nav-arrow-btn" 
+                        title="Next schedule">→</button>
+                    <span id="schedule-counter" 
+                        class="schedule-counter">1 / 1</span>
                     <button id="new-schedule-btn" title="Create new schedule">+
                         New</button>
                     <button id="duplicate-schedule-btn"

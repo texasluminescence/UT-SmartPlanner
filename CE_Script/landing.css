@@ -375,3 +375,32 @@ body {
 .teal {
     background-color: #20C4B0; /* teal */
 }
+
+/* Navigation arrow buttons for schedules */
+.nav-arrow-btn {
+    padding: 6px 12px !important;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 40px;
+    background: #BF5700 !important;
+    color: white !important;
+    border: 1px solid #BF5700 !important;
+}
+
+.nav-arrow-btn:hover:not(:disabled) {
+    background: #A04700 !important;
+}
+
+.nav-arrow-btn:disabled {
+    background: #ddd !important;
+    color: #999 !important;
+    border-color: #ddd !important;
+    cursor: not-allowed;
+}
+
+.schedule-counter {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+    font-weight: normal;
+}

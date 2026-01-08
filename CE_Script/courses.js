@@ -333,7 +333,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.sidebar-item').forEach(it => {
         it.addEventListener('click', function() {
             const text = this.textContent.trim().toUpperCase();
-            if (text === 'SCHEDULES' || text === 'COURSE SCHEDULE') {
+            if (text === 'SCHEDULES') {
+                window.location.href = 'schedules.html';
+            } else if (text === 'COURSE SCHEDULE') {
                 window.location.href = 'landing.html';
             } else if (text === 'COURSES') {
                 window.location.href = 'courses.html';
