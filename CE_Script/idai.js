@@ -23,7 +23,15 @@ document.addEventListener('DOMContentLoaded', function() {
     let conversationHistory = [];
 
     // Elements
+   // NEW CODE
     const pdfUpload = document.getElementById('pdf-upload');
+    const uploadTriggerBtn = document.getElementById('upload-trigger-btn');
+
+    // Make the button trigger the file input
+    uploadTriggerBtn.addEventListener('click', function() {
+        pdfUpload.click();
+    });
+    
     const fileName = document.getElementById('file-name');
     const uploadStatus = document.getElementById('upload-status');
     const generateBtn = document.getElementById('generate-btn');

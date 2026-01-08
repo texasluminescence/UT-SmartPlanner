@@ -31,10 +31,24 @@
                     <div class="upload-card">
                         <h2>📄 Upload Your Degree Audit</h2>
                         <p>Upload your IDA (Interactive Degree Audit) PDF to get started</p>
-                        <input type="file" id="pdf-upload" accept=".pdf" style="display: none;">
-                        <button class="upload-btn" onclick="document.getElementById('pdf-upload').click()">
+                        
+                        <!-- Hidden file input -->
+                        <input 
+                            type="file" 
+                            id="pdf-upload" 
+                            accept=".pdf" 
+                            style="display: none;"
+                        >
+                        
+                        <!-- Visible button that triggers file input -->
+                        <button 
+                            class="upload-btn" 
+                            id="upload-trigger-btn"
+                            type="button"
+                        >
                             Choose PDF File
                         </button>
+                        
                         <div id="file-name" class="file-name"></div>
                         <div id="upload-status" class="upload-status"></div>
                     </div>
