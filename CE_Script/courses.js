@@ -314,7 +314,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const sidebarItems = document.querySelectorAll('.sidebar-item');
     const navMap = {
         'COURSES': 'courses.html',
-        'SCHEDULES': 'landing.html',
         'COURSE SCHEDULE': 'landing.html',
         'MY UT': 'index.html',
         'IDAI+': 'idai.html'
@@ -339,6 +338,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.location.href = 'landing.html';
             } else if (text === 'COURSES') {
                 window.location.href = 'courses.html';
+            } else if (text === 'IDAI+') {
+                window.location.href = 'idai.html';
             }
         });
     });
