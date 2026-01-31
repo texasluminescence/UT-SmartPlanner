@@ -13,10 +13,12 @@ Course Page
 <img width="1505" height="862" alt="image" src="https://github.com/user-attachments/assets/61644c4a-30a7-4059-9916-dbd71ec26f10" />
 
 Current Schedule Page
+
 <img width="1499" height="925" alt="image" src="https://github.com/user-attachments/assets/bf4a1b16-0618-49da-af92-bd33708012a3" />
 
-UT Smart Planner Chrome Extension Popup
-<img width="539" height="782" alt="image" src="https://github.com/user-attachments/assets/197ddbf2-55bc-4914-8856-111ee4f98edf" />
+Landing Page
+<img width="1913" height="745" alt="image" src="https://github.com/user-attachments/assets/8bf73a23-15ef-4195-a197-8e7e8fa36d27" />
+
 
 ## In Development
 
